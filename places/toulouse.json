@@ -1,65 +1,72 @@
 { "city": 
-	{
-		"name": "toulouse",
-		"lat" : "43.607378",
-		"lon" : "1.4399286"
-  	},
+  {
+    "name": "toulouse",
+    "lat" : "43.607378",
+    "lon" : "1.4399286"
+    },
   "places": [
-   	{
-  		"name": "La fabrique", 
-  		"lat": "43.607378", 
-  		"lon": "1.4399286", 
-  		"address":  "6 Place du Peyrou",
-  		"power": "at least 2",
-  		"wifi": "?"
-  	},
-  	{
-  		"name": "Brasserie Père Léon", 
-  		"lat": "43.600474", 
-  		"lon": "1.443858999999975", 
-  		"address": "2 Place Esquirol" ,
-  		"power": "no",
-  		"wifi": "no"
-  	},
-  	{
-  		"name": "The George and Dragon",
-  		"lat": "43.607414",
-  		"lon": "1.4396000000000413",
-  		"address": "1 Place du Peyrou",
-  		"power": "yes",
-  		"wifi": "?"
-  	},
-  	{
-  		"name": "L'impro",
-  		"lat": "43.602984",
-  		"lon": "1.4416109999999662",
-  		"address": "7 Carriera Leon Gambetta" ,
-  		"power": "no",
-  		"wifi": "no"
-  	},
-  	{
-  		"name": "La Fiancée",
-  		"lat": "43.602133",
-  		"lon": "1.4411210000000665",
-  		"address": "54 Rue Peyrolières",
-  		"power": "?",
-  		"wifi": "?"
-  	},
-  	{
-  		"name": "Médiathèque José Cabanis",
-  		"lat": "43.610231",
-  		"lon": "1.455492999999933",
-  		"address": "1 Allée Jacques Chaban-Delmas",
-  		"power": "?",
-  		"wifi": "?"
-  	},
-  	{
-  		"name": "Café Albert",
-  		"lat": "43.60467360000001",
-  		"lon": "1.4428554999999506",
-  		"address": "15 Place du Capitole",
-  		"power": "?",
-  		"wifi": "?"
-  	}
+    {
+      "name": "La fabrique", 
+      "lat": "43.607378", 
+      "lon": "1.4399286", 
+      "address":  "6 Place du Peyrou",
+      "type" : "coffee/restaurant",
+      "power": "at least 2",
+      "wifi": "?"
+    },
+    {
+      "name": "Brasserie Père Léon", 
+      "lat": "43.600474", 
+      "lon": "1.443858999999975", 
+      "address": "2 Place Esquirol" ,
+      "type" : "brasserie",
+      "power": "no",
+      "wifi": "no"
+    },
+    {
+      "name": "The George and Dragon",
+      "lat": "43.607414",
+      "lon": "1.4396000000000413",
+      "address": "1 Place du Peyrou",
+      "type" : "pub",
+      "power": "yes",
+      "wifi": "?"
+    },
+    {
+      "name": "L'impro",
+      "lat": "43.602984",
+      "lon": "1.4416109999999662",
+      "address": "7 Carriera Leon Gambetta" ,
+      "type" : "coffee",
+      "power": "no",
+      "wifi": "no"
+    },
+    {
+      "name": "La Fiancée",
+      "lat": "43.602133",
+      "lon": "1.4411210000000665",
+      "address": "54 Rue Peyrolières",
+      "type" : "coffee",
+      "power": "?",
+      "wifi": "?"
+    },
+    {
+      "name": "Médiathèque José Cabanis",
+      "lat": "43.610231",
+      "lon": "1.455492999999933",
+      "address": "1 Allée Jacques Chaban-Delmas",
+      "type" : "",
+      "power": "?",
+      "wifi": "?"
+    },
+    {
+      "name": "Café Albert",
+      "lat": "43.60467360000001",
+      "lon": "1.4428554999999506",
+      "address": "15 Place du Capitole",
+      "type" : "brasserie",
+      "power": "?",
+      "wifi": "?"
+    }
   ]
 }

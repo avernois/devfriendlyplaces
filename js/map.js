@@ -1,6 +1,6 @@
 function getPlaces(city) {
 	var request = new XMLHttpRequest();
-	request.open("GET", "/" + city + "/places.json", false);
+	request.open("GET", "/places/" + city + ".json", false);
 	request.send(null)
 
 	return JSON.parse(request.responseText) 	

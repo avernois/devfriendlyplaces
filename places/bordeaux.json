@@ -1,0 +1,19 @@
+{ "city": 
+  {
+    "name": "Bordeaux",
+    "lat" : "44.863728",
+    "lon" : "-0.586141",
+    "defaultZoom": "14"
+    },
+  "places": [
+    {
+      "name": "Le Node", 
+      "lat": "44.840458",
+      "lon": "-0.570447", 
+      "address":  "12 rue des Faussets",
+      "type" : "coworking",
+      "power": "at least 8",
+      "wifi": "yes"
+    }    
+  ]
+}

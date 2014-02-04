@@ -4,7 +4,8 @@ A collection of nice places where developpers can work fine and some useful info
 
 Current cities
 -------------
- - Toulouse : [toulouse.devfriendlyplaces.net][toulouse]
+ - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
+ - Toulon: [toulon.devfriendlyplaces.net][toulon]
 
 Contribute
 ----------
@@ -20,3 +21,4 @@ Once your pull request is merged and deployed, your map will be accessible at ht
 Open issue, fork, commit and pull request. But you already know that :)
 
 [toulouse]: http://toulouse.devfriendlyplaces.net
+[toulon]: http://toulon.devfriendlyplaces.net

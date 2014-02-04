@@ -8,8 +8,8 @@
   "places": [
     {
       "name": "Le Node", 
-      "lat": "43.120496", 
-      "lon": "5.938807", 
+      "lat": "44.840458",
+      "lon": "-0.570447", 
       "address":  "12 rue des Faussets",
       "type" : "coworking",
       "power": "at least 8",

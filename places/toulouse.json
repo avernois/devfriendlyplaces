@@ -41,33 +41,6 @@
       "type" : "coffee",
       "power": "no",
       "wifi": "no"
-    },
-    {
-      "name": "La Fiancée",
-      "lat": "43.602133",
-      "lon": "1.4411210000000665",
-      "address": "54 Rue Peyrolières",
-      "type" : "coffee",
-      "power": "?",
-      "wifi": "?"
-    },
-    {
-      "name": "Médiathèque José Cabanis",
-      "lat": "43.610231",
-      "lon": "1.455492999999933",
-      "address": "1 Allée Jacques Chaban-Delmas",
-      "type" : "",
-      "power": "?",
-      "wifi": "?"
-    },
-    {
-      "name": "Café Albert",
-      "lat": "43.60467360000001",
-      "lon": "1.4428554999999506",
-      "address": "15 Place du Capitole",
-      "type" : "brasserie",
-      "power": "?",
-      "wifi": "?"
     }
   ]
 }

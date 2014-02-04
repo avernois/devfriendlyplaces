@@ -41,6 +41,25 @@
       "type" : "coffee",
       "power": "no",
       "wifi": "no"
+    },
+    {
+      "name": "Un bout du monde",
+      "lat": "43.606091", 
+      "lon": "1.441757",
+      "address": "18, rue des penitents gris" ,
+      "type" : "coffee",
+      "power": "yes",
+      "wifi": "yes"
+    },
+    {
+      "name": "Les coudes sur la table",
+      "lat": "43.607103", 
+      "lon": "1.439847",
+      "address": "39, rue des lois" ,
+      "type" : "coffee",
+      "power": "yes",
+      "wifi": "yes"
     }
+
   ]
 }

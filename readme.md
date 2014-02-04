@@ -18,6 +18,6 @@ Add a file in the `places` directory called `yourcity.json` and add places infor
 Once your pull request is merged and deployed, your map will be accessible at http://yourcity.devfriendlyplaces.net.
 
 ### improve code / add feature
-Fork, commit and pull request. But you already know that :)
+Open issue, fork, commit and pull request. But you already know that :)
 
 [toulouse]: http://toulouse.devfriendlyplaces.net

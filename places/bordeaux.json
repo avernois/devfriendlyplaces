@@ -1,8 +1,8 @@
 { "city": 
   {
     "name": "Bordeaux",
-    "lat" : "44.863728",
-    "lon" : "-0.586141",
+    "lat" : "44.8382",
+    "lon" : "-0.5748",
     "defaultZoom": "14"
     },
   "places": [

@@ -14,6 +14,15 @@
       "type" : "coworking",
       "power": "at least 8",
       "wifi": "yes"
+    },
+    {
+      "name": "Coolworking",
+      "lat": "44.843098",
+      "lon": "-0.572875",
+      "address": "19 rue Esprit des Lois",
+      "type" : "coworking",
+      "power": "yes",
+      "wifi": "yes"   
     }    
   ]
 }

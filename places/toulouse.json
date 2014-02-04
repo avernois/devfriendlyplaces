@@ -2,7 +2,8 @@
   {
     "name": "toulouse",
     "lat" : "43.607378",
-    "lon" : "1.4399286"
+    "lon" : "1.4399286",
+    "defaultZoom": "14"
     },
   "places": [
     {

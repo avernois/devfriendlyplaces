@@ -19,9 +19,10 @@ function getPlaces(city) {
 }
 
 function buildMapFor(city) {
+	var defaultZoom = 14;
 	var places = getPlaces(city);
 
-	var map = L.map('map').setView([places.city.lat, places.city.lon], 14);
+	var map = L.map('map').setView([places.city.lat, places.city.lon], places.city.defaultZoom);
 
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
@@ -37,10 +38,4 @@ function buildMapFor(city) {
 			+ "wifi: " + place.wifi)
 		.addTo(map);
 	});
-
-	function onMapClick(e) {
-		map.setView([51.5073219, -0.1276474], 14)
-	}
-
-	map.on('click', onMapClick);
 }

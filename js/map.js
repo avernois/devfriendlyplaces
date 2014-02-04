@@ -38,10 +38,4 @@ function buildMapFor(city) {
 			+ "wifi: " + place.wifi)
 		.addTo(map);
 	});
-
-	function onMapClick(e) {
-		map.setView([51.5073219, -0.1276474], 14)
-	}
-
-	map.on('click', onMapClick);
 }

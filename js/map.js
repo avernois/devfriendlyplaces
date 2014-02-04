@@ -30,12 +30,35 @@ function buildMapFor(city) {
 
 	places.places.forEach(function(place) {
 		L.marker([place.lat, place.lon])
-		.bindPopup(
-			"<b>" + place.name + "</b><br>"
-			+ "address: " + place.address + "<br>"
-			+ "type: " + place.type + "<br>"
-			+ "power: " + place.power + "<br>"
-			+ "wifi: " + place.wifi)
+		.bindPopup(placeToHtml(place))
 		.addTo(map);
 	});
+}
+
+function placeToHtml(place) {
+	return "<b>" + place.name + "</b><br>"
+	+ "address: " + place.address + "<br>"
+	+ "type: " + place.type + "<br>"
+	+ "power: " + optionToHtml(place.power) + "<br>"
+	+ "wifi: " + optionToHtml(place.wifi) + "<br>"
+};
+
+function optionToHtml(value) {
+	if (value !== undefined) {
+		return boolToStr(value.available) + optionalComment(value.comment);
+	} else {
+		return 'undefined';
+	}
+}
+
+function boolToStr(value) {
+	if (value !== undefined) {
+		return value ? "yes" : "no";
+	} else {
+		return 'undefined';
+	}
+}
+
+function optionalComment(value) {
+	return value ? "(" + value + ")" : "";
 }

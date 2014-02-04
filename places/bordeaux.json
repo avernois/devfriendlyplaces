@@ -1,19 +1,19 @@
-{ "city": 
+{ "city":
   {
     "name": "Bordeaux",
     "lat" : "44.8382",
     "lon" : "-0.5748",
     "defaultZoom": "14"
-    },
+  },
   "places": [
     {
-      "name": "Le Node", 
+      "name": "Le Node",
       "lat": "44.840458",
-      "lon": "-0.570447", 
+      "lon": "-0.570447",
       "address":  "12 rue des Faussets",
       "type" : "coworking",
-      "power": "at least 8",
-      "wifi": "yes"
+      "power": {"available": true, "comment": "at least 8"},
+      "wifi": {"available": true}
     },
     {
       "name": "Coolworking",
@@ -21,8 +21,8 @@
       "lon": "-0.572875",
       "address": "19 rue Esprit des Lois",
       "type" : "coworking",
-      "power": "yes",
-      "wifi": "yes"   
+      "power": {"available": true},
+      "wifi": {"available": true}
     }    
   ]
 }

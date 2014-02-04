@@ -1,28 +1,27 @@
-{ "city": 
+{ "city":
   {
     "name": "toulouse",
     "lat" : "43.607378",
     "lon" : "1.4399286",
     "defaultZoom": "14"
-    },
+  },
   "places": [
     {
-      "name": "La fabrique", 
-      "lat": "43.607378", 
-      "lon": "1.4399286", 
+      "name": "La fabrique",
+      "lat": "43.607378",
+      "lon": "1.4399286",
       "address":  "6 Place du Peyrou",
       "type" : "coffee/restaurant",
-      "power": "at least 2",
-      "wifi": "?"
+      "power": {"available": true, "comment": "at least 2"}
     },
     {
-      "name": "Brasserie Père Léon", 
-      "lat": "43.600474", 
-      "lon": "1.443858999999975", 
+      "name": "Brasserie Père Léon",
+      "lat": "43.600474",
+      "lon": "1.443858999999975",
       "address": "2 Place Esquirol" ,
       "type" : "brasserie",
-      "power": "no",
-      "wifi": "no"
+      "power": {"available": false},
+      "wifi": {"available": false}
     },
     {
       "name": "The George and Dragon",
@@ -30,8 +29,7 @@
       "lon": "1.4396000000000413",
       "address": "1 Place du Peyrou",
       "type" : "pub",
-      "power": "yes",
-      "wifi": "?"
+      "power": {"available": true}
     },
     {
       "name": "L'impro",
@@ -39,8 +37,8 @@
       "lon": "1.4416109999999662",
       "address": "7 Carriera Leon Gambetta" ,
       "type" : "coffee",
-      "power": "no",
-      "wifi": "no"
+      "power": {"available": false},
+      "wifi": {"available": false}
     },
     {
       "name": "Un bout du monde",
@@ -48,8 +46,8 @@
       "lon": "1.441757",
       "address": "18, rue des penitents gris" ,
       "type" : "coffee",
-      "power": "yes",
-      "wifi": "yes"
+      "power": {"available": true},
+      "wifi": {"available": true}
     },
     {
       "name": "Les coudes sur la table",
@@ -57,8 +55,8 @@
       "lon": "1.439847",
       "address": "39, rue des lois" ,
       "type" : "coffee",
-      "power": "yes",
-      "wifi": "yes"
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
 
   ]

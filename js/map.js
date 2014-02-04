@@ -1,3 +1,15 @@
+function getCityFromUrl() {
+	var hostname = window.location.hostname;
+	var split = hostname.split(".");
+	var city = split[0]
+
+	if ((split.length < 3) || (city == "www")) {
+		return "toulouse";
+	}
+
+	return city;
+}
+
 function getPlaces(city) {
 	var request = new XMLHttpRequest();
 	request.open("GET", "/places/" + city + ".json", false);

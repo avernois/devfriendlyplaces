@@ -6,6 +6,7 @@ Current cities
 -------------
  - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
+ - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
 
 Contribute
 ----------
@@ -22,3 +23,4 @@ Open issue, fork, commit and pull request. But you already know that :)
 
 [toulouse]: http://toulouse.devfriendlyplaces.net
 [toulon]: http://toulon.devfriendlyplaces.net
+[bordeaux]: http://bordeaux.devfriendlyplaces.net

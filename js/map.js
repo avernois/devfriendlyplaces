@@ -37,11 +37,16 @@ function buildMapFor(city) {
 
 function placeToHtml(place) {
 	return "<b>" + place.name + "</b><br>"
-	+ "address: " + place.address + "<br>"
-	+ "type: " + place.type + "<br>"
+	+ optionalValueToHtml("address", place.address)
+	+ optionalValueToHtml("open hours", place.openHours)
+	+ optionalValueToHtml("type", place.type)
 	+ "power: " + optionToHtml(place.power) + "<br>"
-	+ "wifi: " + optionToHtml(place.wifi) + "<br>"
+	+ "wifi: " + optionToHtml(place.wifi) + "<br>";
 };
+
+function optionalValueToHtml(label, value) {
+	return value ? label + ": " + value + "<br>" : "";
+}
 
 function optionToHtml(value) {
 	if (value !== undefined) {

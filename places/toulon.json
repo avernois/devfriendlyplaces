@@ -1,15 +1,15 @@
 { "city":
   {
     "name": "toulon",
-    "lat" : "43.117",
-    "lon" : "5.9333",
+    "lat" : 43.117,
+    "lon" : 5.9333,
     "defaultZoom": "14"
   },
   "places": [
     {
       "name": "La Cantine by Tvt",
-      "lat": "43.120496",
-      "lon": "5.938807",
+      "lat": 43.120496,
+      "lon": 5.938807,
       "address":  "Maison des technologies, Place G.Pompidou",
       "type" : "coworking",
       "power": {"available": true, "comment": "at least 15"},

@@ -1,15 +1,15 @@
 { "city":
   {
     "name": "london",
-    "lat" : "51.5073219",
-    "lon" : "-0.1276474",
+    "lat" : 51.5073219,
+    "lon" : -0.1276474,
     "defaultZoom": "13"
   },
   "places": [
    {
       "name": "Caffe Forum",
-      "lat": "51.4935507",
-      "lon": "-0.182199",
+      "lat": 51.4935507,
+      "lon": -0.182199,
       "address": "146 Gloucester Rd",
       "type" : "cafe",
       "power": {"available": true, "comment": "one socket"},

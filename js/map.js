@@ -40,20 +40,24 @@ function placeToHtml(place) {
 	+ optionalValueToHtml("address", place.address)
 	+ optionalValueToHtml("open hours", place.openHours)
 	+ optionalValueToHtml("type", place.type)
-	+ "power: " + optionToHtml(place.power) + "<br>"
-	+ "wifi: " + optionToHtml(place.wifi) + "<br>";
+	+ optionToHtml("power", place.power)
+	+ optionToHtml("wifi", place.wifi);
 };
 
 function optionalValueToHtml(label, value) {
 	return value ? label + ": " + value + "<br>" : "";
 }
 
-function optionToHtml(value) {
+function optionToHtml(label, value) {
+	return label + ": " + optionText(value) + "<br>";
+}
+
+function optionText(value) {
 	if (value !== undefined) {
 		return boolToStr(value.available) + optionalComment(value.comment);
 	} else {
-		return 'undefined';
-	}
+		return "undefined";
+	}	
 }
 
 function boolToStr(value) {

@@ -1,8 +1,7 @@
 function getCityFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
-	var city = split[0]
-
+	var city = split[0];
 	if ((split.length < 3) || (city == "www")) {
 		return "toulouse";
 	}

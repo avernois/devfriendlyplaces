@@ -37,18 +37,27 @@ function buildMapFor(city) {
 
 function placeToHtml(place) {
 	return "<b>" + place.name + "</b><br>"
-	+ "address: " + place.address + "<br>"
-	+ "type: " + place.type + "<br>"
-	+ "power: " + optionToHtml(place.power) + "<br>"
-	+ "wifi: " + optionToHtml(place.wifi) + "<br>"
+	+ optionalFieldToHtml("address", place.address)
+	+ optionalFieldToHtml("open hours", place.openHours)
+	+ optionalFieldToHtml("type", place.type)
+	+ optionToHtml("power", place.power)
+	+ optionToHtml("wifi", place.wifi);
 };
 
-function optionToHtml(value) {
+function optionalFieldToHtml(label, value) {
+	return value ? label + ": " + value + "<br>" : "";
+}
+
+function optionToHtml(label, value) {
+	return label + ": " + optionText(value) + "<br>";
+}
+
+function optionText(value) {
 	if (value !== undefined) {
 		return boolToStr(value.available) + optionalComment(value.comment);
 	} else {
-		return 'undefined';
-	}
+		return "undefined";
+	}	
 }
 
 function boolToStr(value) {

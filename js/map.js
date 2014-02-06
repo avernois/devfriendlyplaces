@@ -40,12 +40,17 @@ function placeToHtml(place) {
 	+ optionalFieldToHtml("address", place.address)
 	+ optionalFieldToHtml("open hours", place.openHours)
 	+ optionalFieldToHtml("type", place.type)
+	+ optionalUrlToLink("website", place.url)
 	+ optionToHtml("power", place.power)
 	+ optionToHtml("wifi", place.wifi);
 };
 
 function optionalFieldToHtml(label, value) {
 	return value ? label + ": " + value + "<br>" : "";
+}
+
+function optionalUrlToLink(label, value){
+	return value ? label + ": " + "<a href='" + value + "'>" + value + "</a>" + "<br>" : "";
 }
 
 function optionToHtml(label, value) {

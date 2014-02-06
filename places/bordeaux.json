@@ -31,7 +31,10 @@
 	  "lat": 44.85437,
 	  "lon": -0.56601,
 	  "address": "92 Quai des Chartrons",
+<<<<<<< HEAD
 	  "url": "http://www.kowork.fr/",
+=======
+>>>>>>> 6d02508... Added Kowork and Darwin to Bordeaux
 	  "type": "coworking",
 	  "power": {"available": true},
 	  "wifi": {"available": true}
@@ -41,7 +44,10 @@
 	  "lat": 44.84978,
 	  "lon": -0.56069,
 	  "address": "87 Quai des Queyries",
+<<<<<<< HEAD
 	  "url": "http://www.coworkers.eu/",
+=======
+>>>>>>> 6d02508... Added Kowork and Darwin to Bordeaux
 	  "type": "coworking",
 	  "power": {"available": true},
 	  "wifi": {"available": true}

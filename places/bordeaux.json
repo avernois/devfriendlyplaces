@@ -11,7 +11,6 @@
       "lat": 44.840458,
       "lon": -0.570447,
       "address":  "12 rue des Faussets",
-      "url": "http://bxno.de/",
       "type" : "coworking",
       "power": {"available": true, "comment": "at least 8"},
       "wifi": {"available": true}
@@ -21,7 +20,6 @@
       "lat": 44.843098,
       "lon": -0.572875,
       "address": "19 rue Esprit des Lois",
-      "url": "http://www.coolworking.fr/",
       "type" : "coworking",
       "power": {"available": true},
       "wifi": {"available": true}

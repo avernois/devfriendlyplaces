@@ -63,7 +63,7 @@
       "name": "Le Cyrano",
       "lat": 43.6039657,
       "lon": 1.4472385,
-      "openHours": "7h30 - ?"
+      "openHours": "7h30 - ?",
       "address": "rue St Antoine du T." ,
       "type" : "coffee",
       "power": {"available": false},

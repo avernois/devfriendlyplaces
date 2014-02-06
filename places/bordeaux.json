@@ -23,6 +23,24 @@
       "type" : "coworking",
       "power": {"available": true},
       "wifi": {"available": true}
-    }    
+    },
+    {
+      "name": "Kowork",
+      "lat": 44.85437,
+      "lon": -0.56601,
+      "address": "92 Quai des Chartrons",
+      "type": "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Darwin",
+      "lat": 44.84978,
+      "lon": -0.56069,
+      "address": "87 Quai des Queyries",
+      "type": "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    }
   ]
 }

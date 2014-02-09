@@ -1,0 +1,37 @@
+{ "city":
+  {
+    "name": "lille",
+    "lat" : 50.6303,
+    "lon" : 3.053802,
+    "defaultZoom": "14"
+  },
+  "places": [
+    {
+      "name": "Le Monde Moderne",
+      "lat": 50.637486,
+      "lon": 3.06397,
+      "address":  "12 Rue des Trois Couronnes",
+      "type" : "coffee",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "L'illustration",
+      "lat": 50.639419,
+      "lon": 3.05823,
+      "address":  "1 Rue Doudin",
+      "type" : "coffee",
+      "power": {"available": false},
+      "wifi": {"available": false}
+    },
+    {
+      "name": "Meert",
+      "lat": 50.637772,
+      "lon": 3.061916,
+      "address":  "27 Rue Esquermoise",
+      "type" : "coffee and teamroom",
+      "power": {"available": false},
+      "wifi": {"available": false}
+    }
+  ]
+}

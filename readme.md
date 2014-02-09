@@ -7,6 +7,7 @@ Current cities
  - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
+ - Lille: [lille.devfriendlyplaces.net][lille]
  - Villeurbanne: [villeurbanne.devfriendlyplaces.net][villeurbanne]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
 
@@ -26,5 +27,6 @@ Open issue, fork, commit and pull request. But you already know that :)
 [toulouse]: http://toulouse.devfriendlyplaces.net
 [toulon]: http://toulon.devfriendlyplaces.net
 [bordeaux]: http://bordeaux.devfriendlyplaces.net
+[lille]: http://lille.devfriendlyplaces.net
 [villeurbanne]: http://villeurbanne.devfriendlyplaces.net
 [lyon]: http://lyon.devfriendlyplaces.net

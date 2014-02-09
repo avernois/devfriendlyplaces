@@ -43,7 +43,7 @@
     },
     {
       "name": "Un bout du monde",
-      "lat": 43.606091, 
+      "lat": 43.606091,
       "lon": 1.441757,
       "address": "18, rue des penitents gris" ,
       "type" : "coffee",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Les coudes sur la table",
-      "lat": 43.607103, 
+      "lat": 43.607103,
       "lon": 1.439847,
       "address": "39, rue des lois" ,
       "type" : "coffee",
@@ -66,6 +66,26 @@
       "openHours": "7h30 - ?",
       "address": "rue St Antoine du T." ,
       "type" : "coffee",
+      "power": {"available": false},
+      "wifi": {"available": false}
+    },
+    {
+      "name": "Ombre blanche",
+      "lat": 43.603361,
+      "lon": 1.442201,
+      "openHours": "10 - ?",
+      "address": "48 rue Leon Gambetta" ,
+      "type" : "coffee and bookshop ",
+      "power": {"available": false},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "L'herbe tendre",
+      "lat": 43.599589,
+      "lon": 1.442543,
+      "openHours": "?",
+      "address": "45 Rue des Paradoux" ,
+      "type" : "coffee and teamroom",
       "power": {"available": false},
       "wifi": {"available": false}
     }

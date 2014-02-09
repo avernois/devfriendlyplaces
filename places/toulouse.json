@@ -19,7 +19,7 @@
       "name": "Brasserie Père Léon",
       "lat": 43.600474,
       "lon": 1.443858999999975,
-      "address": "2 Place Esquirol" ,
+      "address": "2 Place Esquirol",
       "type" : "brasserie",
       "power": {"available": false},
       "wifi": {"available": false}
@@ -36,7 +36,7 @@
       "name": "L'impro",
       "lat": 43.602984,
       "lon": 1.4416109999999662,
-      "address": "7 Carriera Leon Gambetta" ,
+      "address": "7 Carriera Leon Gambetta",
       "type" : "coffee",
       "power": {"available": false},
       "wifi": {"available": false}
@@ -88,7 +88,15 @@
       "type" : "coffee and teamroom",
       "power": {"available": false},
       "wifi": {"available": false}
+    },
+    {
+      "name": "Tau",
+      "lat": 43.601919,
+      "lon": 1.438586,
+      "address": "18 Place de la Daurade",
+      "type" : "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
-
   ]
 }

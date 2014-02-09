@@ -8,6 +8,7 @@ Current cities
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
  - Lille: [lille.devfriendlyplaces.net][lille]
+ - Lyon: [lyon.devfriendlyplaces.net][lyon]
 
 Contribute
 ----------
@@ -26,3 +27,4 @@ Open issue, fork, commit and pull request. But you already know that :)
 [toulon]: http://toulon.devfriendlyplaces.net
 [bordeaux]: http://bordeaux.devfriendlyplaces.net
 [lille]: http://lille.devfriendlyplaces.net
+[lyon]: http://lyon.devfriendlyplaces.net

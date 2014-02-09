@@ -42,7 +42,8 @@ function placeToHtml(place) {
 	+ optionalFieldToHtml("type", place.type)
 	+ optionalUrlToLink("website", place.url)
 	+ optionToHtml("power", place.power)
-	+ optionToHtml("wifi", place.wifi);
+	+ optionToHtml("wifi", place.wifi)
+	+ optionToHtml("url", place.url);
 };
 
 function optionalFieldToHtml(label, value) {

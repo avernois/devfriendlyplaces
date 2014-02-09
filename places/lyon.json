@@ -1,0 +1,34 @@
+{ "city":
+  {
+    "name": "lyon",
+    "lat" : 45.7662954,
+    "lon" : 4.879662199999984,
+    "defaultZoom": "13"
+  },
+  "places": [
+    {
+      "name": "La Cordée Perrache",
+      "lat": 45.750516,
+      "lon": 4.825557000000003,
+      "address":  "13 cours de Verdun 69002 Lyon",
+      "type" : "coworking",
+	    "url" : "http://www.la-cordee.net/"
+    },
+    {
+      "name": "La Cordée Liberté",
+      "lat": 45.7573428,
+      "lon": 4.8427315000000135,
+      "address":  "61 cours de la Liberté 69003 Lyon",
+      "type" : "coworking",
+	    "url" : "http://www.la-cordee.net/"
+    },
+    {
+      "name": "La Cordée Charpennes",
+      "lat": 45.77138189999999,
+      "lon": 4.863123200000018,
+      "address":  "27 rue Henri Rolland 69100 Villeurbanne",
+      "type" : "coworking",
+      "url" : "http://www.la-cordee.net/"
+    }
+  ]
+}

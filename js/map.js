@@ -41,7 +41,8 @@ function placeToHtml(place) {
 	+ optionalFieldToHtml("open hours", place.openHours)
 	+ optionalFieldToHtml("type", place.type)
 	+ optionToHtml("power", place.power)
-	+ optionToHtml("wifi", place.wifi);
+	+ optionToHtml("wifi", place.wifi)
+	+ optionToHtml("url", place.url);
 };
 
 function optionalFieldToHtml(label, value) {

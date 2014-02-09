@@ -14,8 +14,11 @@
 	<script src="/js/map.js"></script>
 	<script type="text/javascript">
 		(function(){
-			mapMaker.buildMapFor(mapMaker.getCityFromUrl());
-		})();
+            var mapMaker = new MapMaker();
+            var mapElm = document.getElementById('map');
+            var city = mapMaker.getCityFromHostname(window.location.hostname);
+			mapMaker.buildMapFor(city, L, mapElm);
+		}());
 	</script>
 </body>
 </html>

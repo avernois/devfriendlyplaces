@@ -45,7 +45,7 @@
       "name": "Un bout du monde",
       "lat": 43.606091,
       "lon": 1.441757,
-      "address": "18, rue des penitents gris" ,
+      "address": "18, rue des penitents gris",
       "type" : "coffee",
       "power": {"available": true},
       "wifi": {"available": true}
@@ -55,7 +55,7 @@
       "lat": 43.607103,
       "lon": 1.439847,
       "openHours": "Monday to Saturday, 11h30 - 19h00",
-      "address": "39, rue des lois" ,
+      "address": "39, rue des lois",
       "type" : "coffee",
       "power": {"available": true},
       "wifi": {"available": true},
@@ -66,7 +66,7 @@
       "lat": 43.6039657,
       "lon": 1.4472385,
       "openHours": "7h30 - ?",
-      "address": "rue St Antoine du T." ,
+      "address": "rue St Antoine du T.",
       "type" : "coffee",
       "power": {"available": false},
       "wifi": {"available": false}
@@ -75,18 +75,19 @@
       "name": "Ombre blanche",
       "lat": 43.603361,
       "lon": 1.442201,
-      "openHours": "10 - ?",
-      "address": "48 rue Leon Gambetta" ,
+      "openHours": "Monday to Friday, 09h30 - 19h00 and Saturday, 10h - 19h30",
+      "address": "48 and 50, rue Gambetta",
       "type" : "coffee and bookshop ",
       "power": {"available": false},
-      "wifi": {"available": true}
+      "wifi": {"available": true},
+      "url": "http://www.ombres-blanches.fr/"
     },
     {
       "name": "L'herbe tendre",
       "lat": 43.599589,
       "lon": 1.442543,
       "openHours": "?",
-      "address": "45 Rue des Paradoux" ,
+      "address": "45 Rue des Paradoux",
       "type" : "coffee and teamroom",
       "power": {"available": false},
       "wifi": {"available": false}

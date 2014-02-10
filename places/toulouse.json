@@ -97,8 +97,8 @@
       "address": "14 Rue de l'Industrie",
       "type" : "pub",
       "power": {"available": false},
-      "wifi": {"available": true}
+      "wifi": {"available": true},
+      "url": "http://www.frogpubs.com/pub-rosbif-toulouse.php"
     }
-
   ]
 }

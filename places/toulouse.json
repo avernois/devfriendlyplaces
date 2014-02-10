@@ -88,7 +88,17 @@
       "type" : "coffee and teamroom",
       "power": {"available": false},
       "wifi": {"available": false}
+    },
+    {
+      "name": "The Frog & Rosbif",
+      "lat": 43.36299,
+      "lon": 1.27072,
+      "openHours": "17h30 - 2h (semaine) - 13h30 - 3h (samedi) - 13h30 - 2h (dimanche)",
+      "address": "14 Rue de l'Industrie",
+      "type" : "pub",
+      "power": {"available": false},
+      "wifi": {"available": true},
+      "url": "http://www.frogpubs.com/pub-rosbif-toulouse.php"
     }
-
   ]
 }

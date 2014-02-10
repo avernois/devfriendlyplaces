@@ -45,10 +45,12 @@
       "name": "Un bout du monde",
       "lat": 43.606091,
       "lon": 1.441757,
+      "openHours": "Tuesday to Wednesday, 12h00 - 20h00 and Thursday to Saturday, 12h00 - 23h00",
       "address": "18, rue des penitents gris",
       "type" : "coffee",
       "power": {"available": true},
-      "wifi": {"available": true}
+      "wifi": {"available": true},
+      "url": "http://www.unboutdumonde.fr/"
     },
     {
       "name": "Les coudes sur la table",

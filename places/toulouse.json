@@ -100,6 +100,17 @@
       "type" : "coworking",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Solaneko",
+      "lat": 43.598608,
+      "lon": 1.433171,
+      "openHours": "Thuesday to Saturday, 11h00 - 19h00",
+      "address": "9, rue Réclusane (place de l’Estrapade)",
+      "type" : "coffee/restaurant",
+      "power": {"available": true, "comment": "at least 2"},
+      "wifi": {"available": false},
+      "url": "http://www.solaneko.fr/"
     }
   ]
 }

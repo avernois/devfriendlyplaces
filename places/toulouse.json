@@ -54,10 +54,12 @@
       "name": "Les coudes sur la table",
       "lat": 43.607103,
       "lon": 1.439847,
+      "openHours": "Monday to Saturday, 11h30 - 19h00",
       "address": "39, rue des lois" ,
       "type" : "coffee",
       "power": {"available": true},
-      "wifi": {"available": true}
+      "wifi": {"available": true},
+      "url": "http://www.lescoudes-surlatable.fr/"
     },
     {
       "name": "Le Cyrano",

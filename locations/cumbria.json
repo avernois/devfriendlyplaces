@@ -1,0 +1,37 @@
+{ "location":
+  {
+    "name": "cumbria",
+    "lat" : 54.6190,
+    "lon" : -2.9004,
+    "defaultZoom": "9"
+  },
+  "places": [
+   {
+      "name": "Carlisle Business Interaction Centre (C-BIC)",
+      "lat": 54.89513,
+      "lon": -2.93975,
+      "address": "4-5 Paternoster Row, Carlisle, CA3 8TT",
+      "type" : "co-working",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Starbucks",
+      "lat": 54.89507,
+      "lon": -2.93542,
+      "address": "64 Scotch Street, Carlisle, CA3 8PN",
+      "type" : "coffee shop",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "The Coffee Kitchen",
+      "lat": 54.66358,
+      "lon": -3.36360,
+      "address": "40 Challoner Street, Cockermouth, CA13 9QU",
+      "type" : "coffee shop",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    }
+  ]
+}

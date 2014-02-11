@@ -1,9 +1,9 @@
 Dev friendly places
 ===================
-A collection of nice places where developpers can work fine and some useful informations about these places (wifi ? power ? ...) on the map of your city.
+A collection of nice places where developers can work fine and some useful informations about these places (wifi ? power ? ...) on the map of a location.
 
-Current cities
--------------
+Current locations
+-----------------
  - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
@@ -12,13 +12,13 @@ Current cities
 
 Contribute
 ----------
-### Add places to an existing city
-That is easy, just edit the json file `places/yourcity.json` and submit a pull request (where `yourcity` is the name of your city).
+### Add places to an existing location
+That is easy, just edit the json file `places/yourlocation.json` and submit a pull request (where `yourlocation` is the name of your location).
 
-### Add your city
-Add a file in the `places` directory called `yourcity.json` and add place informations.
+### Add your location
+Add a file in the `places` directory called `yourlocation.json` and add place informations.
 
-Once your pull request is merged and deployed, your map will be accessible at http://yourcity.devfriendlyplaces.net.
+Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.
 
 ### Improve code / add feature
 Open issue, fork, commit and pull request. But you already know that :)

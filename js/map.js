@@ -1,28 +1,28 @@
-function getCityFromUrl() {
+function getLocationFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
-	var city = split[0]
+	var location = split[0]
 
-	if ((split.length < 3) || (city == "www")) {
+	if ((split.length < 3) || (location == "www")) {
 		return "toulouse";
 	}
 
-	return city;
+	return location;
 }
 
-function getPlaces(city) {
+function getPlaces(location) {
 	var request = new XMLHttpRequest();
-	request.open("GET", "/places/" + city + ".json", false);
+	request.open("GET", "/locations/" + location + ".json", false);
 	request.send(null)
 
 	return JSON.parse(request.responseText) 	
 }
 
-function buildMapFor(city) {
+function buildMapFor(location) {
 	var defaultZoom = 14;
-	var places = getPlaces(city);
+	var places = getPlaces(location);
 
-	var map = L.map('map').setView([places.city.lat, places.city.lon], places.city.defaultZoom);
+	var map = L.map('map').setView([places.location.lat, places.location.lon], places.location.defaultZoom);
 
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'

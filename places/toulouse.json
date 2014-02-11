@@ -101,7 +101,8 @@
       "address": "18 Place de la Daurade",
       "type" : "coworking",
       "power": {"available": true},
-      "wifi": {"available": true}
+      "wifi": {"available": true},
+      "url": "http://www.tau.so/"
     },
     {
       "name": "Solaneko",

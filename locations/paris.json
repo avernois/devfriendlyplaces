@@ -1,0 +1,100 @@
+{ "location":
+  {
+    "name": "paris",
+    "lat" : 48.8568,
+    "lon" : 2.351828,
+    "defaultZoom": "13"
+  },
+  "places": [
+    {
+      "name": "Café CRAFT",
+      "lat": 48.8731907,
+      "lon": 2.3631488,
+      "address": "24 Rue des Vinaigriers - 75010 Paris",
+      "type": "coffee / coworking",
+      "url": "http://cafe-craft.com",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "L'ANTICAFE",
+      "lat": 48.8625921,
+      "lon": 2.3512003,
+      "address": "79 Rue Quincampoix - 75003 Paris",
+      "type": "coworking",
+      "url": "http://anticafe.fr",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Soleilles Cowork",
+      "lat": 48.868143,
+      "lon": 2.339605,
+      "address": "13 rue Vivienne - 75002 Paris",
+      "type": "coworking",
+      "url": "http://www.soleillescowork.com",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Le Laptop",
+      "lat": 48.877406,
+      "lon": 2.3907456,
+      "address": "6 Rue Arthur Rozier - 75019 Paris",
+      "type": "coworking",
+      "url": "http://www.lelaptop.com",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "NUMA Paris",
+      "lat": 48.8675894,
+      "lon": 2.3496312,
+      "address": "39 Rue du Caire - 75002 Paris",
+      "type": "coworking",
+      "url": "http://cowork.numaparis.com/",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "BGE PaRIF",
+      "lat": 48.8682709,
+      "lon": 2.3663365,
+      "address": "18 Rue du Faubourg du Temple - 75011 Paris",
+      "type": "coworking",
+      "url": "http://www.bgparif.com/coworking/",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Mozaik Coworking",
+      "lat": 48.875829,
+      "lon": 2.3468634,
+      "address": "9 Rue Bleue - 75009 Paris",
+      "type": "coworking",
+      "url": "http://www.mozaik-coworking.com/",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "La Mutinerie",
+      "lat": 48.8795595,
+      "lon": 2.3717432,
+      "address": "29 rue de Meaux - 75019 Paris",
+      "type": "coworking",
+      "url": "http://www.mutinerie.org",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Delaville Café",
+      "lat": 48.870664,
+      "lon": 2.348671,
+      "address": "34 Bd de Bonne Nouvelle - 75010 Paris",
+      "type": "coffee",
+      "url": "http://delavillecafe.com/",
+      "power": {"available": false},
+      "wifi": {"available": true}
+    }
+  ]
+}

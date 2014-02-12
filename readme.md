@@ -9,6 +9,7 @@ Current locations
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
  - Lille: [lille.devfriendlyplaces.net][lille]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
+ - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
 
 Contribute
 ----------
@@ -28,3 +29,4 @@ Open issue, fork, commit and pull request. But you already know that :)
 [bordeaux]: http://bordeaux.devfriendlyplaces.net
 [lille]: http://lille.devfriendlyplaces.net
 [lyon]: http://lyon.devfriendlyplaces.net
+[cumbria]: http://cumbria.devfriendlyplaces.net

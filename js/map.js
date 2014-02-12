@@ -1,7 +1,7 @@
 function getCityFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
-	var city = split[0]
+	var city = split[0];
 
 	if ((split.length < 3) || (city == "www")) {
 		return "toulouse";
@@ -13,9 +13,9 @@ function getCityFromUrl() {
 function getPlaces(city) {
 	var request = new XMLHttpRequest();
 	request.open("GET", "/places/" + city + ".json", false);
-	request.send(null)
+	request.send(null);
 
-	return JSON.parse(request.responseText) 	
+	return JSON.parse(request.responseText);
 }
 
 function buildMapFor(city) {
@@ -36,14 +36,14 @@ function buildMapFor(city) {
 }
 
 function placeToHtml(place) {
-	return "<b>" + place.name + "</b><br>"
-	+ optionalFieldToHtml("address", place.address)
-	+ optionalFieldToHtml("open hours", place.openHours)
-	+ optionalFieldToHtml("type", place.type)
-	+ optionalUrlToLink("website", place.url)
-	+ optionToHtml("power", place.power)
-	+ optionToHtml("wifi", place.wifi);
-};
+	return "<b>" + place.name + "</b><br>" +
+	optionalFieldToHtml("address", place.address) +
+	optionalFieldToHtml("open hours", place.openHours) +
+	optionalFieldToHtml("type", place.type) +
+	optionalUrlToLink("website", place.url) +
+	optionToHtml("power", place.power) +
+	optionToHtml("wifi", place.wifi);
+}
 
 function optionalFieldToHtml(label, value) {
 	return value ? label + ": " + value + "<br>" : "";
@@ -62,7 +62,7 @@ function optionText(value) {
 		return boolToStr(value.available) + optionalComment(value.comment);
 	} else {
 		return "undefined";
-	}	
+	}
 }
 
 function boolToStr(value) {

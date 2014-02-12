@@ -135,5 +135,15 @@
       "wifi": {"available": false},
       "url":  "http://bibliotheque.toulouse.fr"
     }
+    {
+      "name": "Mediathèque José Cabanis",
+      "lat": 43.610632,
+      "lon": 1.455578,
+      "address": "1 Allée Jacques Chaban-Delmas",
+      "type" : "library",
+      "power": {"available": true},
+      "wifi": {"available": false},
+      "url":  "bibliotheque.toulouse.fr"
+    },
   ]
 }

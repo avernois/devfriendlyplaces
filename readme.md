@@ -10,6 +10,7 @@ Current locations
  - Lille: [lille.devfriendlyplaces.net][lille]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
+ - Paris: [paris.devfriendlyplaces.net][cumbria]
 
 Contribute
 ----------
@@ -30,3 +31,4 @@ Open issue, fork, commit and pull request. But you already know that :)
 [lille]: http://lille.devfriendlyplaces.net
 [lyon]: http://lyon.devfriendlyplaces.net
 [cumbria]: http://cumbria.devfriendlyplaces.net
+[paris]: http://paris.devfriendlyplaces.net

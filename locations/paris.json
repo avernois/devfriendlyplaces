@@ -95,6 +95,16 @@
       "url": "http://delavillecafe.com/",
       "power": {"available": false},
       "wifi": {"available": true}
+    },
+    {
+      "name": "La cordée",
+      "lat": 48.8489557,
+      "lon": 2.3745205,
+      "address": "61 Rue Traversière - 75012 Paris",
+      "type": "coworking",
+      "url": "http://www.la-cordee.net/en/la-cordee-paris-gare-de-lyon-2",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

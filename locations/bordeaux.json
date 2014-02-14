@@ -46,6 +46,16 @@
       "type": "coworking",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Chez Vincent",
+      "lat": 44.823521,
+      "lon": -0.618585,
+      "address": "27 rue de Lyon",
+
+      "type": "home coworking",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

@@ -56,6 +56,17 @@
       "type": "home coworking",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Médiathèque Jacques Elul",
+      "lat": 44.799583,
+      "lon": -0.642509,
+      "address": "21 Résidence Camponac",
+
+      "url": "http://mediatheque.mairie-pessac.fr/",
+      "type": "library",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

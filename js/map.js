@@ -1,4 +1,4 @@
-var marker_icons = new Array();
+var marker_icons = [];
 for(i=0; i<4; i++) {
   marker_icons.push(
     L.icon({
@@ -10,11 +10,11 @@ for(i=0; i<4; i++) {
     )
   );
 }
-
+ 
 function getLocationFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
-	var location = split[0]
+	var location = split[0];
 
 	if ((split.length < 3) || (location == "www")) {
 		return "toulouse";
@@ -26,9 +26,9 @@ function getLocationFromUrl() {
 function getPlaces(location) {
 	var request = new XMLHttpRequest();
 	request.open("GET", "/locations/" + location + ".json", false);
-	request.send(null)
+	request.send(null);
 
-	return JSON.parse(request.responseText)
+  return JSON.parse(request.responseText);
 }
 
 function buildMapFor(location) {
@@ -49,24 +49,24 @@ function buildMapFor(location) {
 }
 
 function placeToHtml(place) {
-	return "<b>" + place.name + "</b><br>"
-	+ optionalFieldToHtml("address", place.address)
-	+ optionalFieldToHtml("open hours", place.openHours)
-	+ optionalFieldToHtml("type", place.type)
-	+ optionalUrlToLink("website", place.url)
-	+ optionToHtml("power", place.power)
-	+ optionToHtml("wifi", place.wifi);
-};
+	return "<b>" + place.name + "</b><br>" +
+    optionalFieldToHtml("address", place.address) +
+    optionalFieldToHtml("open hours", place.openHours) +
+    optionalFieldToHtml("type", place.type) +
+    optionalUrlToLink("website", place.url) +
+    optionToHtml("power", place.power) +
+    optionToHtml("wifi", place.wifi);
+}
 
 function iconForPlace(place) {
-  var weights = {wifi: 1, power: 2}
+  var weights = {wifi: 1, power: 2};
   var iconIndex = 0;
   for(var idx in weights) {
     iconIndex += optionValue(place[idx]) * weights[idx];
   }
   return marker_icons[iconIndex];
 }
-
+ 
 function optionalFieldToHtml(label, value) {
 	return value ? label + ": " + value + "<br>" : "";
 }
@@ -84,7 +84,7 @@ function optionText(value) {
 		return boolToStr(value.available) + optionalComment(value.comment);
 	} else {
 		return "undefined";
-	}
+	}	
 }
 
 function optionValue(value) {

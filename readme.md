@@ -10,7 +10,7 @@ Current locations
  - Lille: [lille.devfriendlyplaces.net][lille]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
- - Paris: [paris.devfriendlyplaces.net][cumbria]
+ - Paris: [paris.devfriendlyplaces.net][paris]
 
 Contribute
 ----------

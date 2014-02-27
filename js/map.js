@@ -1,7 +1,20 @@
+var marker_icons = [];
+for(i=0; i<4; i++) {
+  marker_icons.push(
+    L.icon({
+      iconUrl: 'images/marker-icon-' + i + '.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [0, -30]
+      }
+    )
+  );
+}
+ 
 function getLocationFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
-	var location = split[0]
+	var location = split[0];
 
 	if ((split.length < 3) || (location == "www")) {
 		return "toulouse";
@@ -13,9 +26,9 @@ function getLocationFromUrl() {
 function getPlaces(location) {
 	var request = new XMLHttpRequest();
 	request.open("GET", "/locations/" + location + ".json", false);
-	request.send(null)
+	request.send(null);
 
-	return JSON.parse(request.responseText) 	
+  return JSON.parse(request.responseText);
 }
 
 function buildMapFor(location) {
@@ -29,22 +42,31 @@ function buildMapFor(location) {
 	}).addTo(map);
 
 	places.places.forEach(function(place) {
-		L.marker([place.lat, place.lon])
+		L.marker([place.lat, place.lon], { icon: iconForPlace(place) } )
 		.bindPopup(placeToHtml(place))
 		.addTo(map);
 	});
 }
 
 function placeToHtml(place) {
-	return "<b>" + place.name + "</b><br>"
-	+ optionalFieldToHtml("address", place.address)
-	+ optionalFieldToHtml("open hours", place.openHours)
-	+ optionalFieldToHtml("type", place.type)
-	+ optionalUrlToLink("website", place.url)
-	+ optionToHtml("power", place.power)
-	+ optionToHtml("wifi", place.wifi);
-};
+	return "<b>" + place.name + "</b><br>" +
+    optionalFieldToHtml("address", place.address) +
+    optionalFieldToHtml("open hours", place.openHours) +
+    optionalFieldToHtml("type", place.type) +
+    optionalUrlToLink("website", place.url) +
+    optionToHtml("power", place.power) +
+    optionToHtml("wifi", place.wifi);
+}
 
+function iconForPlace(place) {
+  var weights = {wifi: 1, power: 2};
+  var iconIndex = 0;
+  for(var idx in weights) {
+    iconIndex += optionValue(place[idx]) * weights[idx];
+  }
+  return marker_icons[iconIndex];
+}
+ 
 function optionalFieldToHtml(label, value) {
 	return value ? label + ": " + value + "<br>" : "";
 }
@@ -65,12 +87,27 @@ function optionText(value) {
 	}	
 }
 
+function optionValue(value) {
+	if (value !== undefined) {
+    return boolToInt(value.available);
+  }
+  return 0;
+}
+
 function boolToStr(value) {
 	if (value !== undefined) {
 		return value ? "yes" : "no";
 	} else {
 		return 'undefined';
 	}
+}
+
+function boolToInt(value){
+  if (value !== undefined) {
+    return value ? 1 : 0;
+  } else {
+    return 0;
+  }
 }
 
 function optionalComment(value) {

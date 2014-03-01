@@ -115,6 +115,16 @@
       "url": "http://www.citizenbox.fr",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Studios singuliers",
+      "lat": 48.8939112,
+      "lon": 2.3540976,
+      "address": "46, rue René Clair – 75018 Paris",
+      "type": "coworking",
+      "url": "http://www.studios-singuliers.fr/",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

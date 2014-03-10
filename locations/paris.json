@@ -125,6 +125,16 @@
       "url": "http://www.studios-singuliers.fr/",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Silicon Banlieue - les bains douches",
+      "lat": 48.9430815,
+      "lon": 2.2466453,
+      "address": "9 rue de Calais, 95100 Argenteuil",
+      "type": "coworking",
+      "url": "http://www.siliconbanlieue.fr",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

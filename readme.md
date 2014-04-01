@@ -11,6 +11,7 @@ Current locations
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
  - Paris: [paris.devfriendlyplaces.net][paris]
+ - London: [london.devfriendlyplaces.net][london]
 
 Contribute
 ----------
@@ -32,3 +33,4 @@ Open issue, fork, commit and pull request. But you already know that :)
 [lyon]: http://lyon.devfriendlyplaces.net
 [cumbria]: http://cumbria.devfriendlyplaces.net
 [paris]: http://paris.devfriendlyplaces.net
+[london]: http://london.devfriendlyplaces.net

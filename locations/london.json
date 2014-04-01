@@ -1,19 +1,129 @@
-{ "location":
-  {
+{
+  "location": {
     "name": "london",
-    "lat" : 51.5073219,
-    "lon" : -0.1276474,
+    "lat": 51.5073219,
+    "lon": -0.1276474,
     "defaultZoom": "13"
   },
   "places": [
-   {
-      "name": "Caffe Forum",
-      "lat": 51.4935507,
-      "lon": -0.182199,
-      "address": "146 Gloucester Rd",
-      "type" : "cafe",
-      "power": {"available": true, "comment": "one socket"},
-      "wifi": {"available": false}
+    {
+      "name": "Timberyard",
+      "lat": -0.09638199999994868,
+      "lon": 51.524126,
+      "power": { "available": true },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Foxcroft and Ginger",
+      "lat": -0.13431400000001759,
+      "lon": 51.513019,
+      "power": { "available": true },
+      "wifi": { "available": false }
+    },
+    {
+      "name": "Look mum no hands!",
+      "lat": -0.09700900000007096,
+      "lon": 51.523928,
+      "power": { "available": true },
+      "wifi": { "available": true, "comments": "The wi-fi is flaky." }
+    },
+    {
+      "name": "Ace Hotel Shoreditch",
+      "lat": -0.07723599999997077,
+      "lon": 51.525744,
+      "power": { "available": true },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Hotel Chocolat",
+      "lat": -0.12687800000003335,
+      "lon": 51.514859,
+      "power": { "available": true },
+      "wifi": { "available": false }
+    },
+    {
+      "name": "Taylor St Baristas",
+      "lat": -0.08605199999999513,
+      "lon": 51.51447,
+      "power": { "available": true },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Starbucks",
+      "lat": -0.07838400000002821,
+      "lon": 51.518916,
+      "power": { "available": true },
+      "wifi": { "available": true, "comments": "The wi-fi is flaky." }
+    },
+    {
+      "name": "Prufrock Coffee",
+      "lat": -0.10949400000004061,
+      "lon": 51.519933,
+      "power": { "available": false },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "With Jam & Bread",
+      "lat": 0.009070999999948981,
+      "lon": 51.456909,
+      "power": { "available": false },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Fix Coffee",
+      "lat": -0.09330499999998665,
+      "lon": 51.523372,
+      "power": { "available": true, "comments": "There's only one power socket." },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "The Oyster Shed",
+      "lat": -0.08976800000004914,
+      "lon": 51.509033,
+      "power": { "available": true },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Marks and Spencer Café",
+      "lat": -0.1921561360359192,
+      "lon": 51.50124709772832,
+      "power": { "available": false },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Foyles Cafe",
+      "lat": -0.1297620000000279,
+      "lon": 51.514891,
+      "power": { "available": true, "comments": "One power socket in the south-east corner." },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Association Coffee",
+      "lat": -0.07911000000001422,
+      "lon": 51.5136,
+      "power": { "available": false },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Timberyard",
+      "lat": -0.1272430000000213,
+      "lon": 51.512839,
+      "power": { "available": true },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Ozone Coffee Roasters",
+      "lat": -0.08685700000000907,
+      "lon": 51.524696,
+      "power": { "available": true },
+      "wifi": { "available": true }
+    },
+    {
+      "name": "Salvation Jane",
+      "lat": -0.08737300000007053,
+      "lon": 51.52431,
+      "power": { "available": false },
+      "wifi": { "available": true }
     }
   ]
 }

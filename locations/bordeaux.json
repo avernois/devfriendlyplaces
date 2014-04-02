@@ -46,6 +46,27 @@
       "type": "coworking",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Chez Vincent",
+      "lat": 44.823521,
+      "lon": -0.618585,
+      "address": "27 rue de Lyon",
+
+      "type": "home coworking",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Médiathèque Jacques Elul",
+      "lat": 44.799583,
+      "lon": -0.642509,
+      "address": "21 Résidence Camponac",
+
+      "url": "http://mediatheque.mairie-pessac.fr/",
+      "type": "library",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

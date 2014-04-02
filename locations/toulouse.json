@@ -135,6 +135,17 @@
       "power": {"available": true},
       "wifi": {"available": false},
       "url":  "http://bibliotheque.toulouse.fr"
+    },
+    {
+      "name": "Cirque Des Arts",
+      "lat": 43.598077,
+      "lon": 1.449283,
+      "openHours": "12h00 - 18h00 (mardi - samedi)",
+      "address": "5 Rue Nineau",
+      "type" : "Espace artistique",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url":  "http://cirquedesarts.com"
     }
   ]
 }

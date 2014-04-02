@@ -1,0 +1,33 @@
+{ "location":
+  {
+    "name": "amsterdam",
+    "lat" : 52.3726,
+    "lon" : 4.9174,
+    "defaultZoom": "13"
+  },
+  "places": [
+    {
+      "name": "Canvas op de 7de",
+      "lat": 52.35335,
+      "lon": 4.91296,
+      "openHours": "12h00 - 18h00"
+      "address": "Wibautstraat 150",
+      "type" : "Coffee",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url":  "http://www.canvas7.nl/‎"
+    },
+    {
+      "name": "Mr Bean",
+      "lat": 52.353115,
+      "lon": 4.893303,
+      "openHours": "Mon / Fri: 07h00 - 19h00, Sat / Sun: 09h00 - 19h00"
+      "address": "Ceintuurbaan 326",
+      "type" : "Coffee",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url":  "http://mister-bean.nl‎‎"
+    }
+
+  ]
+}

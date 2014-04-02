@@ -24,7 +24,7 @@
       "openHours": "Monday, 08:00 to 19:00; Tuesday to Friday, 08:00 to 22:00; Saturday to Sunday, 09:00 to 22:00",
       "type": "coffee",
       "power": { "available": true },
-      "wifi": { "available": false }
+      "wifi": { "available": true }
     },
     {
       "name": "Look mum no hands!",

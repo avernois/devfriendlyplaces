@@ -108,11 +108,31 @@
     },
     {
       "name": "Citizen Box",
-      "lat": 48.904336,
-      "lon": 2.352791,
+      "lat": 48.896911,
+      "lon": 2.3529419,
       "address": "146 rue des Poissonniers - 75018 PARIS",
       "type": "coworking",
       "url": "http://www.citizenbox.fr",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Studios singuliers",
+      "lat": 48.8939112,
+      "lon": 2.3540976,
+      "address": "46, rue René Clair – 75018 Paris",
+      "type": "coworking",
+      "url": "http://www.studios-singuliers.fr/",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },
+    {
+      "name": "Silicon Banlieue - les bains douches",
+      "lat": 48.9430815,
+      "lon": 2.2466453,
+      "address": "9 rue de Calais, 95100 Argenteuil",
+      "type": "coworking",
+      "url": "http://www.siliconbanlieue.fr",
       "power": {"available": true},
       "wifi": {"available": true}
     }

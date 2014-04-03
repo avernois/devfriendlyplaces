@@ -12,6 +12,7 @@ Current locations
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
  - Paris: [paris.devfriendlyplaces.net][paris]
  - London: [london.devfriendlyplaces.net][london]
+ - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
 
 Contribute
 ----------
@@ -34,3 +35,4 @@ Open issue, fork, commit and pull request. But you already know that :)
 [cumbria]: http://cumbria.devfriendlyplaces.net
 [paris]: http://paris.devfriendlyplaces.net
 [london]: http://london.devfriendlyplaces.net
+[cote-basque]: http://cote-basque.devfriendlyplaces.net

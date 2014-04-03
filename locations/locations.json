@@ -1,0 +1,63 @@
+{
+	"amsterdam" :
+	{
+		"name" : "Amsterdam",
+		"lat" : 52.3726,
+		"lon" : 4.9174,
+		"defaultZoom": "13"
+	},
+	"bordeaux" : {
+		"name" : "Bordeaux",
+		"lat" : 44.8382,
+		"lon" : -0.5748,
+		"defaultZoom": "14"
+	},
+	"cote-basque": {
+		"name": "cote-basque",
+		"lat" : 43.4721419,
+		"lon" : -1.5053586,
+		"defaultZoom": "11"
+	},
+	"cumbria": {
+		"name": "cumbria",
+		"lat" : 54.6190,
+		"lon" : -2.9004,
+		"defaultZoom": "9"
+	},
+	"lille": {
+		"name": "lille",
+		"lat" : 50.6303,
+		"lon" : 3.053802,
+		"defaultZoom": "14"
+	},
+	"london": {
+		"name": "london",
+		"lat": 51.5073219,
+		"lon": -0.1276474,
+		"defaultZoom": "14"
+	},
+	"lyon":{
+		"name": "lyon",
+		"lat" : 45.7662954,
+		"lon" : 4.879662199999984,
+		"defaultZoom": "13"
+	},
+	"paris": {
+		"name": "paris",
+		"lat" : 48.8568,
+		"lon" : 2.351828,
+		"defaultZoom": "13"
+	},
+	"toulon": {
+		"name": "toulon",
+		"lat" : 43.117,
+		"lon" : 5.9333,
+		"defaultZoom": "14"
+	},
+	"toulouse" : {
+		"name" : "Toulouse",
+		"lat" : 43.607378,
+		"lon" : 1.4399286,
+		"defaultZoom": "14"
+	}
+}

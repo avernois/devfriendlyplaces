@@ -58,6 +58,45 @@ please note:
 * For more readbility, the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
 * "comment" are optional
 
+location.json example, to adjust to your needs:
+
+```json
+
+{ "location":
+  {
+    "name": "mylocationname",
+    "lat" : 64.138171,
+    "lon" : -21.928711,
+    "defaultZoom": "10"
+  },
+  "places": [
+    {
+      "name": "Coworking Reykjavik",
+      "openHours": "24/7",
+      "lat": 64.157015,
+      "lon": -21.941714,
+      "address": "Fiskislóð 101 Reykjavík",
+      "type" : "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.reykjavikcoworking.is/"
+    },
+    {
+      "name": "Another stuff... etc.",
+      "openHours": "8:00 - 18:00"
+    }
+  ]
+}
+
+```
+
+please note:
+
+* The ``places`` is a list, you can append several places.
+* For more readbility, the fields "name", "lat" and "long" are mandatory. Add
+  as many details as needed to provide complete information.
+
+
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.
 
 

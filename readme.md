@@ -22,7 +22,43 @@ That is easy, just edit the json file `places/yourlocation.json` and submit a pu
 ### Add your location
 Add a file in the `places` directory called `yourlocation.json` and add place informations.
 
+location.json example, to adjust to your needs:
+
+```json
+
+{ "location":
+  {
+    "name": "mylocationname",
+    "lat" : 64.138171,
+    "lon" : -21.928711,
+    "defaultZoom": "10"
+  },
+  "places": [
+    {
+      "name": "Coworking Reykjavik",
+      "openHours": "24/7",
+      "lat": 64.157015,
+      "lon": -21.941714,
+      "address": "Fiskislóð 101 Reykjavík",
+      "type" : "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.reykjavikcoworking.is/"
+    },
+    {
+      "name": "Another stuff... etc.",
+      "openHours": "8:00 - 18:00"
+    }
+  ]
+}
+
+```
+
+please note that the ``places`` is a list, append as many places as you want.
+
+
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.
+
 
 ### Improve code / add feature
 Open issue, fork, commit and pull request. But you already know that :)

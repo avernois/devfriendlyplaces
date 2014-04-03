@@ -54,7 +54,11 @@ location.json example, to adjust to your needs:
 
 ```
 
-please note that the ``places`` is a list, append as many places as you want.
+please note:
+
+* The ``places`` is a list, you can append several places.
+* For more readbility, the fields "name", "lat" and "long" are mandatory. Add
+  as many details as needed to provide complete information.
 
 
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.

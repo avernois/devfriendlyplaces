@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "paris",
-    "lat" : 48.8568,
-    "lon" : 2.351828,
-    "defaultZoom": "13"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Café CRAFT",
       "lat": 48.8731907,

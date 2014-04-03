@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "Bordeaux",
-    "lat" : 44.8382,
-    "lon" : -0.5748,
-    "defaultZoom": "14"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Le Node",
       "lat": 44.840458,

@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "lille",
-    "lat" : 50.6303,
-    "lon" : 3.053802,
-    "defaultZoom": "14"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Le Monde Moderne",
       "lat": 50.637486,

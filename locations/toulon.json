@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "toulon",
-    "lat" : 43.117,
-    "lon" : 5.9333,
-    "defaultZoom": "14"
-  },
-  "places": [
+{ "places": [
     {
       "name": "La Cantine by Tvt",
       "lat": 43.120496,

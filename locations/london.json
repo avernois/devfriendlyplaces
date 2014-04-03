@@ -171,6 +171,16 @@
       "type": "coffee",
       "power": { "available": false },
       "wifi": { "available": true }
+    },
+    {
+      "name": "Talkhouse Coffee",
+      "lat": 51.517815,
+      "lon": -0.206698,
+      "address": "275 Portobello Rd, London W11 1LR",
+      "openHours": "Monday, closed; Tuesday to Friday, 08:00 to 17:00; Saturday, 09.30 to 19:00; Sunday, 09:30 to 17:00",
+      "type": "coffee",
+      "power": { "available": true },
+      "wifi": { "available": true }
     }
   ]
 }

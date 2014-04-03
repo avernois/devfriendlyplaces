@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "cote-basque",
-    "lat" : 43.4721419,
-    "lon" : -1.5053586,
-    "defaultZoom": "11"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Coworking Pays Basque",
       "openHours": "9h30 - 18h00",

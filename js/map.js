@@ -11,7 +11,7 @@ for(i=0; i<4; i++) {
   );
 }
  
-function getLocationFromUrl() {
+function extractLocationFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
 	var location = split[0];
@@ -23,29 +23,35 @@ function getLocationFromUrl() {
 	return location;
 }
 
+function getLocations() {
+  	return getJSON("/locations/locations.json");	
+}
+
 function getPlaces(location) {
+  	return getJSON("/locations/" + location + ".json");
+}
+
+function getJSON(url) {
 	var request = new XMLHttpRequest();
-	request.open("GET", "/locations/" + location + ".json", false);
+	request.open("GET", url, false);
 	request.send(null);
 
-  return JSON.parse(request.responseText);
+	return JSON.parse(request.responseText);		
 }
 
 function buildMapFor(location) {
 	var defaultZoom = 14;
-	var places = getPlaces(location);
+	var locations = getLocations();
 
-	var map = L.map('map').setView([places.location.lat, places.location.lon], places.location.defaultZoom);
-
+	var map = L.map('map').setView([locations[location].lat, locations[location].lon], locations[location].defaultZoom);
+	map.on('moveend', onMoveEnd(map, locations));
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
 	}).addTo(map);
 
-	places.places.forEach(function(place) {
-		L.marker([place.lat, place.lon], { icon: iconForPlace(place) } )
-		.bindPopup(placeToHtml(place))
-		.addTo(map);
-	});
+	map.isDisplayedLocation = {};
+	
+	displayPlacesFromLocation(map, location);
 }
 
 function placeToHtml(place) {
@@ -112,4 +118,33 @@ function boolToInt(value){
 
 function optionalComment(value) {
 	return value ? "(" + value + ")" : "";
+}
+
+function displayPlacesFromLocation(map, location) {
+	if (isLocationDisplayedOnMap(map, location)) {return ;}
+
+	var places = getPlaces(location);
+
+	places.places.forEach(function(place) {
+		L.marker([place.lat, place.lon], { icon: iconForPlace(place) } )
+		 .bindPopup(placeToHtml(place))
+		 .addTo(map);
+	});
+
+	map.isDisplayedLocation[location] = true;
+}
+
+function onMoveEnd(map, locations) {
+	return function() {
+		 for (var key in locations) {
+		 	var location = locations[key];
+		 	if (map.getBounds().contains([location.lat, location.lon])) {
+				displayPlacesFromLocation(map, key);
+		 	 }			
+		 };
+	}
+}
+
+function isLocationDisplayedOnMap(map, location) {
+	return map.isDisplayedLocation[location];
 }

@@ -1,12 +1,5 @@
-{ "location":
-  {
-    "name": "cumbria",
-    "lat" : 54.6190,
-    "lon" : -2.9004,
-    "defaultZoom": "9"
-  },
-  "places": [
-   {
+{ "places": [
+    {
       "name": "Carlisle Business Interaction Centre (C-BIC)",
       "lat": 54.89513,
       "lon": -2.93975,

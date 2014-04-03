@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "amsterdam",
-    "lat" : 52.3726,
-    "lon" : 4.9174,
-    "defaultZoom": "13"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Canvas op de 7de",
       "lat": 52.35335,

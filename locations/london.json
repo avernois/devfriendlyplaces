@@ -1,11 +1,4 @@
-{
-  "location": {
-    "name": "london",
-    "lat": 51.5073219,
-    "lon": -0.1276474,
-    "defaultZoom": "14"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Timberyard",
       "lat": 51.524126,

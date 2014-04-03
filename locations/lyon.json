@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "lyon",
-    "lat" : 45.7662954,
-    "lon" : 4.879662199999984,
-    "defaultZoom": "13"
-  },
-  "places": [
+{ "places": [
     {
       "name": "La Cordée Perrache",
       "lat": 45.750516,

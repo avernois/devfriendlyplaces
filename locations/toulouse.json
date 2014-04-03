@@ -1,11 +1,4 @@
-{ "location":
-  {
-    "name": "toulouse",
-    "lat" : 43.607378,
-    "lon" : 1.4399286,
-    "defaultZoom": "14"
-  },
-  "places": [
+{ "places": [
     {
       "name": "La fabrique",
       "openHours": "7h30 - ?",

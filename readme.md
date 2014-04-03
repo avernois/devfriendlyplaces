@@ -19,21 +19,18 @@ Contribute
 ### Add places to an existing location
 That is easy, just edit the json file `places/yourlocation.json` and submit a pull request (where `yourlocation` is the name of your location).
 
-### Add your location
-Add a file in the `places` directory called `yourlocation.json` and add place informations.
+### Add a new location
+There are two steps:
 
-location.json example, to adjust to your needs:
+* add your location information in the `places/locations.json` file. Look how other locations are defined. All field are mandatory.
+* create the new `places/yourlocation.json` file, see the example below.
+
+### Exemple of yourlocation.json
+yourlocation.json example, to adjust to your needs:
 
 ```json
 
-{ "location":
-  {
-    "name": "mylocationname",
-    "lat" : 64.138171,
-    "lon" : -21.928711,
-    "defaultZoom": "10"
-  },
-  "places": [
+{ "places": [
     {
       "name": "Coworking Reykjavik",
       "openHours": "24/7",
@@ -41,8 +38,8 @@ location.json example, to adjust to your needs:
       "lon": -21.941714,
       "address": "Fiskislóð 101 Reykjavík",
       "type" : "coworking",
-      "power": {"available": true},
-      "wifi": {"available": true},
+      "power": {"available": true, "comment": "look under the table"},
+      "wifi": {"available": true, "comment": "ask people around to get the code"},
       "url": "http://www.reykjavikcoworking.is/"
     },
     {
@@ -57,15 +54,16 @@ location.json example, to adjust to your needs:
 please note:
 
 * The ``places`` is a list, you can append several places.
-* For more readbility, the fields "name", "lat" and "long" are mandatory. Add
-  as many details as needed to provide complete information.
-
+* For more readbility, the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
+* "comment" are optional
 
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.
 
 
 ### Improve code / add feature
-Open issue, fork, commit and pull request. But you already know that :)
+Open issue, fork, commit and pull request. But you already know that :) 
+
+Please, don't improve code/add new feature and add new places/locations in the same pull request.
 
 [toulouse]: http://toulouse.devfriendlyplaces.net
 [toulon]: http://toulon.devfriendlyplaces.net

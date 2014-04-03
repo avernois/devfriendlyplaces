@@ -13,6 +13,7 @@ Current locations
  - Paris: [paris.devfriendlyplaces.net][paris]
  - London: [london.devfriendlyplaces.net][london]
  - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
+ - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
 
 Contribute
 ----------
@@ -75,3 +76,4 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [paris]: http://paris.devfriendlyplaces.net
 [london]: http://london.devfriendlyplaces.net
 [cote-basque]: http://cote-basque.devfriendlyplaces.net
+[amsterdam]: http://amsterdam.devfriendlyplaces.net

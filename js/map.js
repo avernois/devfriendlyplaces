@@ -121,6 +121,8 @@ function optionalComment(value) {
 }
 
 function displayPlacesFromLocation(map, location) {
+	if (isLocationDisplayedOnMap(map, location)) {return ;}
+
 	var places = getPlaces(location);
 
 	places.places.forEach(function(place) {
@@ -136,13 +138,13 @@ function onMoveEnd(map, locations) {
 	return function() {
 		 for (var key in locations) {
 		 	var location = locations[key];
-		 	if (map.getBounds().contains([location.lat, location.lon]) && !isLocationAlreadyOnMap(map, key)) {
+		 	if (map.getBounds().contains([location.lat, location.lon])) {
 				displayPlacesFromLocation(map, key);
 		 	 }			
 		 };
 	}
 }
 
-function isLocationAlreadyOnMap(map, location) {
+function isLocationDisplayedOnMap(map, location) {
 	return map.isDisplayedLocation[location];
 }

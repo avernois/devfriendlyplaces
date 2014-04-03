@@ -26,7 +26,7 @@ There are two steps:
 * create the new `places/yourlocation.json` file, see the example below.
 
 ### Exemple of yourlocation.json
-yourlocation.json example, to adjust to your needs:
+``yourlocation.json`` example, to adjust to your needs:
 
 ```json
 
@@ -44,7 +44,8 @@ yourlocation.json example, to adjust to your needs:
     },
     {
       "name": "Another stuff... etc.",
-      "openHours": "8:00 - 18:00"
+      "lat" : 43.607378,
+      "lon" : 1.4399286 
     }
   ]
 }

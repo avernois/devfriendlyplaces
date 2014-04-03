@@ -1,0 +1,21 @@
+{ "location":
+  {
+    "name": "cote-basque",
+    "lat" : 43.4721419,
+    "lon" : -1.5053586,
+    "defaultZoom": "11"
+  },
+  "places": [
+    {
+      "name": "Coworking Pays Basque",
+      "openHours": "9h30 - 18h00",
+      "lat": 43.4617727,
+      "lon": -1.5393176,
+      "address":  "10 Rue des Mésanges 64200 Biarritz‎",
+      "type" : "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://coworking-pb.com/"
+    }
+  ]
+}

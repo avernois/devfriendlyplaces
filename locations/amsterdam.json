@@ -10,7 +10,7 @@
       "name": "Canvas op de 7de",
       "lat": 52.35335,
       "lon": 4.91296,
-      "openHours": "12h00 - 18h00"
+      "openHours": "12h00 - 18h00",
       "address": "Wibautstraat 150",
       "type" : "Coffee",
       "power": {"available": true},
@@ -21,7 +21,7 @@
       "name": "Mr Bean",
       "lat": 52.353115,
       "lon": 4.893303,
-      "openHours": "Mon / Fri: 07h00 - 19h00, Sat / Sun: 09h00 - 19h00"
+      "openHours": "Mon / Fri: 07h00 - 19h00, Sat / Sun: 09h00 - 19h00",
       "address": "Ceintuurbaan 326",
       "type" : "Coffee",
       "power": {"available": true},

@@ -1,9 +1,10 @@
 { "places": [
     {
-      "name": "Capitainerie coworking",
+      "name": "Capitainerie Coworking",
+      "openHours": "9h30 / 18h Lun - Ven",
       "lat": 44.018719,
       "lon": 1.355046,
-      "address": "10 rue de la comédie",
+      "address": "10 rue de la comédie, 82000 Montauban",
       "type" : "coworking",
       "power": {"available": true},
       "wifi": {"available": true},

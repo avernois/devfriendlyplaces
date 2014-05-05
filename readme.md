@@ -4,9 +4,9 @@ A collection of nice places where developers can work fine and some useful infor
 
 Current locations
 -----------------
- - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
  - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
+ - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
  - Lille: [lille.devfriendlyplaces.net][lille]
  - London: [london.devfriendlyplaces.net][london]

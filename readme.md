@@ -4,16 +4,17 @@ A collection of nice places where developers can work fine and some useful infor
 
 Current locations
 -----------------
- - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
- - Toulon: [toulon.devfriendlyplaces.net][toulon]
- - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
- - Lille: [lille.devfriendlyplaces.net][lille]
- - Lyon: [lyon.devfriendlyplaces.net][lyon]
- - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
- - Paris: [paris.devfriendlyplaces.net][paris]
- - London: [london.devfriendlyplaces.net][london]
  - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
  - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
+ - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
+ - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
+ - Lille: [lille.devfriendlyplaces.net][lille]
+ - London: [london.devfriendlyplaces.net][london]
+ - Lyon: [lyon.devfriendlyplaces.net][lyon]
+ - Montauban [montauban.devfriendlyplaces.net][montauban]
+ - Paris: [paris.devfriendlyplaces.net][paris]
+ - Toulon: [toulon.devfriendlyplaces.net][toulon]
+ - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
 
 Contribute
 ----------

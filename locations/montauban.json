@@ -1,0 +1,13 @@
+{ "places": [
+    {
+      "name": "Capitainerie coworking",
+      "lat": 44.018719,
+      "lon": 1.355046,
+      "address": "10 rue de la comédie",
+      "type" : "coworking",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.capitainerie-coworking.com/montauban"
+    }
+  ]
+}

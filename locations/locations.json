@@ -59,5 +59,11 @@
 		"lat" : 43.607378,
 		"lon" : 1.4399286,
 		"defaultZoom": "14"
-	}
+	},
+    "montauban" : {
+        "name" : "montauban",
+        "lat" : 44.020831,
+        "lon" : 1.358375,
+        "defaultZoom": "14"
+    }
 }

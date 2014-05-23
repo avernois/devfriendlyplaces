@@ -19,13 +19,13 @@ Current locations
 Contribute
 ----------
 ### Add places to an existing location
-That is easy, just edit the json file `places/yourlocation.json` and submit a pull request (where `yourlocation` is the name of your location).
+That is easy, just edit the json file `locations/yourlocation.json` and submit a pull request (where `yourlocation` is the name of your location).
 
 ### Add a new location
 There are two steps:
 
-* add your location information in the `places/locations.json` file. Look how other locations are defined. All field are mandatory.
-* create the new `places/yourlocation.json` file, see the example below.
+* add your location information in the `locations/locations.json` file. Look how other locations are defined. All field are mandatory.
+* create the new `locations/yourlocation.json` file, see the example below.
 
 ### Exemple of yourlocation.json
 ``yourlocation.json`` example, to adjust to your needs:

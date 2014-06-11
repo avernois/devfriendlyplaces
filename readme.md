@@ -78,3 +78,4 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [london]: http://london.devfriendlyplaces.net
 [cote-basque]: http://cote-basque.devfriendlyplaces.net
 [amsterdam]: http://amsterdam.devfriendlyplaces.net
+[montauban]: http://montauban.devfriendlyplaces.net

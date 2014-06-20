@@ -128,6 +128,16 @@
       "url": "http://www.siliconbanlieue.fr",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "CoWorkshop",
+      "lat": 48.8729534,
+      "lon": 2.3624861,
+      "address": "29, rue des vinaigriers 75010 paris",
+      "type": "coworking",
+      "url": "http://www.coworkshop.fr",
+      "power": {"available": true},
+      "wifi": {"available": true}
     }
   ]
 }

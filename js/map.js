@@ -1,16 +1,16 @@
 var marker_icons = [];
 for(i=0; i<4; i++) {
-  marker_icons.push(
-    L.icon({
-      iconUrl: 'images/marker-icon-' + i + '.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [0, -30]
-      }
-    )
-  );
+	marker_icons.push(
+		L.icon({
+			iconUrl: 'images/marker-icon-' + i + '.png',
+			iconSize: [25, 41],
+			iconAnchor: [12, 41],
+			popupAnchor: [0, -30]
+			}
+		)
+	);
 }
- 
+
 function extractLocationFromUrl() {
 	var hostname = window.location.hostname;
 	var split = hostname.split(".");
@@ -24,11 +24,11 @@ function extractLocationFromUrl() {
 }
 
 function getLocations() {
-  	return getJSON("/locations/locations.json");	
+		return getJSON("/locations/locations.json");
 }
 
 function getPlaces(location) {
-  	return getJSON("/locations/" + location + ".json");
+		return getJSON("/locations/" + location + ".json");
 }
 
 function getJSON(url) {
@@ -36,7 +36,7 @@ function getJSON(url) {
 	request.open("GET", url, false);
 	request.send(null);
 
-	return JSON.parse(request.responseText);		
+	return JSON.parse(request.responseText);
 }
 
 function buildMapFor(location) {
@@ -56,23 +56,23 @@ function buildMapFor(location) {
 
 function placeToHtml(place) {
 	return "<b>" + place.name + "</b><br>" +
-    optionalFieldToHtml("address", place.address) +
-    optionalFieldToHtml("open hours", place.openHours) +
-    optionalFieldToHtml("type", place.type) +
-    optionalUrlToLink("website", place.url) +
-    optionToHtml("power", place.power) +
-    optionToHtml("wifi", place.wifi);
+		optionalFieldToHtml("address", place.address) +
+		optionalFieldToHtml("open hours", place.openHours) +
+		optionalFieldToHtml("type", place.type) +
+		optionalUrlToLink("website", place.url) +
+		optionToHtml("power", place.power) +
+		optionToHtml("wifi", place.wifi);
 }
 
 function iconForPlace(place) {
-  var weights = {wifi: 1, power: 2};
-  var iconIndex = 0;
-  for(var idx in weights) {
-    iconIndex += optionValue(place[idx]) * weights[idx];
-  }
-  return marker_icons[iconIndex];
+	var weights = {wifi: 1, power: 2};
+	var iconIndex = 0;
+	for(var idx in weights) {
+		iconIndex += optionValue(place[idx]) * weights[idx];
+	}
+	return marker_icons[iconIndex];
 }
- 
+
 function optionalFieldToHtml(label, value) {
 	return value ? label + ": " + value + "<br>" : "";
 }
@@ -90,14 +90,14 @@ function optionText(value) {
 		return boolToStr(value.available) + optionalComment(value.comment);
 	} else {
 		return "undefined";
-	}	
+	}
 }
 
 function optionValue(value) {
 	if (value !== undefined) {
-    return boolToInt(value.available);
-  }
-  return 0;
+		return boolToInt(value.available);
+	}
+	return 0;
 }
 
 function boolToStr(value) {
@@ -109,11 +109,11 @@ function boolToStr(value) {
 }
 
 function boolToInt(value){
-  if (value !== undefined) {
-    return value ? 1 : 0;
-  } else {
-    return 0;
-  }
+	if (value !== undefined) {
+		return value ? 1 : 0;
+	} else {
+		return 0;
+	}
 }
 
 function optionalComment(value) {
@@ -136,12 +136,12 @@ function displayPlacesFromLocation(map, location) {
 
 function onMoveEnd(map, locations) {
 	return function() {
-		 for (var key in locations) {
-		 	var location = locations[key];
-		 	if (map.getBounds().contains([location.lat, location.lon])) {
-				displayPlacesFromLocation(map, key);
-		 	 }			
-		 };
+		for (var key in locations) {
+				var location = locations[key];
+				if (map.getBounds().contains([location.lat, location.lon])) {
+					displayPlacesFromLocation(map, key);
+				}
+		};
 	}
 }
 

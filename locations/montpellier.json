@@ -20,6 +20,17 @@
       "url": "https://www.facebook.com/FairviewCoffee",
       "power": {"available": true },
       "wifi": {"available": true }
+    },
+    {
+      "name": "Cowork'in Montpellier",
+      "lat": 43.609229,
+      "lon": 3.869569,
+      "openHours": "From Monday to Friday - 9am to 6pm",
+      "address": "19 Rue de l'Ecole de Droit",
+      "type": "coworking",
+      "url": "http://coworkinmontpellier.org/",
+      "power": {"available": true },
+      "wifi": {"available": true }
     }
   ]
 }

@@ -9,6 +9,17 @@
       "url": "https://fr-fr.facebook.com/BUNcafe",
       "power": {"available": true},
       "wifi": {"available": true}
+    },
+    {
+      "name": "Fairview Coffee",
+      "lat": 43.606992,
+      "lon": 3.877552,
+      "openHours": "Tuesday to Saturday 09h30 - 19h00 and Sundays, 11h00 - 17h00",
+      "address":  "6 Rue Loys",
+      "type": "coffee/restaurant",
+      "url": "https://www.facebook.com/FairviewCoffee",
+      "power": {"available": true },
+      "wifi": {"available": true }
     }
   ]
 }

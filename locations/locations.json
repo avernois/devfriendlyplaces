@@ -13,43 +13,43 @@
 		"defaultZoom": "14"
 	},
 	"cote-basque": {
-		"name": "cote-basque",
+		"name": "Cote-basque",
 		"lat" : 43.4721419,
 		"lon" : -1.5053586,
 		"defaultZoom": "11"
 	},
 	"cumbria": {
-		"name": "cumbria",
+		"name": "Cumbria",
 		"lat" : 54.6190,
 		"lon" : -2.9004,
 		"defaultZoom": "9"
 	},
 	"lille": {
-		"name": "lille",
+		"name": "Lille",
 		"lat" : 50.6303,
 		"lon" : 3.053802,
 		"defaultZoom": "14"
 	},
 	"london": {
-		"name": "london",
+		"name": "London",
 		"lat": 51.5073219,
 		"lon": -0.1276474,
 		"defaultZoom": "14"
 	},
 	"lyon":{
-		"name": "lyon",
+		"name": "Lyon",
 		"lat" : 45.7662954,
 		"lon" : 4.879662199999984,
 		"defaultZoom": "13"
 	},
 	"paris": {
-		"name": "paris",
+		"name": "Paris",
 		"lat" : 48.8568,
 		"lon" : 2.351828,
 		"defaultZoom": "13"
 	},
 	"toulon": {
-		"name": "toulon",
+		"name": "Toulon",
 		"lat" : 43.117,
 		"lon" : 5.9333,
 		"defaultZoom": "14"

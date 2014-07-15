@@ -12,6 +12,7 @@ Current locations
  - London: [london.devfriendlyplaces.net][london]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
  - Montauban [montauban.devfriendlyplaces.net][montauban]
+ - Montpellier [montpellier.devfriendlyplaces.net][montpellier]
  - Paris: [paris.devfriendlyplaces.net][paris]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
  - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
@@ -79,3 +80,4 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [cote-basque]: http://cote-basque.devfriendlyplaces.net
 [amsterdam]: http://amsterdam.devfriendlyplaces.net
 [montauban]: http://montauban.devfriendlyplaces.net
+[montpellier]: http://montpellier.devfriendlyplaces.net

@@ -65,5 +65,11 @@
         "lat" : 44.020831,
         "lon" : 1.358375,
         "defaultZoom": "14"
+    },
+    "montpellier" : {
+        "name" : "Montpellier",
+        "lat" : 43.6100219,
+        "lon" : 3.8741615,
+        "defaultZoom": "14"
     }
 }

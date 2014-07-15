@@ -1,0 +1,14 @@
+{ "places": [
+    {
+      "name": "Café BUN",
+      "lat": 43.607508,
+      "lon": 3.87793,
+      "openHours": "Monday 12h00 - 19h00, Tuesday to Wednesday 07h30 - 19h00 and Saturday, 09h30 - 19h00",
+      "address":  "05 rue des Etuves",
+      "type" : "coffee/restaurant",
+      "url": "https://fr-fr.facebook.com/BUNcafe",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    }
+  ]
+}

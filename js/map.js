@@ -1,3 +1,29 @@
+var LocationSelector = L.Control.extend({
+	onAdd: function (map) {
+		var container = L.DomUtil.create('div',
+			'location-selection-control');
+
+		var selector = L.DomUtil.create('select', 'selector leaflet-bar leaflet-control');
+		selector.addEventListener('change', this.onChange.bind(this, map, selector));
+		container.appendChild(selector);
+
+		for (var key in this.options.locations) {
+			var element = L.DomUtil.create('option', 'location');
+			element.setAttribute('value', key)
+			element.innerHTML = this.options.locations[key].name;
+			selector.appendChild(element);
+		}
+		selector.value = this.options.value;
+
+		return container;
+	},
+	onChange: function (map, selector) {
+		var key = selector.value;
+		var locations = this.options.locations;
+		map.setView([locations[key].lat, locations[key].lon], locations[key].defaultZoom);
+	}
+});
+
 var marker_icons = [];
 for(i=0; i<4; i++) {
 	marker_icons.push(
@@ -47,6 +73,12 @@ function buildMapFor(location) {
 	map.on('moveend', onMoveEnd(map, locations));
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+	}).addTo(map);
+
+	locationSelector = new LocationSelector({
+		"position": "bottomleft",
+		"locations": locations,
+		"value": location
 	}).addTo(map);
 
 	map.isDisplayedLocation = {};

@@ -9,7 +9,7 @@ var LocationSelector = L.Control.extend({
 
 		for (var key in this.options.locations) {
 			var element = L.DomUtil.create('option', 'location');
-			element.setAttribute('value', key)
+			element.setAttribute('value', key);
 			element.innerHTML = this.options.locations[key].name;
 			selector.appendChild(element);
 		}
@@ -19,8 +19,13 @@ var LocationSelector = L.Control.extend({
 	},
 	onChange: function (map, selector) {
 		var key = selector.value;
-		var locations = this.options.locations;
-		map.setView([locations[key].lat, locations[key].lon], locations[key].defaultZoom);
+		var locations = this.options.locations,
+			location = locations[key];
+		if (!location) {
+			// default to toulouse
+			location = locations.toulouse;
+		};
+		map.setView([location.lat, location.lon], location.defaultZoom);
 	}
 });
 
@@ -42,7 +47,7 @@ function extractLocationFromUrl() {
 	var split = hostname.split(".");
 	var location = split[0];
 
-	if ((split.length < 3) || (location == "www")) {
+	if ((split.length < 3) || (location == "www") || (location == "127")) {
 		return "toulouse";
 	}
 

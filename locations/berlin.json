@@ -1,0 +1,40 @@
+{ "places": [
+    {
+      "name": "Betahaus",
+      "lat": 52.502543,
+      "lon": 13.412206,
+      "address": "Prinzessinnenstraße 19-20, Berlin",
+      "type": "coffee / coworking",
+      "url": "http://www.betahaus.com/berlin",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },{
+      "name": "co-up",
+      "lat": 52.500444,
+      "lon": 13.41951,
+      "address": "Adalbertstraße 8, Berlin",
+      "type": "coworking",
+      "url": "http://co-up.de/",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },{
+      "name": "Sankt Oberholz",
+      "lat": 52.5295476,
+      "lon": 13.4018946,
+      "address": "Rosenthaler Straße 72a, Berlin",
+      "type": "coffee / coworking",
+      "url": "http://www.sanktoberholz.de/",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    },{
+      "name": "MobileSuite",
+      "lat": 52.543118,
+      "lon": 13.414199,
+      "address": "Pappelallee 78/79, Berlin",
+      "type": "coworking",
+      "url": "http://www.mobilesuite.de",
+      "power": {"available": true},
+      "wifi": {"available": true}
+    }
+  ]
+}

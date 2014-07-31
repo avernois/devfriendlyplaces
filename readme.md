@@ -5,6 +5,7 @@ A collection of nice places where developers can work fine and some useful infor
 Current locations
 -----------------
  - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
+ - Berlin: [berlin.devfriendlyplaces.net][berlin]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
  - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
@@ -71,6 +72,7 @@ Please, don't improve code/add new feature and add new places/locations in the s
 
 [toulouse]: http://toulouse.devfriendlyplaces.net
 [toulon]: http://toulon.devfriendlyplaces.net
+[berlin]: http://berlin.devfriendlyplaces.net
 [bordeaux]: http://bordeaux.devfriendlyplaces.net
 [lille]: http://lille.devfriendlyplaces.net
 [lyon]: http://lyon.devfriendlyplaces.net

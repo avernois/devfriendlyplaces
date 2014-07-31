@@ -6,12 +6,18 @@
 		"lon" : 4.9174,
 		"defaultZoom": "13"
 	},
+	"berlin" : {
+		"name" : "Berlin",
+		"lat" : 52.5169444,
+		"lon" : 13.4106924,
+		"defaultZoom": "13"
+	},
 	"bordeaux" : {
 		"name" : "Bordeaux",
 		"lat" : 44.8382,
-		"lon" : -0.5748,
-		"defaultZoom": "14"
-	},
+ 		"lon" : -0.5748,
+ 		"defaultZoom": "14"
+ 	},
 	"cote-basque": {
 		"name": "Cote-basque",
 		"lat" : 43.4721419,

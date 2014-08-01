@@ -73,7 +73,7 @@
       "openHours": "Monday to Friday, 09h30 - 19h00 and Saturday, 10h - 19h30",
       "address": "48 and 50, rue Gambetta",
       "type" : "coffee and bookshop ",
-      "power": {"available": false},
+      "power": {"available": true},
       "wifi": {"available": true},
       "url": "http://www.ombres-blanches.fr/"
     },

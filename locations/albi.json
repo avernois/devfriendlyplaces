@@ -1,0 +1,14 @@
+{ "places": [
+    {
+      "name": "Capulus Bagels & Coffee Shop",
+      "openHours": "Monday - Saturday, 10h00 - 19h00",
+      "lat": 43.926348,
+      "lon": 2.1444273,
+      "address":  "18 rue de Verdusse",
+      "type" : "Bagels & Coffee Shop",
+      "wifi": {"available": true},
+      "power": {"available": true},
+      "url": "http://fr-fr.facebook.com/pages/Capulus-Bagels-Coffee-Shop/1497991170420468"
+    }
+  ]
+}

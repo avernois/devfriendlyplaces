@@ -77,5 +77,11 @@
         "lat" : 43.6100219,
         "lon" : 3.8741615,
         "defaultZoom": "14"
+    },
+    "albi" : {
+        "name" : "Albi",
+        "lat" : 43.9289905,
+        "lon" : 2.1323003,
+        "defaultZoom": "14"
     }
 }

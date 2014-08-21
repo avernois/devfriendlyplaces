@@ -4,6 +4,7 @@ A collection of nice places where developers can work fine and some useful infor
 
 Current locations
 -----------------
+ - Albi [albi.devfriendlyplaces.net][albi]
  - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
  - Berlin: [berlin.devfriendlyplaces.net][berlin]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
@@ -81,5 +82,6 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [london]: http://london.devfriendlyplaces.net
 [cote-basque]: http://cote-basque.devfriendlyplaces.net
 [amsterdam]: http://amsterdam.devfriendlyplaces.net
+[albi]: http://albi.devfriendlyplaces.net
 [montauban]: http://montauban.devfriendlyplaces.net
 [montpellier]: http://montpellier.devfriendlyplaces.net

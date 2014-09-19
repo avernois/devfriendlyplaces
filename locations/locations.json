@@ -89,5 +89,11 @@
         "lat" : 43.2969500,
         "lon" : 5.3810700,
         "defaultZoom": "14"
+    },
+    "dakar" : {
+        "name" : "Dakar",
+        "lat" : 14.7324022,
+        "lon" : -17.3881194,
+        "defaultZoom": "14"
     }
 }

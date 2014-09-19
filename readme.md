@@ -13,6 +13,7 @@ Current locations
  - Lille: [lille.devfriendlyplaces.net][lille]
  - London: [london.devfriendlyplaces.net][london]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
+ - Marseille [marseille.devfriendlyplaces.net][marseille]
  - Montauban [montauban.devfriendlyplaces.net][montauban]
  - Montpellier [montpellier.devfriendlyplaces.net][montpellier]
  - Paris: [paris.devfriendlyplaces.net][paris]
@@ -50,7 +51,7 @@ There are two steps:
     {
       "name": "Another stuff... etc.",
       "lat" : 43.607378,
-      "lon" : 1.4399286 
+      "lon" : 1.4399286
     }
   ]
 }
@@ -67,7 +68,7 @@ Once your pull request is merged and deployed, your map will be accessible at ht
 
 
 ### Improve code / add feature
-Open issue, fork, commit and pull request. But you already know that :) 
+Open issue, fork, commit and pull request. But you already know that :)
 
 Please, don't improve code/add new feature and add new places/locations in the same pull request.
 

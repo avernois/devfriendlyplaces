@@ -1,0 +1,14 @@
+{ "places": [
+    {
+      "name": "Le Môle",
+      "lat": 43.29531,
+      "lon": 5.36180,
+      "openHours": "Monday 12h00 - 19h00, Wednesday to Saturday, 12h00 - 19h00",
+      "address":  "01 esplanade du J4 - Mucem",
+      "type" : "coffee/restaurant",
+      "url": "http://www.passedat.fr/#!le-mole/",
+      "power": {"available": true},
+      "wifi": {"available": false}
+    }
+  ]
+}

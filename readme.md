@@ -84,5 +84,6 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [cote-basque]: http://cote-basque.devfriendlyplaces.net
 [amsterdam]: http://amsterdam.devfriendlyplaces.net
 [albi]: http://albi.devfriendlyplaces.net
+[marseille]: http://marseille.devfriendlyplaces.net
 [montauban]: http://montauban.devfriendlyplaces.net
 [montpellier]: http://montpellier.devfriendlyplaces.net

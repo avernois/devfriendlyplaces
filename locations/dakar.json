@@ -1,0 +1,13 @@
+{ "places": [
+  {
+    "name": "Presse Café",
+    "lat": 14.667021,
+    "lon": -17.440041,
+    "address": "Rue Carnot angle Boul. des Madeleines",
+    "type": "coffee / coworking",
+    "url": "http://pressecafe.sn",
+    "power": {"available": true},
+    "wifi": {"available": true}
+  }
+  ]
+}

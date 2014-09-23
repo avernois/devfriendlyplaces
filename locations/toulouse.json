@@ -139,6 +139,17 @@
       "power": {"available": true},
       "wifi": {"available": true},
       "url":  "http://cirquedesarts.com"
+    },
+    {
+      "name": "Le Parc",
+      "openHours": "Monday - Friday, 7h30 - 21h00",
+      "lat": 43.635600, 
+      "lon": 1.384067
+      "address":  "3 place des Marronniers, 31700 BLAGNAC",
+      "type" : "coffee/restaurant",
+      "wifi": {"available": true},
+      "power": {"available": true, "comment":"SFRWifi, FreeWifi"},
+	  "phone": "05 61 71 61 71"
     }
   ]
 }

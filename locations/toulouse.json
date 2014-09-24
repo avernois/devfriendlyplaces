@@ -144,7 +144,7 @@
       "name": "Le Parc",
       "openHours": "Monday - Friday, 7h30 - 21h00",
       "lat": 43.635600, 
-      "lon": 1.384067
+      "lon": 1.384067,
       "address":  "3 pl Marronniers, 31700 BLAGNAC, phone:05 61 71 61 71",
       "type" : "coffee/restaurant",
       "wifi": {"available": true, "comment":"SFRWifi, FreeWifi, Orange"},

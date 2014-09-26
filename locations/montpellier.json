@@ -1,36 +1,36 @@
 { "places": [
     {
-      "name": "Café BUN",
-      "lat": 43.607508,
-      "lon": 3.87793,
-      "openHours": "Monday 12h00 - 19h00, Tuesday to Wednesday 07h30 - 19h00 and Saturday, 09h30 - 19h00",
-      "address":  "05 rue des Etuves",
-      "type" : "coffee/restaurant",
-      "url": "https://fr-fr.facebook.com/BUNcafe",
-      "power": {"available": true},
-      "wifi": {"available": true}
+        "name": "Café BUN",
+        "lat": 43.607508,
+        "lon": 3.87793,
+        "openHours": "Monday 12h00 - 19h00, Tuesday to Wednesday 07h30 - 19h00 and Saturday, 09h30 - 19h00",
+        "address":  "05 rue des Etuves",
+        "type" : "coffee/restaurant",
+        "url": "https://fr-fr.facebook.com/BUNcafe",
+        "power": {"available": true},
+        "wifi": {"available": true}
     },
     {
-      "name": "Fairview Coffee",
-      "lat": 43.606992,
-      "lon": 3.877552,
-      "openHours": "Tuesday to Saturday 09h30 - 19h00 and Sundays, 11h00 - 17h00",
-      "address":  "6 Rue Loys",
-      "type": "coffee/restaurant",
-      "url": "https://www.facebook.com/FairviewCoffee",
-      "power": {"available": true },
-      "wifi": {"available": true }
+        "name": "Fairview Coffee",
+        "lat": 43.606992,
+        "lon": 3.877552,
+        "openHours": "Tuesday to Saturday 09h30 - 19h00 and Sundays, 11h00 - 17h00",
+        "address":  "6 Rue Loys",
+        "type": "coffee/restaurant",
+        "url": "https://www.facebook.com/FairviewCoffee",
+        "power": {"available": true },
+        "wifi": {"available": true }
     },
     {
-      "name": "Cowork'in Montpellier",
-      "lat": 43.609229,
-      "lon": 3.869569,
-      "openHours": "From Monday to Friday - 9am to 6pm",
-      "address": "19 Rue de l'Ecole de Droit",
-      "type": "coworking",
-      "url": "http://coworkinmontpellier.org/",
-      "power": {"available": true },
-      "wifi": {"available": true }
+        "name": "Cowork'in Montpellier",
+        "lat": 43.609229,
+        "lon": 3.869569,
+        "openHours": "From Monday to Friday - 9am to 6pm",
+        "address": "19 Rue de l'Ecole de Droit",
+        "type": "coworking",
+        "url": "http://coworkinmontpellier.org/",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
-  ]
+]
 }

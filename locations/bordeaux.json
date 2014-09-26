@@ -1,65 +1,62 @@
 { "places": [
     {
-      "name": "Le Node",
-      "lat": 44.840458,
-      "lon": -0.570447,
-      "address":  "12 rue des Faussets",
-      "url": "http://bxno.de/",
-      "type" : "coworking",
-      "power": {"available": true, "comment": "at least 8"},
-      "wifi": {"available": true}
+        "name": "Le Node",
+        "lat": 44.840458,
+        "lon": -0.570447,
+        "address":  "12 rue des Faussets",
+        "url": "http://bxno.de/",
+        "type" : "coworking",
+        "power": {"available": true, "comment": "at least 8"},
+        "wifi": {"available": true}
     },
     {
-      "name": "Coolworking",
-      "lat": 44.843098,
-      "lon": -0.572875,
-      "address": "19 rue Esprit des Lois",
-      "url": "http://www.coolworking.fr/",
-      "type" : "coworking",
-      "power": {"available": true},
-      "wifi": {"available": true}
+        "name": "Coolworking",
+        "lat": 44.843098,
+        "lon": -0.572875,
+        "address": "19 rue Esprit des Lois",
+        "url": "http://www.coolworking.fr/",
+        "type" : "coworking",
+        "power": {"available": true},
+        "wifi": {"available": true}
     },
     {
-      "name": "Kowork",
-      "lat": 44.85437,
-      "lon": -0.56601,
-      "address": "92 Quai des Chartrons",
-	    "url": "http://www.kowork.fr/",
-      "type": "coworking",
-      "power": {"available": true},
-      "wifi": {"available": true}
+        "name": "Kowork",
+        "lat": 44.85437,
+        "lon": -0.56601,
+        "address": "92 Quai des Chartrons",
+        "url": "http://www.kowork.fr/",
+        "type": "coworking",
+        "power": {"available": true},
+        "wifi": {"available": true}
     },
     {
-      "name": "Darwin",
-      "lat": 44.84978,
-      "lon": -0.56069,
-      "address": "87 Quai des Queyries",
-
-      "url": "http://www.coworkers.eu/",
-      "type": "coworking",
-      "power": {"available": true},
-      "wifi": {"available": true}
+        "name": "Darwin",
+        "lat": 44.84978,
+        "lon": -0.56069,
+        "address": "87 Quai des Queyries",
+        "url": "http://www.coworkers.eu/",
+        "type": "coworking",
+        "power": {"available": true},
+        "wifi": {"available": true}
     },
     {
-      "name": "Chez Vincent",
-      "lat": 44.823521,
-      "lon": -0.618585,
-      "address": "27 rue de Lyon",
-
-      "type": "home coworking",
-      "power": {"available": true},
-      "wifi": {"available": true}
+        "name": "Chez Vincent",
+        "lat": 44.823521,
+        "lon": -0.618585,
+        "address": "27 rue de Lyon",
+        "type": "home coworking",
+        "power": {"available": true},
+        "wifi": {"available": true}
     },
     {
-      "name": "Médiathèque Jacques Elul",
-      "lat": 44.799583,
-      "lon": -0.642509,
-      "address": "21 Résidence Camponac",
-
-      "url": "http://mediatheque.mairie-pessac.fr/",
-      "type": "library",
-      "power": {"available": true},
-      "wifi": {"available": true}
+        "name": "Médiathèque Jacques Elul",
+        "lat": 44.799583,
+        "lon": -0.642509,
+        "address": "21 Résidence Camponac",
+        "url": "http://mediatheque.mairie-pessac.fr/",
+        "type": "library",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
-  ]
+]
 }

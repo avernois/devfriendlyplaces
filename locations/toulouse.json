@@ -149,6 +149,17 @@
         "type" : "coffee/restaurant",
         "wifi": {"available": true, "comment":"SFRWifi, FreeWifi, Orange"},
         "power": {"available": true, "comment":"3"}
+    },
+    {
+        "name": "La fiancée",
+        "openHours": "Thursday to Friday: 09h30 - 18h30, Saturday: 10h30 - 18h30, Sunday: 11h30 - 18h30",
+        "lat": 43.602108,
+        "lon": 1.440986,
+        "address":  "54 rue Pérolières",
+        "type" : "coffee",
+        "wifi": {"available": true},
+        "power": {"available": false},
+        "url":  "https://www.facebook.com/cafelafiancee"
     }
 ]
 }

@@ -31,6 +31,28 @@
         "url": "http://coworkinmontpellier.org/",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "La Panacée",
+        "lat": 43.61282,
+        "lon": 3.87811,
+        "openHours": "From Wednesday to Saturday - 10am to 1am and Sundays, 10am to 18pm",
+        "address": "14, rue de l’école de pharmacie",
+        "type": "café, musée",
+        "url": "http://lapanacee.org",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Scopyleft",
+        "lat": 43.65637,
+        "lon": 3.89018,
+        "openHours": "From Monday to Friday - 9am to 19pm",
+        "address": "5, chemin de la Magnanerie - 34830 Clapiers",
+        "type": "tiers lieu",
+        "url": "http://scopyleft.fr",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

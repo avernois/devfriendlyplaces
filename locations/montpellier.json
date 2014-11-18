@@ -53,6 +53,17 @@
         "url": "http://scopyleft.fr",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Corum",
+        "lat": 43.614337,
+        "lon": 3.881923,
+        "openHours": "From Monday to Friday - 08h45 - 12h15 to 13h30 - 17h30",
+        "address": "Esplanade Charles De Gaulle",
+        "type": "public place",
+        "url": "http://www.montpellier-events.com/Le-Corum/Presentation",
+        "power": {"available": true },
+        "wifi": {"available": false }
     }
 ]
 }

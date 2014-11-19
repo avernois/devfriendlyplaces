@@ -36,7 +36,7 @@
         "name": "La Panacée",
         "lat": 43.61282,
         "lon": 3.87811,
-        "openHours": "From Wednesday to Saturday - 10am to 1am and Sundays, 10am to 18pm",
+        "openHours": "From Wednesday to Saturday - 10am to 1am and Sundays, 10am to 6pm",
         "address": "14, rue de l’école de pharmacie",
         "type": "café, musée",
         "url": "http://lapanacee.org",
@@ -47,12 +47,23 @@
         "name": "Scopyleft",
         "lat": 43.65637,
         "lon": 3.89018,
-        "openHours": "From Monday to Friday - 9am to 19pm",
+        "openHours": "From Monday to Friday - 9am to 7pm",
         "address": "5, chemin de la Magnanerie - 34830 Clapiers",
         "type": "tiers lieu",
         "url": "http://scopyleft.fr",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Corum",
+        "lat": 43.614337,
+        "lon": 3.881923,
+        "openHours": "From Monday to Friday - 08h45 - 12h15 to 13h30 - 17h30",
+        "address": "Esplanade Charles De Gaulle",
+        "type": "public place",
+        "url": "http://www.montpellier-events.com/Le-Corum/Presentation",
+        "power": {"available": true },
+        "wifi": {"available": false }
     }
 ]
 }

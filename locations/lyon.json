@@ -30,6 +30,25 @@
         "address":  "11 rue Terme 69001 Lyon",
         "type": "coffee / restaurant",
         "url": "http://www.lantreautre.fr"
+    },
+    {
+        "name": "La Folie Douce",
+        "lat": 45.7724217,
+        "lon": 4.8343591,
+        "address":  "7, pl. Colbert 69001 Lyon",
+        "type": "coffee",
+        "power": {"available": true, "comment": "for one table"},
+        "wifi": {"available": true, "comment": "ask to the boss to get the code"}
+    },
+    {
+        "name": "Le Tasse Livre",
+        "lat": 45.7687415,
+        "lon": 4.830928,
+        "address":  "place sathonay 69001 Lyon",
+        "type": "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
+
 ]
 }

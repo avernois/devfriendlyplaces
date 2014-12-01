@@ -64,6 +64,17 @@
         "url": "http://www.montpellier-events.com/Le-Corum/Presentation",
         "power": {"available": true },
         "wifi": {"available": false }
+    },
+    {
+        "name": "Médiathèque centrale d'Agglomération Emile Zola",
+        "lat": 43.6082336,
+        "lon": 3.8938274,
+        "openHours": "Tuesday and Friday 12h-19h, Wednesday: 10h-19h, Thursday: 10h-21h Saturday: 10h-18h30 and Sunday: 14h30-18h (october to april)",
+        "address": "240, rue de l'Acropole",
+        "type": "public place",
+        "url": "http://mediatheque.montpellier-agglo.com/exploitation/DEFAULT/mediatheque-emile-zola.aspx",
+        "power": {"available": true },
+        "wifi": {"available": false }
     }
 ]
 }

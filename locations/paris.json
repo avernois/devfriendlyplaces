@@ -10,10 +10,30 @@
         "wifi": {"available": true}
     },
     {
-        "name": "L'ANTICAFE",
+        "name": "L'ANTICAFE BEAUBOURG",
         "lat": 48.8625921,
         "lon": 2.3512003,
         "address": "79 Rue Quincampoix - 75003 Paris",
+        "type": "coworking",
+        "url": "http://anticafe.fr",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "L'ANTICAFE OLYMPIADES",
+        "lat": 48.8254416,
+        "lon": 2.3665593,
+        "address": "59 Rue Nationale - 75013 Paris",
+        "type": "coworking",
+        "url": "http://anticafe.fr",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "L'ANTICAFE LOUVRE",
+        "lat": 48.8641804,
+        "lon": 2.3362479,
+        "address": "10 Rue Richelieu - 75001 Paris",
         "type": "coworking",
         "url": "http://anticafe.fr",
         "power": {"available": true},

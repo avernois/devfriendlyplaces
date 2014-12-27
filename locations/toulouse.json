@@ -160,6 +160,17 @@
         "wifi": {"available": true},
         "power": {"available": false},
         "url":  "https://www.facebook.com/cafelafiancee"
+    },
+    {
+        "name": "Etincelle Coworking",
+        "openHours": "24/7",
+        "lat": 43.605587,
+        "lon": 1.447456,
+        "address": "2 rue d'Austerlitz",
+        "type" : "coworking",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "http://www.coworking-toulouse.com/"
     }
 ]
 }

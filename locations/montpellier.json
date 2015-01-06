@@ -44,17 +44,6 @@
         "wifi": {"available": true }
     },
     {
-        "name": "Scopyleft",
-        "lat": 43.65637,
-        "lon": 3.89018,
-        "openHours": "From Monday to Friday - 9am to 7pm",
-        "address": "5, chemin de la Magnanerie - 34830 Clapiers",
-        "type": "tiers lieu",
-        "url": "http://scopyleft.fr",
-        "power": {"available": true },
-        "wifi": {"available": true }
-    },
-    {
         "name": "Corum",
         "lat": 43.614337,
         "lon": 3.881923,

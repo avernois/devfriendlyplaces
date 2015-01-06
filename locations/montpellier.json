@@ -64,6 +64,17 @@
         "url": "http://mediatheque.montpellier-agglo.com/exploitation/DEFAULT/mediatheque-emile-zola.aspx",
         "power": {"available": true },
         "wifi": {"available": false }
+    },
+    {
+        "name": "Les demoiselles de Montpellier",
+        "lat": 43.611717920894,
+        "lon": 3.8781226612183,
+        "openHours": "From Monday to Saturday - 11:30am to 7:00pm - Sunday 11:00am to 3:30pm",
+        "address": "2, rue de la Carbonnerie - 34000 Montpellier",
+        "type": "Tea room - gluten free",
+        "url": "https://www.facebook.com/lesdemoisellesdemontpellier",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

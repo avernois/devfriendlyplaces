@@ -75,6 +75,28 @@
         "url": "https://www.facebook.com/lesdemoisellesdemontpellier",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Columbus Café & Co Montpellier",
+        "lat": 43.610368,
+        "lon": 3.877198,
+        "openHours": "From Monday to Saturday - 7:30am to 7:30pm",
+        "address": "28, rue Foch - 34000 Montpellier",
+        "type": "Coffee room",
+        "url": "http://www.columbuscafe.com/columbus-cafe-montpellier.htm",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Centre chorégraphique national Agora",
+        "lat": 43.614141,
+        "lon": 3.878109,
+        "openHours": "From Monday to Friday - 9:30am to 12:30am - 2:00pm to 6:00pm",
+        "address": "18 Rue Sainte-Ursule - 34961 Montpellier",
+        "type": "Public place",
+        "url": "http://www.montpellierdanse.com",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

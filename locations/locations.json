@@ -101,5 +101,12 @@
         "lat" : 43.67825,
         "lon" : 4.63337,
         "defaultZoom": "14"
+    },
+    "oxford" : {
+        "name" : "Oxford",
+        "lat" : 51.7546405,
+        "lon" : -1.2557418,
+        "defaultZoom": "15"
     }
+
 }

@@ -95,5 +95,11 @@
         "lat" : 14.7324022,
         "lon" : -17.3881194,
         "defaultZoom": "14"
+    },
+    "arles" : {
+        "name" : "Arles",
+        "lat" : 43.67825,
+        "lon" : 4.63337,
+        "defaultZoom": "14"
     }
 }

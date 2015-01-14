@@ -1,3 +1,14 @@
 { "places": [
+  {
+    "name": "Médiathèque d'Arles",
+    "lat": 43.67624,
+    "lon": 4.625513,
+    "openHours": "From Monday to Friday - 1:00pm to 6:30pm - Wendesday - 10:00am to 6:30pm - saturday - 10:00am to 5:00pm",
+    "address": "Place Félix Rey - 13200 Arles",
+    "type": "Public place",
+    "url": "http://www.mediatheque.ville-arles.fr",
+    "power": {"available": true },
+    "wifi": {"available": false }
+  }
 ]
 }

@@ -171,6 +171,17 @@
         "power": {"available": true},
         "wifi": {"available": true},
         "url": "http://www.coworking-toulouse.com/"
+    },
+    {
+        "name": "Bibliothèque d’Étude et du Patrimoine",
+        "openHours": "Friday to Saturday: 10h00 - 19h00",
+        "lat": 43.607851,
+        "lon": 1.443869,
+        "address": "1, Rue du Périgord",
+        "type" : "public place",
+        "power": {"available": true},
+        "wifi": {"available": false},
+        "url": "http://www.bibliotheque.toulouse.fr/bep-lieu.html"
     }
 ]
 }

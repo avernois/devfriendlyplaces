@@ -182,6 +182,17 @@
         "power": {"available": true},
         "wifi": {"available": false},
         "url": "http://www.bibliotheque.toulouse.fr/bep-lieu.html"
+    },
+    {
+        "name": "Théâtre National de Toulouse",
+        "openHours": "Friday to Saturday: 13h00 - 19h00",
+        "lat": 43.60493,
+        "lon": 1.449517,
+        "address": "1, Rue Pierre Baudis",
+        "type" : "public place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "http://www.tnt-cite.com"
     }
 ]
 }

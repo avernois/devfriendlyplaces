@@ -191,7 +191,7 @@
         "address": "1, Rue Pierre Baudis",
         "type" : "public place",
         "power": {"available": true},
-        "wifi": {"available": false},
+        "wifi": {"available": true},
         "url": "http://www.tnt-cite.com"
     }
 ]

@@ -107,6 +107,12 @@
         "lat" : 51.7546405,
         "lon" : -1.2557418,
         "defaultZoom": "15"
+    },
+    "saint-louis" : {
+        "name" : "Saint-Louis",
+        "lat" : 38.6531004,
+        "lon" : -90.243462,
+        "defaultZoom": "12"
     }
 
 }

@@ -6,17 +6,22 @@ Current locations
 -----------------
  - Albi [albi.devfriendlyplaces.net][albi]
  - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
+ - Arles [arles.devfriendlyplaces.net][arles]
  - Berlin: [berlin.devfriendlyplaces.net][berlin]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
  - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
+ - Dakar: [dakar.devfriendlyplaces.net][dakar]
  - Lille: [lille.devfriendlyplaces.net][lille]
  - London: [london.devfriendlyplaces.net][london]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
- - Marseille [marseille.devfriendlyplaces.net][marseille]
- - Montauban [montauban.devfriendlyplaces.net][montauban]
- - Montpellier [montpellier.devfriendlyplaces.net][montpellier]
+ - Marseille: [marseille.devfriendlyplaces.net][marseille]
+ - Montauban: [montauban.devfriendlyplaces.net][montauban]
+ - Montpellier: [montpellier.devfriendlyplaces.net][montpellier]
+ - Oxford: [oxford.devfriendlyplaces.net][oxford]
  - Paris: [paris.devfriendlyplaces.net][paris]
+ - Pays Cathare: [pays-cathare.devfriendlyplaces.net][pays-cathare]
+ - Saint-Louis: [saint-louis.devfriendlyplaces.net][saint-louis]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
  - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
 
@@ -87,3 +92,8 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [marseille]: http://marseille.devfriendlyplaces.net
 [montauban]: http://montauban.devfriendlyplaces.net
 [montpellier]: http://montpellier.devfriendlyplaces.net
+[arles]: http://arles.devfriendlyplaces.net
+[dakar]: http://dakar.devfriendlyplaces.net
+[oxford]: http://oxford.devfriendlyplaces.net
+[pays-cathare]: http://pays-cathare.devfriendlyplaces.net
+[saint-louis]: http://saint-louis.devfriendlyplaces.net

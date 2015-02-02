@@ -54,6 +54,12 @@
         "lon": 2.351828,
         "defaultZoom": "13"
     },
+    "pays-cathare": {
+        "name": "Pays Cathare",
+        "lat": 43.05665,
+        "lon": 2.21306,
+        "defaultZoom": "10"
+    },
     "toulon": {
         "name": "Toulon",
         "lat": 43.117,

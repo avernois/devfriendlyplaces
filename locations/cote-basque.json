@@ -9,6 +9,17 @@
         "power": {"available": true},
         "wifi": {"available": true},
         "url": "http://coworking-pb.com/"
+    },
+    {
+        "name": "La Cocotte",
+        "openHours": "9h00 - 19h00",
+        "lat": 43.489755,
+        "lon": -1.4707876,
+        "address":  "15 place Paul Bert",
+        "type" : "coworking",
+        "power": {"available": true},
+        "wifi": {"available": true, "comment": "currently not a very high bandwidth. expecting fiber-based connection asap"},
+        "url": "http://www.cocotte-coworking.fr/"
     }
 ]
 }

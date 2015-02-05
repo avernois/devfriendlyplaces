@@ -15,7 +15,7 @@
         "openHours": "9h00 - 19h00",
         "lat": 43.489755,
         "lon": -1.4707876,
-        "address":  "15 place Paul Bert",
+        "address":  "15 place Paul Bert, 64100 Bayonne",
         "type" : "coworking",
         "power": {"available": true},
         "wifi": {"available": true, "comment": "currently not a very high bandwidth. expecting fiber-based connection asap"},

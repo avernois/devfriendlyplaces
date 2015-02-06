@@ -126,5 +126,10 @@
         "lon" : -122.2901429,
         "defaultZoom": "11"
     },
-
+    "mountain-view" : {
+        "name" : "Mountain View",
+        "lat" : 37.3967282,
+        "lon" : -122.1114794,
+        "defaultZoom": "12"
+    }
 }

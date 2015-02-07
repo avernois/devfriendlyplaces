@@ -3,17 +3,19 @@
 var LocationSelector = L.Control.extend({
     onAdd: function (map) {
         var container = L.DomUtil.create('div', 'location-selection-control');
-
         var selector = L.DomUtil.create('select', 'selector leaflet-bar leaflet-control');
+        var locations = this.options.locations;
+
         selector.addEventListener('change', this.onChange.bind(this, map, selector));
         container.appendChild(selector);
 
-        for (var key in this.options.locations) {
+        sortKeys(locations).map(function (key) {
             var element = L.DomUtil.create('option', 'location');
             element.setAttribute('value', key)
-            element.innerHTML = this.options.locations[key].name;
+            element.innerHTML = locations[key].name;
             selector.appendChild(element);
-        }
+        });
+
         selector.value = this.options.value;
 
         return container;
@@ -52,6 +54,16 @@ function extractLocationFromUrl() {
 
 function getLocations() {
     return getJSON("/locations/locations.json");
+}
+
+function sortKeys(locations) {
+    var keys = [];
+
+    for (var key in locations) {
+        keys.push(key);
+    }
+
+    return keys.sort();
 }
 
 function getPlaces(location) {

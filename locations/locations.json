@@ -119,6 +119,17 @@
         "lat" : 38.6531004,
         "lon" : -90.243462,
         "defaultZoom": "12"
+    },
+    "san-francisco" : {
+        "name" : "San Francisco",
+        "lat" : 37.6563861,
+        "lon" : -122.2901429,
+        "defaultZoom": "11"
+    },
+    "mountain-view" : {
+        "name" : "Mountain View",
+        "lat" : 37.3967282,
+        "lon" : -122.1114794,
+        "defaultZoom": "12"
     }
-
 }

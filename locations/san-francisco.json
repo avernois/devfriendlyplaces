@@ -1,0 +1,13 @@
+{ "places": [
+    {
+        "name": "San Francisco Public Library",
+        "openHours": "Monday: 12am - 5pm, Tuesday - Thursday: 9am - 8pm, Friday: 12am - 6pm, Saturday: 10am - 6pm, Sunday: 12pm - 5pm",
+        "lat": 38.6027557,
+        "lon": -90.2524691,
+        "address":  "100 Larkin St. - San Francisco, 94102",
+        "type" : "Public library",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "url": "http://sfpl.org/"
+    }
+]}

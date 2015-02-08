@@ -138,19 +138,19 @@
         "type": "Boulangerie",
         "power": {"available": true },
         "wifi": {"available": true }
-     },
-     {
+    },
+    {
         "name": "Hopital Gui de Chauliac",
         "lat": 43.6297968,
         "lon": 3.8628262,
         "openHours": "From Monday to Friday - 7:00am to 7:00pm - Saturday and Sundays - 9:00am to 6:00pm",
         "address": "80, avenue Augustin Fliche - 34000 Montpellier",
         "type": "Snack",
-         "url": "http://www.chu-montpellier.fr/fr/a-propos-du-chru/decouvrir-le-chru/etablissements/gui-de-chauliac/",
+        "url": "http://www.chu-montpellier.fr/fr/a-propos-du-chru/decouvrir-le-chru/etablissements/gui-de-chauliac/",
         "power": {"available": true },
         "wifi": {"available": false }
-     },
-     {
+    },
+    {
         "name": "Boulangerie patisserie Gouley",
         "lat": 43.61795,
         "lon": 3.81037,
@@ -159,6 +159,6 @@
         "type": "Boulangerie",
         "power": {"available": true },
         "wifi": {"available": false }
-     }
+    }
 ]
 }

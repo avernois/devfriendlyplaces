@@ -9,5 +9,16 @@
         "wifi": {"available": true},
         "power": {"available": true},
         "url": "http://sfpl.org/"
+    },
+    {
+        "name": "Panera Bread",
+        "openHours": "Monday - Sunday: 6:30am - 9pm",
+        "lat": 37.7757022,
+        "lon": -122.3936884,
+        "address":  "301 King St, San Francisco, CA 94158",
+        "type" : "Bread shop",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "url": "https://www.panerabread.com/"
     }
 ]}

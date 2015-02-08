@@ -159,6 +159,17 @@
         "type": "Boulangerie",
         "power": {"available": true },
         "wifi": {"available": false }
+    },
+    {
+        "name": "Tennis la Jalade",
+        "lat": 43.628174,
+        "lon": 3.863447,
+        "openHours": "From Monday to Sunday - 8:30am to 8:30pm",
+        "address": "Rue de la Jalade - 34090 Montpellier",
+        "type": "Restaurant",
+        "url": "http://www.tcmlajalade.fr",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

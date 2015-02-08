@@ -97,6 +97,68 @@
         "url": "http://www.montpellierdanse.com",
         "power": {"available": true },
         "wifi": {"available": true }
-    }
+    },
+    {
+        "name": "Les Petits Débrouillards",
+        "lat": 43.5996813,
+        "lon": 3.8747227,
+        "openHours": "From Monday to Sunday - 9:30am to 5:30pm",
+        "address": "49, boulevard Berthelot - 34000 Montpellier",
+        "type": "Public place",
+        "url": "http://www.lespetitsdebrouillards.org",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "L'Épi Gaulois",
+        "lat": 43.607711,
+        "lon": 3.898918,
+        "openHours": "From Monday to Sunday - 6:00am to 8:00pm",
+        "address": "200, avenue de la Pompignane - 34000 Montpellier",
+        "type": "Boulangerie",
+        "power": {"available": false },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "La Ronde des Pains",
+        "lat": 43.6009962,
+        "lon": 3.8988458,
+        "openHours": "From Monday to Sunday - 6:30am to 8:00pm",
+        "address": "185, avenue Marie de Montpellier - 34000 Montpellier",
+        "type": "Boulangerie",
+        "power": {"available": false },
+        "wifi": {"available": false }
+    },
+    {
+        "name": "L'Assiette aux Pains",
+        "lat": 43.6227084,
+        "lon": 3.8682955,
+        "openHours": "From Monday to Sunday - 6:30am to 8:00pm",
+        "address": "18, avenue du professeur Grasset - 34000 Montpellier",
+        "type": "Boulangerie",
+        "power": {"available": true },
+        "wifi": {"available": true }
+     },
+     {
+        "name": "Hopital Gui de Chauliac",
+        "lat": 43.6297968,
+        "lon": 3.8628262,
+        "openHours": "From Monday to Friday - 7:00am to 7:00pm - Saturday and Sundays - 9:00am to 6:00pm",
+        "address": "80, avenue Augustin Fliche - 34000 Montpellier",
+        "type": "Snack",
+         "url": "http://www.chu-montpellier.fr/fr/a-propos-du-chru/decouvrir-le-chru/etablissements/gui-de-chauliac/",
+        "power": {"available": true },
+        "wifi": {"available": false }
+     },
+     {
+        "name": "Boulangerie patisserie Gouley",
+        "lat": 43.61795,
+        "lon": 3.81037,
+        "openHours": "From Monday to Sunday - 7:00am to 8:00pm",
+        "address": "Place du soleil - Quartier des constellations - 34990 Juvignac",
+        "type": "Boulangerie",
+        "power": {"available": true },
+        "wifi": {"available": false }
+     }
 ]
 }

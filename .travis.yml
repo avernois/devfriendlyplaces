@@ -1,0 +1,5 @@
+before_script:
+  - wget http://stedolan.github.io/jq/download/linux64/jq && chmod u+x jq
+
+script:
+  - ./jq '.' locations/*.json

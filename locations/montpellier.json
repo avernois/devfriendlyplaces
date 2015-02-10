@@ -170,6 +170,17 @@
         "url": "http://www.tcmlajalade.fr",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "L'emporté gourmand",
+        "lat": 43.6061218,
+        "lon": 3.8757435,
+        "openHours": "From Monday to Saturday - 8:00am to 18:30pm",
+        "address": "9, rue faubourg de la Saunerie - 34090 Montpellier",
+        "type": "Restaurant",
+        "url": "https://www.facebook.com/emportegourmand",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

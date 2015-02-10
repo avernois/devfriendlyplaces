@@ -170,6 +170,28 @@
         "url": "http://www.tcmlajalade.fr",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "L'emporté gourmand",
+        "lat": 43.6061218,
+        "lon": 3.8757435,
+        "openHours": "From Monday to Saturday - 8:00am to 18:30pm",
+        "address": "9, rue faubourg de la Saunerie - 34000 Montpellier",
+        "type": "Restaurant",
+        "url": "https://www.facebook.com/emportegourmand",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Le Faubourg",
+        "lat": 43.61427,
+        "lon": 3.88141,
+        "openHours": "From Monday to Tuesday - 11:00am to 1:00pm and 5:00pm to 7:00pm - Friday - 11:00am to 1:00pm",
+        "address": "15, Rue du Faubourg de Nîmes - 34000 Montpellier",
+        "type": "Fellowship",
+        "url": "http://autour.com/LeFaubourg",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

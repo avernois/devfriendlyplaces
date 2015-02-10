@@ -20,5 +20,38 @@
         "wifi": {"available": true},
         "power": {"available": true},
         "url": "https://www.panerabread.com/"
+    },
+    {
+        "name": "The Metreon",
+        "openHours": "Monday - Sunday: 10:30am - 9pm",
+        "lat": 37.78418,
+        "lon": -122.40361,
+        "address":  "135 4th Street, San Francisco, CA 94103",
+        "type" : "Urban mall",
+        "wifi": {"available": true},
+        "power": {"available": false},
+        "url": "http://www.cityviewmetreon.com/"
+    },
+    {
+        "name": "Beacon Coffee & Pantry",
+        "openHours": "Monday - Sunday: 7am - 6pm",
+        "lat": 37.8022408,
+        "lon": -122.4133416,
+        "address":  "805 Columbus Avenue - San Francisco, CA 94133",
+        "type" : "Coffee shop",
+        "wifi": {"available": true},
+        "power": {"available": false},
+        "url": "http://www.beacon-sf.com/"
+    },
+    {
+        "name": "Peets Coffee & Tea",
+        "openHours": "Monday - Sunday: 5am - 8:30pm",
+        "lat": 37.764842,
+        "lon": -122.431898,
+        "address":  "2257 Market Street - San Francisco, CA 94114",
+        "type" : "Coffee shop",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "url": "https://www.peets.com/"
     }
 ]}

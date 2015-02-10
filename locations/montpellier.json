@@ -172,7 +172,7 @@
         "wifi": {"available": true }
     },
     {
-        "name": "L'emporté gourmand",
+        "name": "L'Emporté Gourmand",
         "lat": 43.6061218,
         "lon": 3.8757435,
         "openHours": "From Monday to Saturday - 8:00am to 18:30pm",
@@ -190,6 +190,17 @@
         "address": "15, Rue du Faubourg de Nîmes - 34000 Montpellier",
         "type": "Fellowship",
         "url": "http://autour.com/LeFaubourg",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "La Terasses des Filles",
+        "lat": 43.608405,
+        "lon": 3.8859496,
+        "openHours": "From Monday to Saturday - 8:00am to 6:00pm",
+        "address": "15, Rue du Faubourg de Nîmes - 4ème étage CC. Polygone - 34000 Montpellier",
+        "type": "Restaurant",
+        "url": "http://laterrassedesfilles.fr",
         "power": {"available": true },
         "wifi": {"available": true }
     }

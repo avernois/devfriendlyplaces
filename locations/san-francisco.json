@@ -64,5 +64,16 @@
         "wifi": {"available": true},
         "power": {"available": false},
         "url": "http://en.wikipedia.org/wiki/Union_Square,_San_Francisco"
+    },
+    {
+        "name": " Peet’s Coffee & Tea ",
+        "openHours": "5am - 6:30pm",
+        "lat": 37.7911186,
+        "lon": -122.4025815,
+        "address":  "217 Montgomery Street - San Francisco, CA 94104",
+        "type" : "Coffee shop",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "url": "https://www.peets.com/"
     }
 ]}

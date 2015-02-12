@@ -51,7 +51,8 @@ There are two steps:
       "type" : "coworking",
       "power": {"available": true, "comment": "look under the table"},
       "wifi": {"available": true, "comment": "ask people around to get the code"},
-      "url": "http://www.reykjavikcoworking.is/"
+      "url": "http://www.reykjavikcoworking.is/",
+      "comment": "noisy at lunch hours"
     },
     {
       "name": "Another stuff... etc.",

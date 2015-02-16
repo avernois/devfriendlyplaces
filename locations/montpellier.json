@@ -214,6 +214,19 @@
         "url": "https://www.facebook.com/pages/Boulangerie-p%C3%A2tisserie-vincent-david/304023713119962",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Maison de la prévention",
+        "lat": 43.6072246,
+        "lon": 3.8794982,
+        "openHours": "From Monday to Friday - 10:00am to 5:00pm - first Saturdays of months - 10:00am to 1:00pm - 4th Tuesdays of months - 8:00pm",
+        "address": "6, rue Maguelone - 34000 Montpellier",
+        "type": "Public place",
+        "url": "http://www.montpellier.fr/3251-maison-de-la-prevention-sante-bis.htm",
+        "power": {"available": true },
+        "wifi": {"available": false }
     }
 ]
 }
+
+

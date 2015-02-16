@@ -224,7 +224,7 @@
         "type": "Public place",
         "url": "http://www.montpellier.fr/3251-maison-de-la-prevention-sante-bis.htm",
         "power": {"available": true },
-        "wifi": {"available": false }
+        "wifi": {"available": true }
     }
 ]
 }

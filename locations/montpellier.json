@@ -84,7 +84,7 @@
         "address": "28, rue Foch - 34000 Montpellier",
         "type": "Coffee Room",
         "url": "http://www.columbuscafe.com/columbus-cafe-montpellier.htm",
-        "power": {"available": true },
+        "power": {"available": true, "comment":"ssh and other exotical port are closed" },
         "wifi": {"available": true }
     },
     {

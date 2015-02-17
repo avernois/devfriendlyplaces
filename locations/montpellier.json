@@ -85,7 +85,7 @@
         "type": "Coffee Room",
         "url": "http://www.columbuscafe.com/columbus-cafe-montpellier.htm",
         "power": {"available": true },
-        "wifi": {"available": true }
+        "wifi": {"available": true, "comment":"ssh and other exotical ports are closed" }
     },
     {
         "name": "Centre Chorégraphique National Agora",

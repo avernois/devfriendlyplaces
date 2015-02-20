@@ -131,5 +131,11 @@
         "lat" : 37.3967282,
         "lon" : -122.1114794,
         "defaultZoom": "12"
+    },
+    "nantes" : {
+        "name" : "Nantes",
+        "lat" : 47.2081436,
+        "lon" : -1.5619954,
+        "defaultZoom": "14"
     }
 }

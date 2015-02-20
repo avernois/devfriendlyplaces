@@ -1,0 +1,14 @@
+{ "places": [
+    {
+      "name": "Lieu Unique",
+      "openHours": "Monday - 11:00am to 8:00pm - From Tuesday to Wednesday - 11:00am to 1:00pm - Thursday - 11:00am to 2:00pm - From Thursday to Saturday - 11:00am to 3:00pm - Sunday - 3:00pm to 8:00pm",
+      "lat": 47.215265,
+      "lon": -1.54573,
+      "address": "2, rue de la Biscuiterie - Quai Ferdinand Favre - 44013 Nantes",
+      "type" : "coffee",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.lelieuunique.com"
+    }
+  ]
+}

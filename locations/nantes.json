@@ -1,0 +1,58 @@
+{ "places": [
+    {
+      "name": "Lieu Unique",
+      "openHours": "Monday - 11:00am to 8:00pm - From Tuesday to Wednesday - 11:00am to 1:00pm - Thursday - 11:00am to 2:00pm - From Thursday to Saturday - 11:00am to 3:00pm - Sunday - 3:00pm to 8:00pm",
+      "lat": 47.215265,
+      "lon": -1.54573,
+      "address": "2, rue de la Biscuiterie - Quai Ferdinand Favre - 44013 Nantes",
+      "type" : "coffee",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.lelieuunique.com"
+    },
+    {
+      "name": "La Maison Café",
+      "openHours": "From Monday to Sunday - 3:00pm to 2:00am",
+      "lat": 47.2200297,
+      "lon": -1.5497687,
+      "address": "4, rue Lebrun - 44000 Nantes",
+      "type" : "cocktails bar - coffee",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "https://www.facebook.com/pages/la-Maison-Caf%C3%A9-Nantes/313440640732"
+    },
+    {
+      "name": "Columbus",
+      "openHours": "From Monday to Saturday - 8:00am to 7:30pm",
+      "lat": 47.214015,
+      "lon": -1.562183,
+      "address": "5, square Fleuriot de l'Angle - 44000 Nantes",
+      "type" : "cocktails bar - coffee",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.columbuscafe.com/columbus-cafe-nantes.htm"
+    },
+    {
+      "name": "Solilab",
+      "openHours": "From Tuesday to Saturday - 10:00am to 6:00pm",
+      "lat": 47.200967,
+      "lon": -1.571585,
+      "address": "8, rue de Saint-Domingue - 44200 Nantes",
+      "type" : "Collaborative Place",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.ecossolies.fr/-Le-Solilab-"
+    },
+    {
+      "name": "Delight Café",
+      "openHours": "From Monday to Saturday - 9:00am to 10:00pm - Sunday - 12:00am to 8:00pm",
+      "lat": 47.213618,
+      "lon": -1.558031,
+      "address": "4, place du Commerce - 44000 Nantes",
+      "type" : "Coffee Shop",
+      "power": {"available": true},
+      "wifi": {"available": true},
+      "url": "http://www.ecossolies.fr/-Le-Solilab-"
+    }
+  ]
+}

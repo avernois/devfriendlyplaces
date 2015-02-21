@@ -18,6 +18,7 @@ Current locations
  - Marseille: [marseille.devfriendlyplaces.net][marseille]
  - Montauban: [montauban.devfriendlyplaces.net][montauban]
  - Montpellier: [montpellier.devfriendlyplaces.net][montpellier]
+ - Nantes: [nantes.devfriendlyplaces.net][nantes]
  - Oxford: [oxford.devfriendlyplaces.net][oxford]
  - Paris: [paris.devfriendlyplaces.net][paris]
  - Pays Cathare: [pays-cathare.devfriendlyplaces.net][pays-cathare]

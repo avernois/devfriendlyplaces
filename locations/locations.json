@@ -137,5 +137,11 @@
         "lat" : 47.2081436,
         "lon" : -1.5619954,
         "defaultZoom": "14"
+    },
+    "foix" : {
+        "name" : "Foix",
+        "lat" : 42.964311,
+        "lon" : 1.604824,
+        "defaultZoom": "15"
     }
 }

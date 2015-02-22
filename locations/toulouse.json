@@ -193,6 +193,17 @@
         "power": {"available": true},
         "wifi": {"available": true},
         "url": "http://www.tnt-cite.com"
+    },
+    {
+        "name": "Bibliothèque Universitaire Jean Jaurès",
+        "openHours": "Monday to Friday: 08h30 - 19h00",
+        "lat": 43.579538,
+        "lon": 1.403954,
+        "address": "5, allée Antonio Machado",
+        "type" : "public place",
+        "power": {"available": true},
+        "wifi": {"available": false, "comment": "Ethernet yes"},
+        "url": "http://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/"
     }
 ]
 }

@@ -12,6 +12,7 @@ Current locations
  - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
  - Dakar: [dakar.devfriendlyplaces.net][dakar]
+ - Foix: [foix.devfriendlyplaces.net] [foix]
  - Lille: [lille.devfriendlyplaces.net][lille]
  - London: [london.devfriendlyplaces.net][london]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]

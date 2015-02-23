@@ -100,7 +100,7 @@
         "name" : "Dakar",
         "lat" : 14.7324022,
         "lon" : -17.3881194,
-        "defaultZoom": "14"
+        "defaultZoom": "12"
     },
     "arles" : {
         "name" : "Arles",

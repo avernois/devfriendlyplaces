@@ -4,15 +4,16 @@ A collection of nice places where developers can work fine and some useful infor
 
 Current locations
 -----------------
- - Albi [albi.devfriendlyplaces.net][albi]
- - Amsterdam [amsterdam.devfriendlyplaces.net][amsterdam]
- - Arles [arles.devfriendlyplaces.net][arles]
+ - Albi: [albi.devfriendlyplaces.net][albi]
+ - Angers: [angers.devfriendlyplaces.net][angers]
+ - Amsterdam: [amsterdam.devfriendlyplaces.net][amsterdam]
+ - Arles: [arles.devfriendlyplaces.net][arles]
  - Berlin: [berlin.devfriendlyplaces.net][berlin]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
- - Côte Basque [cote-basque.devfriendlyplaces.net][cote-basque]
+ - Côte Basque: [cote-basque.devfriendlyplaces.net][cote-basque]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
  - Dakar: [dakar.devfriendlyplaces.net][dakar]
- - Foix: [foix.devfriendlyplaces.net] [foix]
+ - Foix: [foix.devfriendlyplaces.net][foix]
  - Lille: [lille.devfriendlyplaces.net][lille]
  - London: [london.devfriendlyplaces.net][london]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]

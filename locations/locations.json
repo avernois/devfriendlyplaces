@@ -149,5 +149,11 @@
         "lat" : 47.4818884,
         "lon" : -0.5629345,
         "defaultZoom": "14"
+    },
+    "barcelona" : {
+        "name" : "Barcelona",
+        "lat" : 41.3754,
+        "lon" : 2.1739,
+        "defaultZoom": "12"
     }
 }

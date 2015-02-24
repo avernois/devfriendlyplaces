@@ -8,6 +8,7 @@ Current locations
  - Angers: [angers.devfriendlyplaces.net][angers]
  - Amsterdam: [amsterdam.devfriendlyplaces.net][amsterdam]
  - Arles: [arles.devfriendlyplaces.net][arles]
+ - Barcelona: [barcelona.devfriendlyplaces.net][barcelona]
  - Berlin: [berlin.devfriendlyplaces.net][berlin]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
  - Côte Basque: [cote-basque.devfriendlyplaces.net][cote-basque]

@@ -1,0 +1,16 @@
+{ "places": [
+    {
+        "name": "L'Antiga Estació",
+        "lat": 41.394142,
+        "lon": 2.183088,
+        "openHours": "From Monday to Sunday - 10:00am to 9:00pm",
+        "address": "Carrer d'Alí Bei, 80 - 08013 Barcelona",
+        "type": "Coffee/Restaurant",
+        "url": "https://www.barcelonanord.cat/en/station-map/ground-floor/",
+        "power": {"available": false },
+        "wifi": {"available": true }
+    }
+]
+}
+
+

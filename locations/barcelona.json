@@ -1,0 +1,38 @@
+{ "places": [
+    {
+        "name": "L'Antiga Estació",
+        "lat": 41.394142,
+        "lon": 2.183088,
+        "openHours": "From Monday to Sunday - 10:00am to 9:00pm",
+        "address": "Carrer d'Alí Bei, 80 - 08013 Barcelona",
+        "type": "Coffee/Restaurant",
+        "url": "https://www.barcelonanord.cat/en/station-map/ground-floor/",
+        "power": {"available": false },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Helios Llibres",
+        "lat": 41.3914619,
+        "lon": 2.1352135,
+        "openHours": "From Monday to Friday - 7:30am to 8:00pm - Saturday and Sunday - 8:00am to 2:00pm",
+        "address": "C/Nicaragua 100, Barcelona",
+        "type": "Library",
+        "url": "http://heliosllibres.blogspot.com.es",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Starbucks Diagonal",
+        "lat": 41.3911671,
+        "lon": 2.1362266,
+        "openHours": "From Monday to Friday - 7:30am to 10:00pm - Saturday and Sunday - 8:30am to 10:00pm",
+        "address": "Avda. Diagonal, 640 - Barcelona",
+        "type": "Coffee",
+        "url": "http://www.starbucks.com/store/2244/es/diagonal-mar/avda-diagonal-no-3-barcelona-kya-08018",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    }
+]
+}
+
+

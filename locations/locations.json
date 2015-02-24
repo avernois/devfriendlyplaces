@@ -100,7 +100,7 @@
         "name" : "Dakar",
         "lat" : 14.7324022,
         "lon" : -17.3881194,
-        "defaultZoom": "14"
+        "defaultZoom": "12"
     },
     "arles" : {
         "name" : "Arles",
@@ -143,5 +143,17 @@
         "lat" : 42.964311,
         "lon" : 1.604824,
         "defaultZoom": "15"
+    },
+    "angers" : {
+        "name" : "Angers",
+        "lat" : 47.4818884,
+        "lon" : -0.5629345,
+        "defaultZoom": "14"
+    },
+    "barcelona" : {
+        "name" : "Barcelona",
+        "lat" : 41.3911671,
+        "lon" : 2.1362266,
+        "defaultZoom": "13"
     }
 }

@@ -9,6 +9,17 @@
         "url": "http://www.passedat.fr/#!le-mole/",
         "power": {"available": true},
         "wifi": {"available": false}
+    },
+    {
+        "name": "Grand Escalier",
+        "lat": 43.301308,
+        "lon": 5.3805723,
+        "openHours": "Monday to Sunday - 6:30am to 10:00pm",
+        "address":  "39, Boulevard Athènes - 13001 Marseille",
+        "type" : "coffee/restaurant",
+        "url": "https://www.facebook.com/pages/Brasserie-Le-Grand-Escalier-Marseille/409279962446559",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

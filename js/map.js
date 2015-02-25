@@ -46,7 +46,7 @@ function extractLocationFromUrl() {
     var location = split[0];
 
     if ((split.length < 3) || (location == "www")) {
-        return "toulouse";
+        throw new Error();
     }
 
     return location;

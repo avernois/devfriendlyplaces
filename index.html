@@ -20,7 +20,13 @@
         <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
         <script src="/js/map.js"></script>
         <script type="text/javascript">
-            buildMapFor(extractLocationFromUrl());
+            try{
+                var location = extractLocationFromUrl();
+                buildMapFor(extractLocationFromUrl());
+            } catch (e) {
+                window.location="/locations.html";
+            }
+
         </script>
     </body>
 </html>

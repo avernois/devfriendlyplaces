@@ -54,6 +54,28 @@
         "url": "http://restauracion.elcorteingles.es/cafeteria.html",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Alsur Café",
+        "lat": 41.3911279,
+        "lon": 2.1713038,
+        "openHours": "From Monday to Wednesday - 8:00am to 0:00 - Thursday - 8:00am to 1:00am - Friday - 8:00am to 3:00am - Saturday - 9:00am to 3:00am - Sunday - 9:00am to 0:00",
+        "address": "Roger de Llúria, 23 - Barcelona",
+        "type": "Coffee",
+        "url": "http://www.alsurcafe.com/alsurcafe/lluria.html",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Alsur Café",
+        "lat": 41.3871079,
+        "lon": 2.174921,
+        "openHours": "From Monday - 10:00am to 1:00 - Thursday to Wednesday - 10:00am to 1:30am - Tuesday - 10:00am to 2:00am - Saturday - 10:00am to 3:00am - Sunday - 10:00am to 1:00",
+        "address": "Sant Pere Més Alt, 4 - Barcelona",
+        "type": "Coffee",
+        "url": "http://www.alsurcafe.com/alsurcafe/lluria.html",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

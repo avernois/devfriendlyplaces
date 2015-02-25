@@ -7,7 +7,7 @@ function getJSON(url) {
 }
 
 function getLocations() {
-	return getJSON("/locations/locations.json");
+    return getJSON("/locations/locations.json");
 }
 
 function sortKeys(locations) {
@@ -21,15 +21,15 @@ function sortKeys(locations) {
 }
 
 function buildLocations() {
-	var locations = getLocations();
+    var locations = getLocations();
 
-	var listContainer = document.createElement("div");
+    var listContainer = document.createElement("div");
     document.getElementById("locations").appendChild(listContainer);       
     var listElement = document.createElement("ul");
 
     listContainer.appendChild(listElement);
 
-	sortKeys(locations).map(function(location) {
+    sortKeys(locations).map(function(location) {
         var listItem = document.createElement("li");
 
         listItem.innerHTML = "<a href=\"http://" + locations[location].name + ".devfriendlyplaces.net\">" + locations[location].name + "</a>";

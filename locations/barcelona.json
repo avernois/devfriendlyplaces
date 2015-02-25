@@ -43,8 +43,18 @@
         "power": {"available": true },
         "wifi": {"available": true },
         "comment": "Great friendly associative place with true wifi"
+    },
+    {
+        "name": "Cafetaria El Corto Inglés",
+        "lat": 41.3879722,
+        "lon": 2.169051,
+        "openHours": "From Monday to Sunday - 9:30pm a 9:30pm",
+        "address": "Plaça de Catalunya, 14 - Barcelona",
+        "type": "Restaurant/Coffee",
+        "url": "http://restauracion.elcorteingles.es/cafeteria.html",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }
-
 

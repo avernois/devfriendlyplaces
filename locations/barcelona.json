@@ -31,6 +31,18 @@
         "url": "http://www.starbucks.com/store/2244/es/diagonal-mar/avda-diagonal-no-3-barcelona-kya-08018",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Club Cronopios",
+        "lat": 41.3821922,
+        "lon": 2.1658459,
+        "openHours": "From Monday to Sunday - 6:00pm to 1:00am",
+        "address": "Carrer de Ferlandina, 16 - Barcelona",
+        "type": "Cultural Center/Coffee",
+        "url": "https://clubcronopiosblog.wordpress.com",
+        "power": {"available": true },
+        "wifi": {"available": true },
+        "comment": "Great friendly associative place with true wifi"
     }
 ]
 }

@@ -22,6 +22,17 @@
         "wifi": {"available": true }
     },
     {
+        "name": "Rabbar",
+        "lat": 41.38651,
+        "lon": 2.13231,
+        "openHours": "From Monday to Sunday",
+        "address": "Plaça de la concòrdia, Barcelona",
+        "type": "Bar",
+        "url": "http://www.rabbar.es",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
         "name": "Starbucks Diagonal",
         "lat": 41.3911671,
         "lon": 2.1362266,

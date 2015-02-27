@@ -78,13 +78,24 @@
         "wifi": {"available": true }
     },
     {
-        "name": "Alsur Café",
+        "name": "Alsur Café (Lluria)",
         "lat": 41.3871079,
         "lon": 2.174921,
         "openHours": "From Monday - 10:00am to 1:00 - Thursday to Wednesday - 10:00am to 1:30am - Tuesday - 10:00am to 2:00am - Saturday - 10:00am to 3:00am - Sunday - 10:00am to 1:00",
         "address": "Sant Pere Més Alt, 4 - Barcelona",
         "type": "Coffee",
         "url": "http://www.alsurcafe.com/alsurcafe/lluria.html",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Alsur Café (El born)",
+        "lat": 41.38665,
+        "lon": 2.18015,
+        "openHours": "From Monday - 11:15am to 0:30 - Friday - 11:15am to 3:00am - Saturday - 10:00am to 3:00am - Sunday - 10:00am to 0:30",
+        "address": "Plaza de Sant Cugat, 1 - Barcelona",
+        "type": "Restaurant/Coffee",
+        "url": "http://www.alsurcafe.com/alsurcafe/el_born.html",
         "power": {"available": true },
         "wifi": {"available": true }
     }

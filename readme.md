@@ -82,23 +82,28 @@ Open issue, fork, commit and pull request. But you already know that :)
 
 Please, don't improve code/add new feature and add new places/locations in the same pull request.
 
-[toulouse]: http://toulouse.devfriendlyplaces.net
-[toulon]: http://toulon.devfriendlyplaces.net
+
+[albi]: http://albi.devfriendlyplaces.net
+[angers]: http://angers.devfriendlyplaces.net
+[amsterdam]: http://amsterdam.devfriendlyplaces.net
+[arles]: http://arles.devfriendlyplaces.net
+[barcelona]: http://barcelona.devfriendlyplaces.net
 [berlin]: http://berlin.devfriendlyplaces.net
 [bordeaux]: http://bordeaux.devfriendlyplaces.net
-[lille]: http://lille.devfriendlyplaces.net
-[lyon]: http://lyon.devfriendlyplaces.net
-[cumbria]: http://cumbria.devfriendlyplaces.net
-[paris]: http://paris.devfriendlyplaces.net
-[london]: http://london.devfriendlyplaces.net
 [cote-basque]: http://cote-basque.devfriendlyplaces.net
-[amsterdam]: http://amsterdam.devfriendlyplaces.net
-[albi]: http://albi.devfriendlyplaces.net
+[cumbria]: http://cumbria.devfriendlyplaces.net
+[dakar]: http://dakar.devfriendlyplaces.net
+[foix]: http://foix.devfriendlyplaces.net
+[lille]: http://lille.devfriendlyplaces.net
+[london]: http://london.devfriendlyplaces.net
+[lyon]: http://lyon.devfriendlyplaces.net
 [marseille]: http://marseille.devfriendlyplaces.net
 [montauban]: http://montauban.devfriendlyplaces.net
 [montpellier]: http://montpellier.devfriendlyplaces.net
-[arles]: http://arles.devfriendlyplaces.net
-[dakar]: http://dakar.devfriendlyplaces.net
+[nantes]: http://nantes.devfriendlyplaces.net
 [oxford]: http://oxford.devfriendlyplaces.net
+[paris]: http://paris.devfriendlyplaces.net
 [pays-cathare]: http://pays-cathare.devfriendlyplaces.net
 [saint-louis]: http://saint-louis.devfriendlyplaces.net
+[toulouse]: http://toulouse.devfriendlyplaces.net
+[toulon]: http://toulon.devfriendlyplaces.net

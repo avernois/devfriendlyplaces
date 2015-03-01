@@ -57,6 +57,28 @@
         "type": "library",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+    {
+        "name": "Fnac and Columbus",
+        "lat": 44.8399427,
+        "lon": -0.5739308,
+        "openHours": "Monday to Saturday - 10:00am to 7:30pm and Sundays - 11:00am to 7:00pm",
+        "address": "50, rue Ste Catherine",
+        "url": "http://www.fnac.com/Bordeaux/Fnac-Bordeaux/cl116/w-4",
+        "type": "shop and coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "go upstairs, at the top"
+    },
+    {
+        "name": "Café des Arts",
+        "lat": 44.8347446,
+        "lon": -0.5731186,
+        "openHours": "Monday to Sundays - 7:30am to 11:30pm",
+        "address": "138, Cours Victor Hugo",
+        "type": "brasserie/coffee",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

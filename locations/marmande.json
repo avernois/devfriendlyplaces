@@ -1,0 +1,13 @@
+{ "places": [
+    {
+        "name": "Garolab",
+        "lat": 44.497851,
+        "lon": 0.164874,
+        "address":  "14, Place du Marché",
+        "url": "http://garolab.com/",
+        "type" : "coworking / fablab",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    }
+]
+}

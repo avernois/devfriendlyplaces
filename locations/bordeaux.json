@@ -79,6 +79,18 @@
         "type": "brasserie/coffee",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+    {
+        "name": "Conseil Départemental de Gironde",
+        "lat": 44.83587,
+        "lon": -0.58602,
+        "openHours": "Monday to Tuesday - 8:15am to 5:15pm - and Friday - 8:15am to 4:45pm",
+        "address": "1, Esplanade Charles de Gaulle",
+        "url": "http://www.gironde.fr",
+        "type": "public place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "wifi, with your id card"
     }
 ]
 }

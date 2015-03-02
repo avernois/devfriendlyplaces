@@ -98,6 +98,17 @@
         "url": "http://www.alsurcafe.com/alsurcafe/el_born.html",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Granja Petitbo",
+        "lat": 41.397547,
+        "lon": 2.172550,
+        "openHours": "From Monday - 08:30am to 22:30 - Thursday & Friday - 08:30am to 0:00am - Saturday - 10:00am to 0:00am - Sunday - 10:00am to 17:00",
+        "address": "Passeig de Sant Joan, 82 - Barcelona",
+        "type": "Restaurant/Coffee",
+        "url": "http://www.granjapetitbo.com/",
+        "power": {"available": false },
+        "wifi": {"available": true }
     }
 ]
 }

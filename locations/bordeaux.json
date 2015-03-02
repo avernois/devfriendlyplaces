@@ -13,7 +13,7 @@
         "name": "Coolworking",
         "lat": 44.843098,
         "lon": -0.572875,
-        "address": "19 rue Esprit des Lois",
+        "address": "9 rue de Condé",
         "url": "http://www.coolworking.fr/",
         "type" : "coworking",
         "power": {"available": true},

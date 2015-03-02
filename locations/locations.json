@@ -155,5 +155,11 @@
         "lat" : 41.3911671,
         "lon" : 2.1362266,
         "defaultZoom": "13"
+    },
+    "marmande" : {
+        "name" : "Marmande",
+        "lat" : 44.499414,
+        "lon" : 0.166338,
+        "defaultZoom": "15"
     }
 }

@@ -84,13 +84,34 @@
         "name": "Conseil Départemental de Gironde",
         "lat": 44.83587,
         "lon": -0.58602,
-        "openHours": "Monday to Tuesday - 8:15am to 5:15pm - and Friday - 8:15am to 4:45pm",
+        "openHours": "Monday to Thursday - 8:15am to 5:15pm - and Friday - 8:15am to 4:45pm",
         "address": "1, Esplanade Charles de Gaulle",
         "url": "http://www.gironde.fr",
         "type": "public place",
         "power": {"available": true},
         "wifi": {"available": true},
         "comment": "wifi, with your id card"
+    },
+    {
+        "name": "Pause Nature",
+        "lat": 44.840878,
+        "lon": -0.5598081,
+        "openHours": "Monday to Friday - 7:45am to 3:30pm",
+        "address": "26/28, Place de Stalingrad",
+        "url": "http://www.pausenature.fr",
+        "type": "coffee/snack",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Bar des Vedettes - Chez Fred",
+        "lat": 44.83839,
+        "lon": -0.56960,
+        "openHours": "Monday to Friday - 7:30am to 2:00am",
+        "address": "13, place du palais",
+        "type": "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

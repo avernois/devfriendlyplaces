@@ -109,7 +109,29 @@
         "lon": -0.56960,
         "openHours": "Monday to Friday - 7:30am to 2:00am",
         "address": "13, place du palais",
-        "type": "coffee",
+        "url": "le-burger-fermier.fr",
+        "type": "restaurant",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Buger Fermier",
+        "lat": 44.82598,
+        "lon": -0.55744,
+        "openHours": "Monday to Saturday - 9:30am to 11:00pm",
+        "address": "Place de Casablanca",
+        "type": "restaurant",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "CAPC - Musée d'Art Contemporain de Bordeaux",
+        "lat": 44.84888,
+        "lon": -0.57316,
+        "openHours": "11:00am to 6:00pm - wendesday - 11:00am to 8:00pm - closed on Monday",
+        "address": "7, rue Ferrère",
+        "url": "http://www.capc-bordeaux.fr",
+        "type": "museum",
         "power": {"available": true},
         "wifi": {"available": true}
     }

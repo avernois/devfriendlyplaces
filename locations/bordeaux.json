@@ -115,7 +115,7 @@
         "wifi": {"available": true}
     },
     {
-        "name": "Buger Fermier",
+        "name": "Burger Fermier",
         "lat": 44.82598,
         "lon": -0.55744,
         "openHours": "Monday to Saturday - 9:30am to 11:00pm",
@@ -157,6 +157,41 @@
         "power": {"available": true},
         "wifi": {"available": true},
         "comment": "Trolley: Gare Saint-Jean"
+    },
+    {
+        "name": "Le Garage Moderne",
+        "lat": 44.86527,
+        "lon": -0.55104,
+        "openHours": "Monday to Friday - 9:00am to 6:00pm",
+        "address": "1, Rue des étrangers",
+        "url": "http://www.legaragemoderne.org",
+        "type": "coop place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "Friendly and original place"
+    },
+    {
+        "name": "Cap Sciences",
+        "lat": 44.85963,
+        "lon": -0.55422,
+        "openHours": "Monday to Friday - 2:00pm to 6:00pm - Thursday - 2:00pm to 9:00pm - Saturday and Sunday - 2:00pm to 7:00pm",
+        "address": "Hangar 20 - Quai de Bacalan",
+        "url": "http://www.cap-sciences.net",
+        "type": "public place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "1st floor"
+    },
+    {
+        "name": "Golden Apple",
+        "lat": 44.8545868,
+        "lon": -0.5697613,
+        "openHours": "Monday - 11:30pm to 3:00pm and 6:00 pm to 11:45pm Tuesday to Thursday - 11:30pm to 3:00pm and 6:00 pm to 2:00pm - Saturday - 12:00pm to 2:00pm",
+        "address": "46, Rue Borie",
+        "url": "http://www.golden-apple.fr",
+        "type": "pub",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

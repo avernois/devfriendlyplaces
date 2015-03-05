@@ -134,6 +134,29 @@
         "type": "museum",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+    {
+        "name": "Billy Factory",
+        "lat": 44.8214926,
+        "lon": -0.5825119,
+        "openHours": "Monday to Saturday - 11:30am to 9:00pm - Saturday - 10:00am to 9:00pm",
+        "address": "5, Place Louis Barthou",
+        "url": "http://www.billyfactory.com",
+        "type": "coffee shop",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "Trolley: Barrière St Genès"
+    },
+    {
+        "name": "Brasserie Terminus",
+        "lat": 44.8265365,
+        "lon": -0.5568704,
+        "openHours": "Monday to Sunday - 11:00am to 10:30pm",
+        "address": "28, Rue Charles Domercq",
+        "type": "brasserie",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "Trolley: Gare Saint-Jean"
     }
 ]
 }

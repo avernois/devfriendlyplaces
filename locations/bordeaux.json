@@ -192,6 +192,17 @@
         "type": "pub",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+    {
+        "name": "French Coffee Shop",
+        "lat": 44.8405389,
+        "lon": -0.5732745,
+        "openHours": "Tuesday to Saturday - 11:00am to 7:00pm",
+        "address": "20, Rue du Parlement Sainte Catherine",
+        "url": "http://www.frenchcoffeeshop.com",
+        "type": "coffee shop",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

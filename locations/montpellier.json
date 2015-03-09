@@ -1,5 +1,15 @@
 { "places": [
     {
+        "name": "Café Bibal",
+        "lat": 43.604292,
+        "lon": 3.919719,
+        "openHours": "Monday to Saturday - 9:00am ro 7:00pm",
+        "address":  "Odysseum, Pl. de Lisbonne",
+        "type" : "Coffee and Snack",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
         "name": "Café Bun",
         "lat": 43.607508,
         "lon": 3.87793,

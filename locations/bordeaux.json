@@ -1,5 +1,46 @@
 { "places": [
     {
+        "name": "Saint Seurin",
+        "lat": 44.8437174,
+        "lon": -0.5868276,
+        "address":  "3, Place Lucien Victor Meunier",
+        "url": "http://restaurant-saint-seurin.com",
+        "openHours": "Monday to Saturday - 10:00am to 2:00am",
+        "type" : "brasserie",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "L'Asile",
+        "lat": 44.8426347,
+        "lon": -0.5811413,
+        "address":  "26, rue Rolland",
+        "url": "http://lasile-bordeaux.fr",
+        "type" : "coworking",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Harriet's Café",
+        "lat": 44.8433988,
+        "lon": -0.577808,
+        "address":  "12, Place des Grands Hommes",
+        "type" : "coffee shop",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "1st floor"
+    },
+    {
+        "name": "Nature Cook",
+        "lat": 44.8368387,
+        "lon": -0.5799406,
+        "address":  "21, Rue des Frères Bonie",
+        "openHours": "Monday to Friday - 7:00am to 4:00pm",
+        "type" : "snack bio",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
         "name": "Le Node",
         "lat": 44.840458,
         "lon": -0.570447,

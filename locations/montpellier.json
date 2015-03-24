@@ -5,8 +5,8 @@
         "lon": 3.87581,
         "openHours": "Tuesday to Sunday - 11:00am ro 7:00pm",
         "address":  "10, Rue Anatole France",
-        "url": "http://www.foudanglais.fr"
-        "type" : "Coffee Shop",
+        "url": "http://www.foudanglais.fr",
+        "type": "Coffee Shop",
         "power": {"available": true},
         "wifi": {"available": true}
     },

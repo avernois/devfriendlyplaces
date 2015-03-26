@@ -1,5 +1,26 @@
 { "places": [
     {
+        "name": "Fou d'Anglais",
+        "lat": 43.60532,
+        "lon": 3.87581,
+        "openHours": "Tuesday to Sunday - 11:00am ro 7:00pm",
+        "address":  "10, Rue Anatole France",
+        "url": "http://www.foudanglais.fr",
+        "type": "Coffee Shop",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "La Maison des Échanges et du Commerce",
+        "lat": 43.60564,
+        "lon": 3.88772,
+        "openHours": "Monday to Saturday - 9:00am ro 7:00pm",
+        "address":  "80, Avenue des États du Languedoc",
+        "type" : "Collaborative Place",
+        "power": {"available": true},
+        "wifi": {"available": false}
+    },
+    {
         "name": "Home Coffee",
         "lat": 43.60733,
         "lon": 3.87656,

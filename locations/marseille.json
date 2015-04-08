@@ -20,6 +20,17 @@
         "url": "https://www.facebook.com/pages/Brasserie-Le-Grand-Escalier-Marseille/409279962446559",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+    {
+        "name": "La Boate",
+        "lat": 43.292172,
+        "lon": 5.37293,
+        "openHours": "Monday to Friday - 9:30am to 6:00pm",
+        "address":  "35, Rue de la Paix Marcel Paul - 13001 Marseille ",
+        "type" : "coworking",
+        "url": "http://laboate.com/",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

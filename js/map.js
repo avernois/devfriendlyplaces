@@ -17,8 +17,8 @@ function extractLocationFromUrl() {
     var split = hostname.split(".");
     var location = split[0];
 
-    if ((split.length < 3) || (location == "www")) {
-        return "toulouse";
+    if ((split.length < 3) || (location === "www")) {
+        return null;
     }
 
     return location;

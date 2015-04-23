@@ -8,6 +8,17 @@
         "type" : "Bar",
         "wifi": {"available": true},
         "power": {"available": true}
+    },
+    {
+        "name": "Gédéon",
+        "openHours": "Saturday to Sunday, 8:30am to 11:00pm",
+        "lat": 43.54612,
+        "lon": 3.98423,
+        "address":  "159, Av. Grassion Cibrand - 34280 Carnon",
+        "url": "http://www.plagedugedeon.com",
+        "type" : "Bar - Hotel - Restaurant",
+        "wifi": {"available": true},
+        "power": {"available": true}
     }
 ]
 }

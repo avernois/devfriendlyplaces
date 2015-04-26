@@ -9,6 +9,8 @@
     <body>
         <section class="container">
             <h1>DEV FRIENDLY PLACES</h1>
+            <button id="geoloc" style="display:none" onclick="initGeolocation()">Locate me</button>
+
             <p>Pick a city and find a place for coding</p>
 
             <div class="github-fork-ribbon-wrapper right">
@@ -23,6 +25,7 @@
             <script type="text/javascript">
                 buildLocations();
             </script>
+            <script src="/js/geoloc.js"></script>
         </section>
     </body>
 </html>

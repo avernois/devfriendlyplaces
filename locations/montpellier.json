@@ -278,6 +278,17 @@
         "url": "http://www.montpellier.fr/3251-maison-de-la-prevention-sante-bis.htm",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "Gazette Café",
+        "lat": 43.604564,
+        "lon": 3.878420,
+        "openHours": "From Tuestday to Saturday - 11:00am to 01:00am",
+        "address": "6 rue levat - 34000 Montpellier",
+        "type": "Restaurant, pub, coffee",
+        "url": "http://www.gazettecafe.fr",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

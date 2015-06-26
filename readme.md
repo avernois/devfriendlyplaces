@@ -25,6 +25,7 @@ Current locations
  - Oxford: [oxford.devfriendlyplaces.net][oxford]
  - Paris: [paris.devfriendlyplaces.net][paris]
  - Pays Cathare: [pays-cathare.devfriendlyplaces.net][pays-cathare]
+ - Saint-Étienne: [saint-etienne.devfriendlyplaces.net][saint-etienne]
  - Saint-Louis: [saint-louis.devfriendlyplaces.net][saint-louis]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
  - Toulouse: [toulouse.devfriendlyplaces.net][toulouse]
@@ -104,6 +105,7 @@ Please, don't improve code/add new feature and add new places/locations in the s
 [oxford]: http://oxford.devfriendlyplaces.net
 [paris]: http://paris.devfriendlyplaces.net
 [pays-cathare]: http://pays-cathare.devfriendlyplaces.net
+[saint-etienne]: http://saint-etienne.devfriendlyplaces.net
 [saint-louis]: http://saint-louis.devfriendlyplaces.net
 [toulouse]: http://toulouse.devfriendlyplaces.net
 [toulon]: http://toulon.devfriendlyplaces.net

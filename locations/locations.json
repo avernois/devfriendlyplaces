@@ -18,6 +18,12 @@
         "lon": -0.5748,
         "defaultZoom": "13"
     },
+	"brussels": {
+        "name": "Brussels",
+        "lat": 50.85045,
+        "lon": 4.34878,
+        "defaultZoom": "14"
+    },
     "cote-basque": {
         "name": "Cote-basque",
         "lat": 43.4721419,

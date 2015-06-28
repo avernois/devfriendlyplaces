@@ -167,5 +167,11 @@
         "lat" : 44.499414,
         "lon" : 0.166338,
         "defaultZoom": "15"
+    },
+    "saint-etienne" : {
+        "name" : "Saint-Étienne",
+        "lat" : 45.439710,
+        "lon" : 4.387387,
+        "defaultZoom": "13"
     }
 }

@@ -1,0 +1,37 @@
+{ "places": [
+    {
+        "name": "Le Mixeur",
+        "lat": 45.449602,
+        "lon": 4.385877,
+        "address": "5 rue Javelin Pagnon, 42000 Saint-Étienne",
+        "type": "third place",
+        "openHours": "08:00-18:00",
+        "url": "http://www.le-mixeur.org/",
+        "power": {"available": true, "comment": "Look on the floor under the tables, or on the wall."},
+        "wifi": {"available": true, "comment": "Good wifi (sadly behind a proxy for authentication). Some exotic ports are blocked. Password is written on the walls."},
+        "comment": "It's free for everyone! Tables, sofas, amazing architecture: very cool place. Often empty then quiet, sometimes occupied for meetings by local communities."
+    },
+    {
+        "name": "Central Parc Café",
+        "lat": 45.4347,
+        "lon": 4.3903,
+        "address": "7 rue Camille Colard, 42000 Saint-Étienne",
+        "type": "coffee",
+        "openHours": "09:00-19:00",
+        "url": "https://plus.google.com/117095066536785671875/about",
+        "power": {"available": true},
+        "wifi": {"available": true, "comment": "Ask the password to the owner"},
+        "coment": "You're supposed to order regularly to be allowed to stay a long time. But the owner never asked for it."
+    },
+    {
+        "name": "Good Dog's Bar",
+        "lat": 45.419097,
+        "lon": 4.412052,
+        "address": "2 rue Copernic, 42000 Saint-Étienne",
+        "type": "restaurant",
+        "url": "http://www.gooddogs.fr/",
+        "wifi": {"available": true, "comment": "True good wifi. Password printed on order tickets."},
+        "coment": "Excellent but cheap burgers and hot-dogs. Very nice place."
+    }
+]
+}

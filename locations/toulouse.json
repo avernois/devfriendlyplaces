@@ -204,6 +204,17 @@
         "power": {"available": true},
         "wifi": {"available": false, "comment": "Ethernet yes"},
         "url": "http://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/"
+    },
+    {
+        "name": "Coffe pot",
+        "openHours": "Monday to Friday: 08h00 - 19h00, Saturday: 9h00 - 17h00",
+        "lat": 43.6072966,
+        "lon": 1.4397796,
+        "address": "2 place du peyrou",
+        "type" : "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "https://www.facebook.com/CoffeePotToulouse"
     }
 ]
 }

@@ -115,7 +115,7 @@
         "lon": 2.3745205,
         "address": "61 Rue Traversière - 75012 Paris",
         "type": "coworking",
-        "url": "http://www.la-cordee.net/en/la-cordee-paris-gare-de-lyon-2",
+        "url": "http://www.la-cordee.net/en/la-cordee-paris-gare-de-lyon",
         "power": {"available": true},
         "wifi": {"available": true}
     },

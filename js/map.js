@@ -12,8 +12,7 @@ for(var i = 0; i < 4; i++) {
     );
 }
 
-function extractLocationFromUrl() {
-    var hostname = window.location.hostname;
+function extractLocationFromUrl(hostname) {
     var split = hostname.split(".");
     var location = split[0];
 

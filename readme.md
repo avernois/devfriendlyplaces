@@ -83,6 +83,14 @@ Open issue, fork, commit and pull request. But you already know that :)
 
 Please, don't improve code/add new feature and add new places/locations in the same pull request.
 
+### Unit testing
+We now can run unit tests against devfriendlyplaces code. You can start them by two ways:
+* from your favorite browser, open the file test/index.html
+* from the console
+  * you first need to have a valid npm installation. Then
+    * `npm install -g mocha`
+    * `npm install mocha-phantomjs chai`
+  * then `./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./test/index.html`
 
 [albi]: http://albi.devfriendlyplaces.net
 [angers]: http://angers.devfriendlyplaces.net

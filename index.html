@@ -24,7 +24,7 @@
             try {
                 "use strict";
 
-                var city = extractLocationFromUrl();
+                var city = extractLocationFromUrl(window.location.hostname);
 
                 buildMapFor(city);
             } catch (e) {

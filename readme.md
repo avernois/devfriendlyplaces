@@ -89,7 +89,7 @@ We now can run unit tests against devfriendlyplaces code. You can start them by 
 * from the console
   * you first need to have a valid npm installation. Then
     * `npm install -g mocha`
-    * `npm install mocha-phantomjs chai`
+    * `npm install mocha-phantomjs`
   * then `./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./test/index.html`
 
 [albi]: http://albi.devfriendlyplaces.net

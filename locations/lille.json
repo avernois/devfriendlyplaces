@@ -25,6 +25,28 @@
         "type" : "coffee and teamroom",
         "power": {"available": false},
         "wifi": {"available": false}
+    },
+    {
+        "name": "Elizabeth's",
+        "lat": 50.6386182,
+        "lon": 3.0602134,
+        "address":  "71 Rue Basse",
+        "type" : "coffee and teamroom",
+        "power": {
+            "available": true,
+            "comment": "a few sockets in the top room's corners"
+        },
+        "wifi": {"available": false},
+        "comment": "Small venue, good food and teas, comfy chairs."
+    },
+    {
+        "name": "Basilic Café",
+        "lat": 50.6386182,
+        "lon": 3.0602134,
+        "address":  "24 bis Rue Esquermoise",
+        "type" : "restaurant and bar",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

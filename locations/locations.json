@@ -6,6 +6,13 @@
         "lon": 4.9174,
         "defaultZoom": "13"
     },
+    "antibes":
+    {
+    	"name": "Antibes",
+    	"lat": 43.5822762,
+    	"lon": 7.069828,
+    	"defaultZoom": "13"
+    },
     "berlin": {
         "name": "Berlin",
         "lat": 52.5169444,

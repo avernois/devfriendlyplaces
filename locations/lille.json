@@ -41,8 +41,8 @@
     },
     {
         "name": "Basilic Café",
-        "lat": 50.6386182,
-        "lon": 3.0602134,
+        "lat": 50.6377668,
+        "lon": 3.0622969,
         "address":  "24 bis Rue Esquermoise",
         "type" : "restaurant and bar",
         "power": {"available": true},

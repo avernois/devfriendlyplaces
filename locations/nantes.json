@@ -53,6 +53,18 @@
         "power": {"available": true},
         "wifi": {"available": true},
         "url": "http://www.delightcafe.fr/"
+    },
+    {
+        "name": "La Cantine Numérique",
+        "openHours": "From Monday to Friday - 9:00am to 7:00pm",
+        "lat": 47.211895,
+        "lon": -1.551345,
+        "address": "11 Impasse Juton - 44000 Nantes",
+        "type" : "Coworking place",
+        "power": {"available": true},
+        "wifi": {"available": true, "comment": "not so fast"},
+        "url": "http://cantine.atlantic2.org/",
+        "comment": "[check out the fees](http://cantine.atlantic2.org/coworking-nantes/tarifs/)"
     }
 ]
 }

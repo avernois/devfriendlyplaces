@@ -158,6 +158,16 @@
         "url": "http://www.coworkshop.fr",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+    {
+        "name": "Le 10h10",
+        "lat": 48.868055,
+        "lon": 2.3462,
+        "address": "19, Rue de Cléry 75002 paris",
+        "type": "coworking",
+        "url": "http://www.le10h10.com/",
+        "power": {"available": true},
+        "wifi": {"available": true}
     }
 ]
 }

@@ -38,17 +38,7 @@
         "url": "http://anticafe.fr",
         "power": {"available": true},
         "wifi": {"available": true}
-    },
-    {
-        "name": "Soleilles Cowork",
-        "lat": 48.868143,
-        "lon": 2.339605,
-        "address": "13 rue Vivienne - 75002 Paris",
-        "type": "coworking",
-        "url": "http://www.soleillescowork.com",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
+    }
     {
         "name": "Le Laptop",
         "lat": 48.877406,
@@ -145,7 +135,7 @@
         "lon": 2.2466453,
         "address": "9 rue de Calais, 95100 Argenteuil",
         "type": "coworking",
-        "url": "http://www.siliconbanlieue.fr",
+        "url": "http://solwww.siliconbanlieue.fr",
         "power": {"available": true},
         "wifi": {"available": true}
     },

@@ -126,7 +126,7 @@
         "address": "1 Allée Jacques Chaban-Delmas",
         "type" : "library",
         "power": {"available": true},
-        "wifi": {"available": false},
+        "wifi": {"available": true},
         "url":  "http://bibliotheque.toulouse.fr"
     },
     {

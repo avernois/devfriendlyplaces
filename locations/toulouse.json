@@ -215,6 +215,17 @@
         "power": {"available": true},
         "wifi": {"available": true},
         "url": "https://www.facebook.com/CoffeePotToulouse"
+    },
+    {
+        "name": "Pomme de Pain",
+        "openHours": "Monday to Saturday: 08h30 - 20h00",
+        "lat": 43.603250,
+        "lon": 1.448835,
+        "address": "51, Bis Rue du Rempart Saint Etienne",
+        "type" : "coffee",
+        "power": {"available": false},
+        "wifi": {"available": true},
+        "url": "http://pommedepain.fr"
     }
 ]
 }

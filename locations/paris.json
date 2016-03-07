@@ -153,9 +153,19 @@
         "name": "CoWorkshop",
         "lat": 48.8729534,
         "lon": 2.3624861,
-        "address": "29, rue des vinaigriers 75010 paris",
+        "address": "29, rue des Vinaigriers 75010 Paris",
         "type": "coworking",
         "url": "http://www.coworkshop.fr",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Hubsy",
+        "lat": 48.8657380,
+        "lon": 2.3541440,
+        "address": "41 Rue Réaumur 75003 Paris",
+        "type": "coworking",
+        "url": "http://www.hubsy.eu/",
         "power": {"available": true},
         "wifi": {"available": true}
     }

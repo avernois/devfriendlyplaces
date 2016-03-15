@@ -1,4 +1,11 @@
 {
+    "aix-en-provence":
+    {
+        "name": "Aix en Provence",
+        "lat": 43.526755,
+        "lon": 5.449476,
+        "defaultZoom": "13"
+    },
     "amsterdam":
     {
         "name": "Amsterdam",

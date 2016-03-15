@@ -29,6 +29,16 @@ Current locations
 
 Contribute
 ----------
+### What kind of place can I add?
+Devfriendlyplaces is meant to list places that are not meant for work, but where you could without having to justify yourself or feeling judge or not welcome.
+For example coffee shop, library, theater hall, ...
+If when thinking to that place you can say yes to the two following questions:
+
+* do I feel comfortable to work here?
+* could I go there for reasons not related to work?
+
+then they are nice places to add. Both criteria are mandatory.
+
 ### Add places to an existing location
 That is easy, just edit the json file `locations/yourlocation.json` and submit a pull request (where `yourlocation` is the name of your location).
 

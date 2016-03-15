@@ -1,14 +1,5 @@
 { "places": [
     {
-        "name": "La Cantine by Tvt",
-        "lat": 43.120496,
-        "lon": 5.938807,
-        "address":  "Maison des technologies, Place G.Pompidou",
-        "type" : "coworking",
-        "power": {"available": true, "comment": "at least 15"},
-        "wifi": {"available": true}
-    },
-    {
         "name": "Café Culture",
         "lat": 43.12314,
         "lon": 5.93433,
@@ -16,17 +7,6 @@
         "address":  "24, Rue Paul Lendrin",
         "url": "http://www.cultures-et-communication.org",
         "type": "Coffee Shop",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
-    {
-        "name": "L'archipel",
-        "lat": 43.121797,
-        "lon": 5.930585,
-        "openHours": "Monday to Saturday - 8:00am to 8:00pm",
-        "address":  "31, Rue Chevalier Paul",
-        "url": "http://www.archipel-toulon.fr",
-        "type": "Coworking",
         "power": {"available": true},
         "wifi": {"available": true}
     }

@@ -49,16 +49,6 @@
         "wifi": {"available": true}
     },
     {
-        "name": "Mutualāb",
-        "lat": 50.62960,
-        "lon": 3.06180,
-        "address":  "19 rue Nicolas Leblanc",
-        "type" : "coworking space",
-        "power": {"available": true},
-        "wifi": {"available": true},
-        "comment": "Meeting rooms, trainings workshop and events. There's also a coffee/organic restaurant."
-    },
-    {
         "name": "Café Citoyen",
         "lat": 50.63262,
         "lon": 3.06312,

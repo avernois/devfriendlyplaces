@@ -55,16 +55,15 @@ There are two steps:
 
 { "places": [
     {
-      "name": "Coworking Reykjavik",
-      "openHours": "24/7",
-      "lat": 64.157015,
-      "lon": -21.941714,
-      "address": "Fiskislóð 101 Reykjavík",
-      "type" : "coworking",
-      "power": {"available": true, "comment": "look under the table"},
-      "wifi": {"available": true, "comment": "ask people around to get the code"},
-      "url": "http://www.reykjavikcoworking.is/",
-      "comment": "noisy at lunch hours"
+        "name": "Bibliothèque d’Étude et du Patrimoine",
+        "openHours": "Friday to Saturday: 10h00 - 19h00",
+        "lat": 43.607851,
+        "lon": 1.443869,
+        "address": "1, Rue du Périgord",
+        "type" : "public place",
+        "power": {"available": true, "comment": "directly on most of the tables"},
+        "wifi": {"available": false},
+        "url": "http://www.bibliotheque.toulouse.fr/bep-lieu.html"
     },
     {
       "name": "Another stuff... etc.",
@@ -79,7 +78,7 @@ There are two steps:
 please note:
 
 * The ``places`` is a list, you can append several places.
-* For more readbility, the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
+* the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
 * "comment" are optional
 
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.

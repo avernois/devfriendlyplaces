@@ -11,7 +11,6 @@ Current locations
  - Barcelona: [barcelona.devfriendlyplaces.net][barcelona]
  - Berlin: [berlin.devfriendlyplaces.net][berlin]
  - Bordeaux: [bordeaux.devfriendlyplaces.net][bordeaux]
- - Côte Basque: [cote-basque.devfriendlyplaces.net][cote-basque]
  - Cumbria: [cumbria.devfriendlyplaces.net][cumbria]
  - Dakar: [dakar.devfriendlyplaces.net][dakar]
  - Foix: [foix.devfriendlyplaces.net][foix]
@@ -19,12 +18,10 @@ Current locations
  - London: [london.devfriendlyplaces.net][london]
  - Lyon: [lyon.devfriendlyplaces.net][lyon]
  - Marseille: [marseille.devfriendlyplaces.net][marseille]
- - Montauban: [montauban.devfriendlyplaces.net][montauban]
  - Montpellier: [montpellier.devfriendlyplaces.net][montpellier]
  - Nantes: [nantes.devfriendlyplaces.net][nantes]
  - Oxford: [oxford.devfriendlyplaces.net][oxford]
  - Paris: [paris.devfriendlyplaces.net][paris]
- - Pays Cathare: [pays-cathare.devfriendlyplaces.net][pays-cathare]
  - Saint-Étienne: [saint-etienne.devfriendlyplaces.net][saint-etienne]
  - Saint-Louis: [saint-louis.devfriendlyplaces.net][saint-louis]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]
@@ -32,6 +29,16 @@ Current locations
 
 Contribute
 ----------
+### What kind of place can I add?
+Devfriendlyplaces is meant to list places that are not meant for work, but where you could without having to justify yourself or feeling judge or not welcome.
+For example coffee shop, library, theater hall, ...
+If when thinking to that place you can say yes to the two following questions:
+
+* do I feel comfortable to work here?
+* could I go there for reasons not related to work?
+
+then they are nice places to add. Both criteria are mandatory.
+
 ### Add places to an existing location
 That is easy, just edit the json file `locations/yourlocation.json` and submit a pull request (where `yourlocation` is the name of your location).
 
@@ -48,16 +55,15 @@ There are two steps:
 
 { "places": [
     {
-      "name": "Coworking Reykjavik",
-      "openHours": "24/7",
-      "lat": 64.157015,
-      "lon": -21.941714,
-      "address": "Fiskislóð 101 Reykjavík",
-      "type" : "coworking",
-      "power": {"available": true, "comment": "look under the table"},
-      "wifi": {"available": true, "comment": "ask people around to get the code"},
-      "url": "http://www.reykjavikcoworking.is/",
-      "comment": "noisy at lunch hours"
+        "name": "Bibliothèque d’Étude et du Patrimoine",
+        "openHours": "Friday to Saturday: 10h00 - 19h00",
+        "lat": 43.607851,
+        "lon": 1.443869,
+        "address": "1, Rue du Périgord",
+        "type" : "public place",
+        "power": {"available": true, "comment": "directly on most of the tables"},
+        "wifi": {"available": false},
+        "url": "http://www.bibliotheque.toulouse.fr/bep-lieu.html"
     },
     {
       "name": "Another stuff... etc.",
@@ -72,7 +78,7 @@ There are two steps:
 please note:
 
 * The ``places`` is a list, you can append several places.
-* For more readbility, the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
+* the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
 * "comment" are optional
 
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.

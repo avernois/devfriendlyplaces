@@ -11,16 +11,6 @@
         "wifi": {"available": true}
     },
     {
-        "name": "L'Asile",
-        "lat": 44.8426347,
-        "lon": -0.5811413,
-        "address":  "26, rue Rolland",
-        "url": "http://lasile-bordeaux.fr",
-        "type" : "coworking",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
-    {
         "name": "Harriet's Café",
         "lat": 44.8433988,
         "lon": -0.577808,
@@ -37,55 +27,6 @@
         "address":  "21, Rue des Frères Bonie",
         "openHours": "Monday to Friday - 7:00am to 4:00pm",
         "type" : "snack bio",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
-    {
-        "name": "Le Node",
-        "lat": 44.840458,
-        "lon": -0.570447,
-        "address":  "12 rue des Faussets",
-        "url": "http://bxno.de/",
-        "type" : "coworking",
-        "power": {"available": true, "comment": "at least 8"},
-        "wifi": {"available": true}
-    },
-    {
-        "name": "Coolworking",
-        "lat": 44.843098,
-        "lon": -0.572875,
-        "address": "9 rue de Condé",
-        "url": "http://www.coolworking.fr/",
-        "type" : "coworking",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
-    {
-        "name": "Kowork",
-        "lat": 44.85437,
-        "lon": -0.56601,
-        "address": "92 Quai des Chartrons",
-        "url": "http://www.kowork.fr/",
-        "type": "coworking",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
-    {
-        "name": "Darwin",
-        "lat": 44.84978,
-        "lon": -0.56069,
-        "address": "87 Quai des Queyries",
-        "url": "http://www.coworkers.eu/",
-        "type": "coworking",
-        "power": {"available": true},
-        "wifi": {"available": true}
-    },
-    {
-        "name": "Chez Vincent",
-        "lat": 44.823521,
-        "lon": -0.618585,
-        "address": "27 rue de Lyon",
-        "type": "home coworking",
         "power": {"available": true},
         "wifi": {"available": true}
     },

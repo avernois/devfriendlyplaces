@@ -88,16 +88,6 @@
         "wifi": {"available": false}
     },
     {
-        "name": "Tau",
-        "lat": 43.601919,
-        "lon": 1.438586,
-        "address": "18 Place de la Daurade",
-        "type" : "coworking",
-        "power": {"available": true},
-        "wifi": {"available": true},
-        "url": "http://www.tau.so/"
-    },
-    {
         "name": "Solaneko",
         "lat": 43.598608,
         "lon": 1.433171,
@@ -160,17 +150,6 @@
         "wifi": {"available": true},
         "power": {"available": false},
         "url":  "https://www.facebook.com/cafelafiancee"
-    },
-    {
-        "name": "Etincelle Coworking",
-        "openHours": "24/7",
-        "lat": 43.605587,
-        "lon": 1.447456,
-        "address": "2 rue d'Austerlitz",
-        "type" : "coworking",
-        "power": {"available": true},
-        "wifi": {"available": true},
-        "url": "http://www.coworking-toulouse.com/"
     },
     {
         "name": "Bibliothèque d’Étude et du Patrimoine",

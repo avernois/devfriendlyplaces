@@ -75,17 +75,6 @@
         "wifi": {"available": true }
     },
     {
-        "name": "Cowork'in Montpellier",
-        "lat": 43.609229,
-        "lon": 3.869569,
-        "openHours": "From Monday to Friday - 9:00am to 6:00pm",
-        "address": "19, rue de l'École de Droit",
-        "type": "Coworking",
-        "url": "http://coworkinmontpellier.org/",
-        "power": {"available": true },
-        "wifi": {"available": true }
-    },
-    {
         "name": "La Panacée",
         "lat": 43.61282,
         "lon": 3.87811,

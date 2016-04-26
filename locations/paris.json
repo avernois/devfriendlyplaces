@@ -20,12 +20,13 @@
         "wifi": {"available": true}
     },
     {
-        "name": "St Christopher's Inn",
+        "name": "St Christopher's - Paris Canal",
         "lat": 48.888533,
         "lon": 2.378878,
         "address": "153 Rue de Crimée - 75019 Paris",
         "type": "Backpacker hostel, coffee and restaurant",
         "url": "https://www.st-christophers.co.uk/paris-hostels/canal",
+        "pro": "Nice view on the canal",
         "power": {"available": true},
         "wifi": {"available": true}
     }

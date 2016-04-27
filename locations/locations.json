@@ -43,6 +43,12 @@
         "lon": -2.9004,
         "defaultZoom": "9"
     },
+    "dijon": {
+        "name": "Dijon",
+        "lat": 47.321753,
+        "lon": 5.040632,
+        "defaultZoom": "13"
+    },
     "lille": {
         "name": "Lille",
         "lat": 50.6303,

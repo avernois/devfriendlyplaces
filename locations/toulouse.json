@@ -198,8 +198,8 @@
         {
         "name": "Ras la Tasse",
         "openHours": "Monday to Saturday: 09h15 - 19h00, Sunday: 12h00 - 19h00",
-        "lat": 43,6018272,
-        "lon": 1,4439305,
+        "lat": 43.6018272,
+        "lon": 1.4439305,
         "address": "3 rue du Puits-Vert",
         "type" : "coffee",
         "power": {"available": true},

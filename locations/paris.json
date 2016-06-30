@@ -30,6 +30,16 @@
         "power": {"available": true},
         "wifi": {"available": true}
     }
-
+    {
+        "name": "Le Viaduc Café",
+        "lat": 48.847632,
+        "lon": 2.375131,
+        "address": "43 avenue Daumesnil - 75012 Paris",
+        "type": "Coffee, restaurant",
+        "url": "http://www.leviaduc-cafe.com/",
+        "pro": "4 min walk from Gare de Lyon",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    }
 ]
 }

@@ -1,7 +1,7 @@
 { "places": [
     {
         "name": "De pain a sandwich",
-        "openHours": "Monday - Saturday, 10h00 - 19h00",
+        "openHours": "Monday - Saturday, 8h00 - 19h00",
         "lat": 43.840777,
         "lon": 1.389933,
         "address":  "5 esplanade Pierre Campech",

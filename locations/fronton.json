@@ -8,7 +8,7 @@
         "type" : "Bakery & Coffee Shop",
         "wifi": {"available": true},
         "power": {"available": true},
-        "comment": table pour poser son ordi, convivial, bon accueil.
+        "comment": "table pour poser son ordi, convivial, bon accueil.",
         "url": "https://www.facebook.com/depains.a.sandwichs/?fref=ts"
     }
 ]

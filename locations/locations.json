@@ -49,6 +49,12 @@
         "lon": 5.040632,
         "defaultZoom": "13"
     },
+        "fronton": {
+        "name": "Fronton",
+        "lat": 43.840098,
+        "lon": 1.389654,
+        "defaultZoom": "13"
+    },
     "lille": {
         "name": "Lille",
         "lat": 50.6303,

@@ -1,11 +1,13 @@
-{ "places": [
+﻿{ "places": [
     {
-        "name": "Café CRAFT",
-        "lat": 48.8731907,
-        "lon": 2.3631488,
-        "address": "24 Rue des Vinaigriers - 75010 Paris",
-        "type": "coffee / coworking",
-        "url": "http://cafe-craft.com",
+        "name": "Lily of the Valley",
+        "lat": 48.8713853,
+        "lon": 2.360817,
+        "address": "47 rue de Lancry  75010 Paris",
+        "openHours" : "7h30-17h",
+        "type": "tearoom",
+        "comment" : "Tiny room. They serve mainly tea, and have coffee and home-made pastry.",
+        "url": "https://www.facebook.com/lilyofthevalleyparis",
         "power": {"available": true},
         "wifi": {"available": true}
     },

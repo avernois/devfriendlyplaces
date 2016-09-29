@@ -4,5 +4,5 @@ before_script:
   - npm install mocha-phantomjs-core
 
 script:
-  - ./jq '.' locations/*.json
+  - error = 0; for file in `ls locations/*json`; do  ./jq '.' $file; error=$((error + $?)); done; exit $error
   - phantomjs node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html

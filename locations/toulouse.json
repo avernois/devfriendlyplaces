@@ -209,8 +209,8 @@
     {
         "name": "Home sweet cafe",
         "openHours": "Tuesday - Friday: 08:30 - 19:00, Saturday: 09:00 - 19:00, Sunday: 10:00 - 19:00",
-        "lat": 43.6020984,
-        "lon": 1.4389343,
+        "lat": 43.602162,
+        "lon": 1.441109,
         "address": "54 rue peyroliere",
         "type" : "coffee",
         "power": {"available": true},

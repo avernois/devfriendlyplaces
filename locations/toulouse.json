@@ -1,5 +1,16 @@
 { "places": [
     {
+        "name": "Le Café Cerise",
+        "openHours": "Tuesday to Friday: 8h30 - 18h00, Saturday, 10h - 18h",
+        "lat": 43.600071,
+        "lon": 1.440335,
+        "address": "4 quai de la Daurade",
+        "type" : "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "http://www.lecafecerise.fr/"
+    },
+    {
         "name": "La fabrique",
         "openHours": "7h30 - ?",
         "lat": 43.607378,

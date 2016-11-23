@@ -278,6 +278,17 @@
         "url": "http://www.gazettecafe.fr",
         "power": {"available": true },
         "wifi": {"available": true }
+    },
+    {
+        "name": "1001pharmacies",
+        "lat": 43.6184747,
+        "lon": 3.9160831,
+        "openHours": "From Monday to Friday - 09:00am to 19:00pm",
+        "address": "256 rue de Thor - 34000 Montpellier",
+        "type": "Office",
+        "url": "http://www.1001pharmacies.com",
+        "power": {"available": true },
+        "wifi": {"available": true }
     }
 ]
 }

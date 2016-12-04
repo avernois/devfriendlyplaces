@@ -6,22 +6,36 @@
       "lon": -1.6757646,
       "address": "4 boulverd de la Liberté - 35000 Rennes",
       "type" : "bar- keynote place",
-      "power": {"available": true, "comment": "look under the table"},
+      "power": {"available": true, "comment": "look at the corner of the room"},
       "wifi": {"available": true, "comment": "Look at the wall"},
       "url": "https://www.facebook.com/Mille-Potes-483203295133261/",
       "comment": "Wikipedia hub on thursday, Pinte of science & biomimicry makers sometimes. Not so far from train station & subway"
     },
+    
     {
       "name": "Le 4C",
       "openHours": "Étage du pôle Vie du Citoyen- Tuesday to friday 10am to 7pm & satruday & sunday 2pm to 7pm",
-      "lat": 48.105158,,
+      "lat": 48.105158,
       "lon": -11.674665,
       "address": "10 Cours des Alliés, 35000 Rennes",
       "type" : "citizen workplace and knowledge plaza",
       "power": {"available": true},
-      "wifi": {"available": true, "comment": ask a ticket for acces},
+      "wifi": {"available": true, "comment": "ask a ticket for access"},
       "url": "http://www.leschampslibres.fr/les-rendez-vous-4c/"
       "comment": "Books, museum, science hall inside, train station very close"
     },
-]
+    
+    {
+    "name": "Le Panama"
+    "openHours": "Fronm Monday to Saturday 10.00am to 1.00am",
+    "lat": 48.0969823,
+    "lon": -1.6672685,
+    "adress": "28 Rue Bigot de Préameneu, 35000 Rennes",
+    "type":"bar and amazing garden",
+    "power": {"available":true},,
+    "wifi": {"available": true, "comment":"ask the barman"},
+    "url":"https://www.facebook.com/Le-Panama-232727366835587/",
+    "comment" : "garden, BBQ, crazy place for crazy people"
+    }
+ ]
 }

@@ -26,15 +26,15 @@
     },
     
     {
-    "name": "Le Panama"
+    "name": "Le Panama",
     "openHours": "Fronm Monday to Saturday 10.00am to 1.00am",
     "lat": 48.0969823,
     "lon": -1.6672685,
     "adress": "28 Rue Bigot de Préameneu, 35000 Rennes",
-    "type":"bar and amazing garden",
-    "power": {"available":true},,
+    "type": "bar and amazing garden",
+    "power": {"available":true},
     "wifi": {"available": true, "comment":"ask the barman"},
-    "url":"https://www.facebook.com/Le-Panama-232727366835587/",
+    "url": "https://www.facebook.com/Le-Panama-232727366835587/",
     "comment" : "garden, BBQ, crazy place for crazy people"
     }
  ]

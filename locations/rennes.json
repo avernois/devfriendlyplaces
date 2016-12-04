@@ -21,7 +21,7 @@
       "type" : "citizen workplace and knowledge plaza",
       "power": {"available": true},
       "wifi": {"available": true, "comment": "ask a ticket for access"},
-      "url": "http://www.leschampslibres.fr/les-rendez-vous-4c/"
+      "url": "http://www.leschampslibres.fr/les-rendez-vous-4c/",
       "comment": "Books, museum, science hall inside, train station very close"
     },
     

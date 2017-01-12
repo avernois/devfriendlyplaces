@@ -1,5 +1,16 @@
 { "places": [
     {
+        "name": "Le Café Cerise",
+        "openHours": "Tuesday to Friday: 8h30 - 18h00, Saturday, 10h - 18h",
+        "lat": 43.600071,
+        "lon": 1.440335,
+        "address": "4 quai de la Daurade",
+        "type" : "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "http://www.lecafecerise.fr/"
+    },
+    {
         "name": "La fabrique",
         "openHours": "7h30 - ?",
         "lat": 43.607378,
@@ -194,6 +205,28 @@
         "power": {"available": false},
         "wifi": {"available": true},
         "url": "http://pommedepain.fr"
+    },
+        {
+        "name": "Ras la Tasse",
+        "openHours": "Monday to Saturday: 09h15 - 19h00, Sunday: 12h00 - 19h00",
+        "lat": 43.6018272,
+        "lon": 1.4439305,
+        "address": "3 rue du Puits-Vert",
+        "type" : "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "http://www.raslatasse.fr"
+    },
+    {
+        "name": "Home sweet cafe",
+        "openHours": "Tuesday - Friday: 08:30 - 19:00, Saturday: 09:00 - 19:00, Sunday: 10:00 - 19:00",
+        "lat": 43.602162,
+        "lon": 1.441109,
+        "address": "54 rue peyroliere",
+        "type" : "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "https://fr-fr.facebook.com/sweethomecafe31/"
     }
 ]
 }

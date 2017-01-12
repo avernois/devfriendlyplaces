@@ -34,7 +34,7 @@ function buildLocations() {
   sortKeys(locations).map(function(location) {
         var listItem = document.createElement("li");
 
-        listItem.innerHTML = "<a href=\"http://" + location + ".devfriendlyplaces.net\">" + locations[location].name + "</a>";
+        listItem.innerHTML = "<a href=\"https://" + location + ".devfriendlyplaces.net\">" + locations[location].name + "</a>";
         listElement.appendChild(listItem);
     });
 }

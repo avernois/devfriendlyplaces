@@ -56,7 +56,7 @@
         "name": "Café Bun",
         "lat": 43.607508,
         "lon": 3.87793,
-        "openHours": "Monday - 12:00am to 7:00pm, Tuesday to Wednesday - 7h30am to 7:00pm and Saturday - 9:30am to 7:00pm",
+        "openHours": "Monday - 12:00am to 7:00pm, Tuesday to Wednesday - 7:30am to 7:00pm and Saturday - 9:30am to 7:00pm",
         "address":  "5, rue des Etuves",
         "type" : "Coffee and Restaurant",
         "url": "https://fr-fr.facebook.com/BUNcafe",
@@ -276,6 +276,28 @@
         "address": "6 rue levat - 34000 Montpellier",
         "type": "Restaurant, pub, coffee",
         "url": "http://www.gazettecafe.fr",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Chez Théo",
+        "lat": 43.6123468,
+        "lon": 3.8788032,
+        "openHours": "From Monday to Saturday - 11:00am to 7:00pm",
+        "address": "45 rue de l'Aiguillerie - 34000 Montpellier",
+        "type": "Coffee",
+        "url": "http://chez-theo.org/",
+        "power": {"available": true },
+        "wifi": {"available": true }
+    },
+    {
+        "name": "Le Dada Café",
+        "lat": 43.6123468,
+        "lon": 3.8788032,
+        "openHours": "From Monday to Friday - 8:00am to 4:00pm",
+        "address": "43 rue de l'Université - 34000 Montpellier",
+        "type": "Restaurant, pub, coffee",
+        "url": "https://www.facebook.com/le-dada-caf%C3%A9-280554891960129/",
         "power": {"available": true },
         "wifi": {"available": true }
     }

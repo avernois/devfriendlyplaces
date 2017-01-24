@@ -91,6 +91,12 @@
         "lon": 2.21306,
         "defaultZoom": "10"
     },
+    "strasbourg": {
+        "name": "Strasbourg",
+        "lat": 48.573392,
+        "lon": 7.752353,
+        "defaultZoom": "14"
+    },
     "toulon": {
         "name": "Toulon",
         "lat": 43.117,

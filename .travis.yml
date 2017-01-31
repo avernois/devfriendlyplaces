@@ -1,8 +1,7 @@
 before_script:
   - wget http://stedolan.github.io/jq/download/linux64/jq && chmod u+x jq
-  - npm install -g mocha
-  - npm install mocha-phantomjs-core
+  - npm install
 
 script:
   - error = 0; for file in `ls locations/*json`; do  ./jq '.' $file; error=$((error + $?)); done; exit $error
-  - phantomjs node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js test/index.html
+  - npm test

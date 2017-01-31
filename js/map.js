@@ -33,7 +33,7 @@ function getLocations() {
 }
 
 function getPlaces(location) {
-    return getJSON("/locations/" + location + ".json");
+    return getJSON("/locations/" + location + ".geojson");
 }
 
 function getJSON(url) {
@@ -59,14 +59,14 @@ function buildMapFor(location) {
 }
 
 function placeToHtml(place) {
-    return "<b>" + place.name + "</b><br>" +
-        optionalFieldToHtml("address", place.address) +
-        optionalFieldToHtml("open hours", place.openHours) +
-        optionalFieldToHtml("type", place.type) +
-        optionalUrlToLink("website", place.url) +
-        optionToHtml("power", place.power) +
-        optionToHtml("wifi", place.wifi) +
-        optionalFieldToHtml("comment", place.comment);
+    return "<b>" + place.properties.name + "</b><br>" +
+        optionalFieldToHtml("address", place.properties.address) +
+        optionalFieldToHtml("open hours", place.properties.openHours) +
+        optionalFieldToHtml("type", place.properties.type) +
+        optionalUrlToLink("website", place.properties.url) +
+        optionToHtml("power", place.properties.power) +
+        optionToHtml("wifi", place.properties.wifi) +
+        optionalFieldToHtml("comment", place.properties.comment);
 }
 
 function iconForPlace(place) {
@@ -132,11 +132,13 @@ function displayPlacesFromLocation(map, location) {
 
     var places = getPlaces(location);
 
-    places.places.forEach(function(place) {
-        L.marker([place.lat, place.lon], { icon: iconForPlace(place) } )
-        .bindPopup(placeToHtml(place))
-        .addTo(map);
-    });
+    L.geoJSON(places, {
+        pointToLayer: function(point, latlng) {
+            return L.marker(latlng, {icon: iconForPlace(point.properties)});
+        }
+    }).bindPopup(function (layer) {
+        return placeToHtml(layer.feature);
+    }).addTo(map);
 
     map.isDisplayedLocation[location] = true;
 }

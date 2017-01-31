@@ -31,12 +31,6 @@
         "lon": 4.34878,
         "defaultZoom": "14"
     },
-    "cote-basque": {
-        "name": "Cote-basque",
-        "lat": 43.4721419,
-        "lon": -1.5053586,
-        "defaultZoom": "11"
-    },
     "cumbria": {
         "name": "Cumbria",
         "lat": 54.6190,
@@ -85,12 +79,6 @@
         "lon": 2.351828,
         "defaultZoom": "13"
     },
-    "pays-cathare": {
-        "name": "Pays Cathare",
-        "lat": 43.05665,
-        "lon": 2.21306,
-        "defaultZoom": "10"
-    },
     "strasbourg": {
         "name": "Strasbourg",
         "lat": 48.573392,
@@ -107,12 +95,6 @@
         "name": "Toulouse",
         "lat": 43.607378,
         "lon": 1.4399286,
-        "defaultZoom": "14"
-    },
-    "montauban": {
-        "name": "Montauban",
-        "lat": 44.020831,
-        "lon": 1.358375,
         "defaultZoom": "14"
     },
     "montpellier": {
@@ -192,12 +174,6 @@
         "lat" : 41.3911671,
         "lon" : 2.1362266,
         "defaultZoom": "13"
-    },
-    "marmande" : {
-        "name" : "Marmande",
-        "lat" : 44.499414,
-        "lon" : 0.166338,
-        "defaultZoom": "15"
     },
     "saint-etienne" : {
         "name" : "Saint-Étienne",

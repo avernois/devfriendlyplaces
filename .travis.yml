@@ -1,7 +1,7 @@
 before_script:
   - wget http://stedolan.github.io/jq/download/linux64/jq && chmod u+x jq
-  - npm install
+  - yarn install
 
 script:
   - error = 0; for file in `ls locations/*json`; do  ./jq '.' $file; error=$((error + $?)); done; exit $error
-  - npm test
+  - yarn test

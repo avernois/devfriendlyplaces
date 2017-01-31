@@ -1,0 +1,52 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.039927,
+                    47.32453
+                ]
+            },
+            "properties": {
+                "name": "Mac Callaghan",
+                "openHours": "Mon, Wed, Thu, Sun 08:45am to 02:00am. Tue, Fri, Sat 07:45am to 02:00am",
+                "address": "8, Rue Bannelier",
+                "url": "http://pub-maccallaghan.com",
+                "type": "Pub",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                },
+                "comment": "Power plug on the terrace, usable even when raining"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.038984,
+                    47.322555
+                ]
+            },
+            "properties": {
+                "name": "O'bareuzai",
+                "openHours": "Monday to Sunday, 08:00 to 23:00",
+                "address": "3, Place François Rude",
+                "type": "Coffee Shop",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                },
+                "comment": "Power plug on the terrace"
+            }
+        }
+    ]
+}

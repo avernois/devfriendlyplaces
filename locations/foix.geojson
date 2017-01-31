@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.608845,
+                    42.965589
+                ]
+            },
+            "properties": {
+                "name": "L'Equitable",
+                "openHours": "Thusday - Friday, 12h00 - 19h00",
+                "address": "Place Georges Duthil",
+                "type": "Espace inter-associatif",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                },
+                "url": "http://www.lequitable.org/"
+            }
+        }
+    ]
+}

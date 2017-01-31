@@ -1,0 +1,236 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.183088,
+                    41.394142
+                ]
+            },
+            "properties": {
+                "name": "L'Antiga Estació",
+                "openHours": "From Monday to Sunday - 10:00am to 9:00pm",
+                "address": "Carrer d'Alí Bei, 80 - 08013 Barcelona",
+                "type": "Coffee/Restaurant",
+                "url": "https://www.barcelonanord.cat/en/station-map/ground-floor/",
+                "power": {
+                    "available": false
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.13847,
+                    41.38577
+                ]
+            },
+            "properties": {
+                "name": "Helios Llibres",
+                "openHours": "From Monday to Friday - 7:30am to 8:00pm - Saturday and Sunday - 8:00am to 2:00pm",
+                "address": "C/Nicaragua 100, Barcelona",
+                "type": "Library",
+                "url": "http://heliosllibres.blogspot.com.es",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.13231,
+                    41.38651
+                ]
+            },
+            "properties": {
+                "name": "Rabbar",
+                "openHours": "From Monday to Sunday",
+                "address": "Plaça de la concòrdia, Barcelona",
+                "type": "Bar",
+                "url": "http://www.rabbar.es",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1362266,
+                    41.3911671
+                ]
+            },
+            "properties": {
+                "name": "Starbucks Diagonal",
+                "openHours": "From Monday to Friday - 7:30am to 10:00pm - Saturday and Sunday - 8:30am to 10:00pm",
+                "address": "Avda. Diagonal, 640 - Barcelona",
+                "type": "Coffee",
+                "url": "http://www.starbucks.com/store/2244/es/diagonal-mar/avda-diagonal-no-3-barcelona-kya-08018",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1658459,
+                    41.3821922
+                ]
+            },
+            "properties": {
+                "name": "Club Cronopios",
+                "openHours": "From Monday to Sunday - 6:00pm to 1:00am",
+                "address": "Carrer de Ferlandina, 16 - Barcelona",
+                "type": "Cultural Center/Coffee",
+                "url": "https://clubcronopiosblog.wordpress.com",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                },
+                "comment": "Great friendly associative place with true wifi"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.169051,
+                    41.3879722
+                ]
+            },
+            "properties": {
+                "name": "Cafetaria El Corto Inglés",
+                "openHours": "From Monday to Sunday - 9:30pm a 9:30pm",
+                "address": "Plaça de Catalunya, 14 - Barcelona",
+                "type": "Restaurant/Coffee",
+                "url": "http://restauracion.elcorteingles.es/cafeteria.html",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1713038,
+                    41.3911279
+                ]
+            },
+            "properties": {
+                "name": "Alsur Café",
+                "openHours": "From Monday to Wednesday - 8:00am to 0:00 - Thursday - 8:00am to 1:00am - Friday - 8:00am to 3:00am - Saturday - 9:00am to 3:00am - Sunday - 9:00am to 0:00",
+                "address": "Roger de Llúria, 23 - Barcelona",
+                "type": "Coffee",
+                "url": "http://www.alsurcafe.com/alsurcafe/lluria.html",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.174921,
+                    41.3871079
+                ]
+            },
+            "properties": {
+                "name": "Alsur Café (Lluria)",
+                "openHours": "From Monday - 10:00am to 1:00 - Thursday to Wednesday - 10:00am to 1:30am - Tuesday - 10:00am to 2:00am - Saturday - 10:00am to 3:00am - Sunday - 10:00am to 1:00",
+                "address": "Sant Pere Més Alt, 4 - Barcelona",
+                "type": "Coffee",
+                "url": "http://www.alsurcafe.com/alsurcafe/lluria.html",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.18015,
+                    41.38665
+                ]
+            },
+            "properties": {
+                "name": "Alsur Café (El born)",
+                "openHours": "From Monday - 11:15am to 0:30 - Friday - 11:15am to 3:00am - Saturday - 10:00am to 3:00am - Sunday - 10:00am to 0:30",
+                "address": "Plaza de Sant Cugat, 1 - Barcelona",
+                "type": "Restaurant/Coffee",
+                "url": "http://www.alsurcafe.com/alsurcafe/el_born.html",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.17255,
+                    41.397547
+                ]
+            },
+            "properties": {
+                "name": "Granja Petitbo",
+                "openHours": "From Monday - 08:30am to 22:30 - Thursday & Friday - 08:30am to 0:00am - Saturday - 10:00am to 0:00am - Sunday - 10:00am to 17:00",
+                "address": "Passeig de Sant Joan, 82 - Barcelona",
+                "type": "Restaurant/Coffee",
+                "url": "http://www.granjapetitbo.com/",
+                "power": {
+                    "available": false
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

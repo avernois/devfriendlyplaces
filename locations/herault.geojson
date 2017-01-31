@@ -1,0 +1,27 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.61784,
+                    43.82857
+                ]
+            },
+            "properties": {
+                "name": "Bar du Chateau",
+                "openHours": "Tuesday - Sunday, 10:00am to 7:00pm",
+                "address": "Quai du Garrel, 34380 Saint-Jean-de-Buèges",
+                "type": "Bar",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

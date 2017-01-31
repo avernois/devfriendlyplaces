@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.549898,
+                    47.478928
+                ]
+            },
+            "properties": {
+                "name": "Multiplexe Angers",
+                "openHours": "From Monday to Sunday - 10:00am to 1:00am",
+                "address": "Avenue des Droits de l'Homme - Quartier St. Serge - 49000 Angers",
+                "type": "Cinema",
+                "url": "http://www.cinemasgaumontpathe.com/cinemas/cinema-gaumont-angers-multiplexe/informations-pratiques.html",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

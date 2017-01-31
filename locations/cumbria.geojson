@@ -1,0 +1,47 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.93542,
+                    54.89507
+                ]
+            },
+            "properties": {
+                "name": "Starbucks",
+                "address": "64 Scotch Street, Carlisle, CA3 8PN",
+                "type": "coffee shop",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.3636,
+                    54.66358
+                ]
+            },
+            "properties": {
+                "name": "The Coffee Kitchen",
+                "address": "40 Challoner Street, Cockermouth, CA13 9QU",
+                "type": "coffee shop",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

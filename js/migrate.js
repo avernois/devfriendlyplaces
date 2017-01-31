@@ -25,8 +25,13 @@ function toGeoJSON(json) {
 function main() {
     let locations = require('../locations/locations.json');
     for (let location in locations) {
-        let result = toGeoJSON(require(`../locations/${location}.json`));
-        fs.writeFileSync(`./locations/${location}.geojson`, JSON.stringify(result, false, 4));
+        let locationPath = `../locations/${location}.json`;
+        if (fs.existsSync(locationPath)) {
+            let result = toGeoJSON(require(locationPath));
+            fs.writeFileSync(`./locations/${location}.geojson`, JSON.stringify(result, false, 4));
+        } else {
+            console.warn(`No json file found for ${location}.`)
+        }
     }
 }
 

@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.83159,
+                    45.769194
+                ]
+            },
+            "properties": {
+                "name": "L'Antre Autre",
+                "address": "11 rue Terme 69001 Lyon",
+                "type": "coffee / restaurant",
+                "url": "http://www.lantreautre.fr"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.8343591,
+                    45.7724217
+                ]
+            },
+            "properties": {
+                "name": "La Folie Douce",
+                "address": "7, pl. Colbert 69001 Lyon",
+                "type": "coffee",
+                "power": {
+                    "available": true,
+                    "comment": "for one table"
+                },
+                "wifi": {
+                    "available": true,
+                    "comment": "ask to the boss to get the code"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.830928,
+                    45.7687415
+                ]
+            },
+            "properties": {
+                "name": "Le Tasse Livre",
+                "address": "place sathonay 69001 Lyon",
+                "type": "coffee",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

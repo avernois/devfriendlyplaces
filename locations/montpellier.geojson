@@ -1,0 +1,644 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.86009,
+                    43.5839
+                ]
+            },
+            "properties": {
+                "name": "Les Grisettes",
+                "openHours": "Monday to Thursday - 7:00am to 8:00pm - Friday - 7:00am to 11:00pm - Saturday - 8:00am to 11:00pm",
+                "address": "36, Rambla des Calissons",
+                "url": "http://www.brasserielesgrisettes.fr",
+                "type": "Brasserie",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87581,
+                    43.60532
+                ]
+            },
+            "properties": {
+                "name": "Fou d'Anglais",
+                "openHours": "Tuesday to Sunday - 11:00am to 7:00pm",
+                "address": "10, Rue Anatole France",
+                "url": "http://www.foudanglais.fr",
+                "type": "Coffee Shop",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.88772,
+                    43.60564
+                ]
+            },
+            "properties": {
+                "name": "La Maison des Échanges et du Commerce",
+                "openHours": "Monday to Saturday - 9:00am to 7:00pm",
+                "address": "80, Avenue des États du Languedoc",
+                "type": "Collaborative Place",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": false
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87656,
+                    43.60733
+                ]
+            },
+            "properties": {
+                "name": "Home Coffee",
+                "openHours": "Monday to Saturday - 7:30am to 7:00pm",
+                "address": "58, Gd Rue Jean Moulin",
+                "url": "http://www.homecoffee.fr",
+                "type": "Coffee Shop",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.919719,
+                    43.604292
+                ]
+            },
+            "properties": {
+                "name": "Café Bibal",
+                "openHours": "Monday to Saturday - 9:00am to 7:00pm",
+                "address": "Odysseum, Pl. de Lisbonne",
+                "type": "Coffee and Snack",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87793,
+                    43.607508
+                ]
+            },
+            "properties": {
+                "name": "Café Bun",
+                "openHours": "Monday - 12:00am to 7:00pm, Tuesday to Wednesday - 7:30am to 7:00pm and Saturday - 9:30am to 7:00pm",
+                "address": "5, rue des Etuves",
+                "type": "Coffee and Restaurant",
+                "url": "https://fr-fr.facebook.com/BUNcafe",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.877552,
+                    43.606992
+                ]
+            },
+            "properties": {
+                "name": "Fairview Coffee",
+                "openHours": "Tuesday to Saturday - 9:30am to 7:00pm and Sundays - 11:00am to 5:00pm",
+                "address": "6, rue Loys",
+                "type": "Coffee and Restaurant",
+                "url": "https://www.facebook.com/FairviewCoffee",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87811,
+                    43.61282
+                ]
+            },
+            "properties": {
+                "name": "La Panacée",
+                "openHours": "From Wednesday to Saturday - 10:00am to 1:00am and Sundays - 10:00am to 6:00pm",
+                "address": "14, rue de l’école de pharmacie",
+                "type": "Coffee and Museum",
+                "url": "http://lapanacee.org",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.881923,
+                    43.614337
+                ]
+            },
+            "properties": {
+                "name": "Le Corum",
+                "openHours": "From Monday to Friday - 8:45am to 12:15am and 1:30am to 5:30pm",
+                "address": "Esplanade Charles De Gaulle",
+                "type": "Public Place",
+                "url": "http://www.montpellier-events.com/Le-Corum/Presentation",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": false
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8938274,
+                    43.6082336
+                ]
+            },
+            "properties": {
+                "name": "Médiathèque Centrale d'Agglomération Émile Zola",
+                "openHours": "Tuesday and Friday - 12:00am to 7:00pm, Wednesday - 10:00am to 7:00pm, Thursday - 10:00am to 9:00pm, Saturday - 10:00am to 6:30pm and Sunday - 2:30pm to 6:00pm (october to april)",
+                "address": "240, rue de l'Acropole",
+                "type": "Public Place",
+                "url": "http://mediatheque.montpellier-agglo.com/exploitation/DEFAULT/mediatheque-emile-zola.aspx",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": false
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8781226612183,
+                    43.611717920894
+                ]
+            },
+            "properties": {
+                "name": "Les Demoiselles de Montpellier",
+                "openHours": "From Monday to Saturday - 12:00am to 7:00pm, Sunday - 11:00am to 3:30pm",
+                "address": "2, rue de la Carbonnerie - 34000 Montpellier",
+                "type": "Tea room - (gluten free)",
+                "url": "https://www.facebook.com/lesdemoisellesdemontpellier",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.877198,
+                    43.610368
+                ]
+            },
+            "properties": {
+                "name": "Columbus Café & Co Montpellier",
+                "openHours": "From Monday to Saturday - 8:00am to 7:30pm",
+                "address": "28, rue Foch - 34000 Montpellier",
+                "type": "Coffee Room",
+                "url": "http://www.columbuscafe.com/columbus-cafe-montpellier.htm",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true,
+                    "comment": "ssh and other exotical ports are closed"
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.878109,
+                    43.614141
+                ]
+            },
+            "properties": {
+                "name": "Centre Chorégraphique National Agora",
+                "openHours": "From Monday to Friday - 9:30am to 12:30am and 2:00pm to 6:00pm",
+                "address": "18, rue Sainte-Ursule - 34961 Montpellier",
+                "type": "Public Place",
+                "url": "http://www.montpellierdanse.com",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8747227,
+                    43.5996813
+                ]
+            },
+            "properties": {
+                "name": "Les Petits Débrouillards",
+                "openHours": "From Monday to Sunday - 9:30am to 5:30pm",
+                "address": "49, boulevard Berthelot - 34000 Montpellier",
+                "type": "Fellowship",
+                "url": "http://www.lespetitsdebrouillards.org",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.898918,
+                    43.607711
+                ]
+            },
+            "properties": {
+                "name": "L'Épi Gaulois",
+                "openHours": "From Monday to Sunday - 6:00am to 8:00pm",
+                "address": "200, avenue de la Pompignane - 34000 Montpellier",
+                "type": "Boulangerie",
+                "power": {
+                    "available": false
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8988458,
+                    43.6009962
+                ]
+            },
+            "properties": {
+                "name": "La Ronde des Pains",
+                "openHours": "From Monday to Sunday - 6:30am to 8:00pm",
+                "address": "185, avenue Marie de Montpellier - 34000 Montpellier",
+                "type": "Boulangerie",
+                "power": {
+                    "available": false
+                },
+                "wifi": {
+                    "available": false
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8682955,
+                    43.6227084
+                ]
+            },
+            "properties": {
+                "name": "L'Assiette aux Pains",
+                "openHours": "From Monday to Sunday - 6:30am to 8:00pm",
+                "address": "18, avenue du professeur Grasset - 34000 Montpellier",
+                "type": "Boulangerie",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8628262,
+                    43.6297968
+                ]
+            },
+            "properties": {
+                "name": "Hopital Gui de Chauliac",
+                "openHours": "From Monday to Friday - 7:00am to 7:00pm - Saturday and Sundays - 9:00am to 6:00pm",
+                "address": "80, avenue Augustin Fliche - 34000 Montpellier",
+                "type": "Snack",
+                "url": "http://www.chu-montpellier.fr/fr/a-propos-du-chru/decouvrir-le-chru/etablissements/gui-de-chauliac/",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": false
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.81037,
+                    43.61795
+                ]
+            },
+            "properties": {
+                "name": "Boulangerie patisserie Gouley",
+                "openHours": "From Monday to Sunday - 7:00am to 8:00pm",
+                "address": "Place du soleil - Quartier des constellations - 34990 Juvignac",
+                "type": "Boulangerie",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": false
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.863447,
+                    43.628174
+                ]
+            },
+            "properties": {
+                "name": "Tennis la Jalade",
+                "openHours": "From Monday to Sunday - 8:30am to 8:30pm",
+                "address": "Rue de la Jalade - 34090 Montpellier",
+                "type": "Restaurant",
+                "url": "http://www.tcmlajalade.fr",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8757435,
+                    43.6061218
+                ]
+            },
+            "properties": {
+                "name": "L'Emporté Gourmand",
+                "openHours": "From Monday to Saturday - 8:00am to 18:30pm",
+                "address": "9, rue faubourg de la Saunerie - 34000 Montpellier",
+                "type": "Restaurant",
+                "url": "https://www.facebook.com/emportegourmand",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.88141,
+                    43.61427
+                ]
+            },
+            "properties": {
+                "name": "Le Faubourg",
+                "openHours": "From Monday to Tuesday - 11:00am to 1:00pm and 5:00pm to 7:00pm - Friday - 11:00am to 1:00pm",
+                "address": "15, Rue du Faubourg de Nîmes - 34000 Montpellier",
+                "type": "Fellowship",
+                "url": "http://autour.com/LeFaubourg",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8859496,
+                    43.608405
+                ]
+            },
+            "properties": {
+                "name": "La Terasses des Filles",
+                "openHours": "From Monday to Saturday - 8:00am to 6:00pm",
+                "address": "1 Place Paul Bec - 34000 Montpellier",
+                "type": "Restaurant",
+                "url": "http://laterrassedesfilles.fr",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8322802,
+                    43.6493062
+                ]
+            },
+            "properties": {
+                "name": "David Vincent",
+                "openHours": "From Monday to Saturday - 7:00am to 8:00pm - Sunday - 7:00am to 1:00pm",
+                "address": "2, rue Gaston Planté - 34790 Grabels",
+                "type": "Boulangerie",
+                "url": "https://www.facebook.com/pages/Boulangerie-p%C3%A2tisserie-vincent-david/304023713119962",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8794982,
+                    43.6072246
+                ]
+            },
+            "properties": {
+                "name": "Maison de la prévention",
+                "openHours": "From Monday to Friday - 10:00am to 5:00pm - first Saturdays of months - 10:00am to 1:00pm - 4th Tuesdays of months - 8:00pm",
+                "address": "6, rue Maguelone - 34000 Montpellier",
+                "type": "Public place",
+                "url": "http://www.montpellier.fr/3251-maison-de-la-prevention-sante-bis.htm",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.87842,
+                    43.604564
+                ]
+            },
+            "properties": {
+                "name": "Gazette Café",
+                "openHours": "From Tuestday to Saturday - 11:00am to 01:00am",
+                "address": "6 rue levat - 34000 Montpellier",
+                "type": "Restaurant, pub, coffee",
+                "url": "http://www.gazettecafe.fr",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8788032,
+                    43.6123468
+                ]
+            },
+            "properties": {
+                "name": "Chez Théo",
+                "openHours": "From Monday to Saturday - 11:00am to 7:00pm",
+                "address": "45 rue de l'Aiguillerie - 34000 Montpellier",
+                "type": "Coffee",
+                "url": "http://chez-theo.org/",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.8788032,
+                    43.6123468
+                ]
+            },
+            "properties": {
+                "name": "Le Dada Café",
+                "openHours": "From Monday to Friday - 8:00am to 4:00pm",
+                "address": "43 rue de l'Université - 34000 Montpellier",
+                "type": "Restaurant, pub, coffee",
+                "url": "https://www.facebook.com/le-dada-caf%C3%A9-280554891960129/",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

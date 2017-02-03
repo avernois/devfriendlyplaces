@@ -1,0 +1,27 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.4018946,
+                    52.5295476
+                ]
+            },
+            "properties": {
+                "name": "Sankt Oberholz",
+                "address": "Rosenthaler Straße 72a, Berlin",
+                "type": "coffee / coworking",
+                "url": "http://www.sanktoberholz.de/",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

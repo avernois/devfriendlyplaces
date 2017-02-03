@@ -1,0 +1,97 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.360817,
+                    48.8713853
+                ]
+            },
+            "properties": {
+                "name": "Lily of the Valley",
+                "address": "47 rue de Lancry  75010 Paris",
+                "openHours": "7h30-17h",
+                "type": "tearoom",
+                "comment": "Tiny room. They serve mainly tea, and have coffee and home-made pastry.",
+                "url": "https://www.facebook.com/lilyofthevalleyparis",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.348671,
+                    48.870664
+                ]
+            },
+            "properties": {
+                "name": "Delaville Café",
+                "address": "34 Bd de Bonne Nouvelle - 75010 Paris",
+                "type": "coffee",
+                "url": "http://delavillecafe.com/",
+                "power": {
+                    "available": false
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.378878,
+                    48.888533
+                ]
+            },
+            "properties": {
+                "name": "St Christopher's - Paris Canal",
+                "address": "153 Rue de Crimée - 75019 Paris",
+                "type": "Backpacker hostel, coffee and restaurant",
+                "url": "https://www.st-christophers.co.uk/paris-hostels/canal",
+                "pro": "Nice view on the canal",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.375131,
+                    48.847632
+                ]
+            },
+            "properties": {
+                "name": "Le Viaduc Café",
+                "address": "43 avenue Daumesnil - 75012 Paris",
+                "type": "Coffee, restaurant",
+                "url": "http://www.leviaduc-cafe.com/",
+                "pro": "4 min walk from Gare de Lyon",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

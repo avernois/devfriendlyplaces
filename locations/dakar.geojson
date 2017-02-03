@@ -1,0 +1,27 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.440041,
+                    14.667021
+                ]
+            },
+            "properties": {
+                "name": "Presse Café",
+                "address": "Rue Carnot angle Boul. des Madeleines",
+                "type": "coffee / coworking",
+                "url": "http://pressecafe.sn",
+                "power": {
+                    "available": true
+                },
+                "wifi": {
+                    "available": true
+                }
+            }
+        }
+    ]
+}

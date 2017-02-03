@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.2630194,
+                    51.7580976
+                ]
+            },
+            "properties": {
+                "name": "Natural Bread Co.",
+                "openHours": "7.30am - 5pm",
+                "address": "29 Little Clarendon Street, Oxford",
+                "type": "coffee",
+                "power": {
+                    "available": true,
+                    "comment": "a few plugs here and there, just ask the staff"
+                },
+                "wifi": {
+                    "available": true,
+                    "comment": "the password is on the blackboards"
+                },
+                "url": "http://naturalbreadcompany.co.uk/"
+            }
+        }
+    ]
+}

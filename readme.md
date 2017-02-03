@@ -46,39 +46,45 @@ That is easy, just edit the json file `locations/yourlocation.json` and submit a
 There are two steps:
 
 * add your location information in the `locations/locations.json` file. Look how other locations are defined. All field are mandatory.
-* create the new `locations/yourlocation.json` file, see the example below.
+* create the new `locations/yourlocation.geojson` file, see the example below.
 
-### Exemple of yourlocation.json
-``yourlocation.json`` example, to adjust to your needs:
+### Exemple of yourlocation.geojson
+``yourlocation.geojson`` example, to adjust to your needs:
 
 ```json
-
-{ "places": [
-    {
-        "name": "Bibliothèque d’Étude et du Patrimoine",
-        "openHours": "Friday to Saturday: 10h00 - 19h00",
-        "lat": 43.607851,
-        "lon": 1.443869,
-        "address": "1, Rue du Périgord",
-        "type" : "public place",
-        "power": {"available": true, "comment": "directly on most of the tables"},
-        "wifi": {"available": false},
-        "url": "http://www.bibliotheque.toulouse.fr/bep-lieu.html"
-    },
-    {
-      "name": "Another stuff... etc.",
-      "lat" : 43.607378,
-      "lon" : 1.4399286
-    }
-  ]
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.735684, 48.583358]
+            },
+            "properties": {
+                "name": "Graffalgar",
+                "openHours": "Monday - Saturday, 07h00 - 00h00, Sunday, 07h00 - 15h00",
+                "address":  "17 Rue Déserte",
+                "type" : "Hotel & Cafetaria",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                },
+                "url": "http://www.graffalgar-hotel-strasbourg.com/"
+            }
+        }
+    ]
 }
 
 ```
 
 please note:
 
-* The ``places`` is a list, you can append several places.
-* the fields "name", "lat" and "long" are mandatory. Add as many details as needed to provide complete information.
+* The file is a [geojson](http://geojson.org/geojson-spec.html) standard file.
+* The property "name" is mandatory. Add as many details as needed to provide complete information.
+* The coordinates are mandatory and order is: longitude, latitude.
 * "comment" are optional
 
 Once your pull request is merged and deployed, your map will be accessible at http://yourlocation.devfriendlyplaces.net.
@@ -93,10 +99,9 @@ Please, don't improve code/add new feature and add new places/locations in the s
 We now can run unit tests against devfriendlyplaces code. You can start them by two ways:
 * from your favorite browser, open the file test/index.html
 * from the console
-  * you first need to have a valid npm installation. Then
-    * `npm install -g mocha`
-    * `npm install mocha-phantomjs`
-  * then `./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./test/index.html`
+  * you first need to have a valid yarn installation. Then
+    * `yarn nstall`
+  * then `yarn test`
 
 [albi]: http://albi.devfriendlyplaces.net
 [angers]: http://angers.devfriendlyplaces.net

@@ -1,0 +1,166 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.2524691,
+                    38.6027557
+                ]
+            },
+            "properties": {
+                "name": "San Francisco Public Library",
+                "openHours": "Monday: 12am - 5pm, Tuesday - Thursday: 9am - 8pm, Friday: 12am - 6pm, Saturday: 10am - 6pm, Sunday: 12pm - 5pm",
+                "address": "100 Larkin St. - San Francisco, 94102",
+                "type": "Public library",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                },
+                "url": "http://sfpl.org/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3936884,
+                    37.7757022
+                ]
+            },
+            "properties": {
+                "name": "Panera Bread",
+                "openHours": "Monday - Sunday: 6:30am - 9pm",
+                "address": "301 King St, San Francisco, CA 94158",
+                "type": "Bread shop",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                },
+                "url": "https://www.panerabread.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.40361,
+                    37.78418
+                ]
+            },
+            "properties": {
+                "name": "The Metreon",
+                "openHours": "Monday - Sunday: 10:30am - 9pm",
+                "address": "135 4th Street, San Francisco, CA 94103",
+                "type": "Urban mall",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": false
+                },
+                "url": "http://www.cityviewmetreon.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4133416,
+                    37.8022408
+                ]
+            },
+            "properties": {
+                "name": "Beacon Coffee & Pantry",
+                "openHours": "Monday - Sunday: 7am - 6pm",
+                "address": "805 Columbus Avenue - San Francisco, CA 94133",
+                "type": "Coffee shop",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": false
+                },
+                "url": "http://www.beacon-sf.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.431898,
+                    37.764842
+                ]
+            },
+            "properties": {
+                "name": "Peets Coffee & Tea",
+                "openHours": "Monday - Sunday: 5am - 8:30pm",
+                "address": "2257 Market Street - San Francisco, CA 94114",
+                "type": "Coffee shop",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                },
+                "url": "https://www.peets.com/"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4075456,
+                    37.7879717
+                ]
+            },
+            "properties": {
+                "name": "Union Square",
+                "openHours": "24/7",
+                "address": "333 Post Street - San Francisco, CA 94108",
+                "type": "Public square",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": false
+                },
+                "url": "http://en.wikipedia.org/wiki/Union_Square,_San_Francisco"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4025815,
+                    37.7911186
+                ]
+            },
+            "properties": {
+                "name": " Peet’s Coffee & Tea ",
+                "openHours": "5am - 6:30pm",
+                "address": "217 Montgomery Street - San Francisco, CA 94104",
+                "type": "Coffee shop",
+                "wifi": {
+                    "available": true
+                },
+                "power": {
+                    "available": true
+                },
+                "url": "https://www.peets.com/"
+            }
+        }
+    ]
+}

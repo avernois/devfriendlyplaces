@@ -91,7 +91,7 @@
         "lon": -0.56960,
         "openHours": "Monday to Friday - 7:30am to 2:00am",
         "address": "13, place du palais",
-        "url": "le-burger-fermier.fr",
+        "url": "http://www.barchezfred.com",
         "type": "restaurant",
         "power": {"available": true},
         "wifi": {"available": true}
@@ -102,6 +102,7 @@
         "lon": -0.55744,
         "openHours": "Monday to Saturday - 9:30am to 11:00pm",
         "address": "Place de Casablanca",
+        "url": "http://le-burger-fermier.fr",
         "type": "restaurant",
         "power": {"available": true},
         "wifi": {"available": true}

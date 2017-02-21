@@ -41,6 +41,17 @@
         "wifi": {"available": true}
     },
     {
+        "name": "Cinéma Jean-Eustache",
+        "lat": 44.8055904,
+        "lon": -0.6332684,
+        "address": "Place de la 5ème République, 33600 Pessac",
+        "openHours": "Monday - 05:30pm to 09:00pm - Tuesday - 12:15pm to 09:00pm - Wednesday, Friday, Saturday, Sunday - 02:00pm to 09:30pm - Thursday - 03:30pm to 09:30pm",
+        "url": "http://www.webeustache.com/le-cafe/",
+        "type": "coffee shop inside a movie theater",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
         "name": "Le Central",
         "lat": 44.8000427,
         "lon": -0.6202214,

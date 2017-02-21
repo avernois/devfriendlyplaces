@@ -41,6 +41,16 @@
         "wifi": {"available": true}
     },
     {
+        "name": "Le Central",
+        "lat": 44.8000427,
+        "lon": -0.6202214,
+        "address": "130 Avenue du Dr Albert Schweitzer, 33600 Pessac",
+        "openHours": "Monday to Friday - 11:00am to 02:00am",
+        "type": "bar",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
         "name": "Fnac and Columbus",
         "lat": 44.8399427,
         "lon": -0.5739308,

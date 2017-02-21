@@ -14,15 +14,28 @@
     
     {
       "name": "Le 4C",
-      "openHours": "Étage du pôle Vie du Citoyen- Tuesday to friday 10am to 7pm & satruday & sunday 2pm to 7pm",
+      "openHours": "Étage du pôle Vie du Citoyen- Tuesday to friday 12am to 7pm & satruday & sunday 2pm to 7pm",
       "lat": 48.105158,
-      "lon": -11.674665,
+      "lon": -1.6768537,
       "address": "10 Cours des Alliés, 35000 Rennes",
       "type" : "citizen workplace and knowledge plaza",
       "power": {"available": true},
       "wifi": {"available": true, "comment": "ask a ticket for access"},
       "url": "http://www.leschampslibres.fr/les-rendez-vous-4c/",
-      "comment": "Books, museum, science hall inside, train station very close"
+      "comment": "Citizen place, whiteboard,Books, museum, science hall inside, train station very close"
+    },
+    
+        {
+      "name": "Le petit Bacchus",
+      "openHours": "Monday to saturday 9pm to 8am",
+      "lat": 48.1084225,
+      "lon": -1.6850632,
+      "address": "42 Rue Vasselot, 35000 Rennes",
+      "type" : "Bar",
+      "power": {"available": true},
+      "wifi": {"available": true, "comment": "Barman is the key"},
+      "url": "https://www.facebook.com/martine.lecomte.370",
+      "comment": "poolroom, coffee, wine, power outlet, Often calm and bright"
     },
     
     {
@@ -37,5 +50,6 @@
     "url": "https://www.facebook.com/Le-Panama-232727366835587/",
     "comment" : "garden, BBQ, crazy place for crazy people"
     }
+    
  ]
 }

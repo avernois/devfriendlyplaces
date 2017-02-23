@@ -147,9 +147,9 @@
     },
     "rennes" : {
         "name" : "Rennes"
-	"lat" : 48.1158943
-	"lon" : -1.7584942
-	"defaultZoom" : "14"
+	"lat" : 48.1158943,
+	"lon" : -1.7584942,
+	"defaultZoom": "14"
     },
     "saint-louis" : {
         "name" : "Saint-Louis",

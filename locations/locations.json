@@ -146,7 +146,7 @@
         "defaultZoom": "15"
     },
     "rennes" : {
-        "name" : "Rennes"
+        "name" : "Rennes",
 	"lat" : 48.1158943,
 	"lon" : -1.7584942,
 	"defaultZoom": "14"

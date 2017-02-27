@@ -133,11 +133,17 @@
         "lon" : -1.2557418,
         "defaultZoom": "15"
     },
-    "rennes" : {
+     "rennes" : {
         "name" : "Rennes",
-	"lat" : 48.1158943,
-	"lon" : -1.7584942,
-	"defaultZoom": "14"
+	"lat" : 48.1117683,
+	"lon" : -1.6393612,
+	"defaultZoom": "13"
+    },
+      "cote-emeraude" : {
+        "name" : "Côte d'Émeraude",
+	"lat" : 48.6349176,
+	"lon" : -2.0389274,
+	"defaultZoom": "12"
     },
     "saint-louis" : {
         "name" : "Saint-Louis",

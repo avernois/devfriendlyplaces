@@ -22,6 +22,8 @@ Current locations
  - Nantes: [nantes.devfriendlyplaces.net][nantes]
  - Oxford: [oxford.devfriendlyplaces.net][oxford]
  - Paris: [paris.devfriendlyplaces.net][paris]
+ - Rennes: [https://rennes.devfriendlyplaces.net/] [rennes]
+ - Côte d'Emeraude: [https://cote-emeraude.devfriendlyplaces.net/] [cote-emeraude]
  - Saint-Étienne: [saint-etienne.devfriendlyplaces.net][saint-etienne]
  - Saint-Louis: [saint-louis.devfriendlyplaces.net][saint-louis]
  - Toulon: [toulon.devfriendlyplaces.net][toulon]

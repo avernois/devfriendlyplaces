@@ -49,6 +49,19 @@
     "wifi": {"available": true, "comment":"ask the barman"},
     "url": "https://www.facebook.com/Le-Panama-232727366835587/",
     "comment" : "garden, BBQ, crazy place for crazy people"
+    },
+    
+    {
+    "name": "Fox and Freinds"
+    "openHours": "From monday to thursday 11am to 1am and saturday 9am to 1am and sunday 5pm to 1am"
+    "lat": 48.1122133,
+    "lon": -1.6829488,
+    "adress": "13 Rue de la Monnaie, 35000 Rennes",
+    "type": "the Pub for Pub lovers",
+    "power": {"aviable": true},
+    "wifi": {"aviable": true},
+    "url": "https://www.facebook.com/pg/foxandfriendspub"
+    "comment": "Tasty burgers, English Spoken, terrace"
     }
     
  ]

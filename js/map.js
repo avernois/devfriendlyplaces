@@ -12,8 +12,21 @@ for(var i = 0; i < 4; i++) {
     );
 }
 
-function extractLocationFromUrl(hostname) {
-    var split = hostname.split(".");
+function parseQueryString(queryString ) {
+    var temp, i;
+    var params = {}
+    var queries = queryString.replace('?','').split("&");
+
+    for ( i = 0; i < queries.length; i++ ) {
+        temp = queries[i].split('=');
+        params[temp[0]] = temp[1];
+    }
+
+    return params;
+};
+
+function extractSubdomainLocation(url) {
+    var split = url.hostname.split(".");
     var location = split[0];
 
     if ((split.length < 3) || (location == "www")) {
@@ -21,6 +34,27 @@ function extractLocationFromUrl(hostname) {
     }
 
     return location;
+}
+
+function extractQueryLocation(url) {
+    var params = parseQueryString(url.search);
+
+    if (!params['location']) {
+        throw "No location in the url";;
+    }
+
+    return params['location'];
+}
+
+function getLocationExtractorFromUrl(url) {
+    if (url.hostname === 'localhost') return extractQueryLocation;
+    if (url.hostname === '127.0.0.1') return extractQueryLocation;
+    return extractSubdomainLocation;
+}
+
+function extractLocationFromUrl(url) {
+    var extractLocation = getLocationExtractorFromUrl(url);
+    return extractLocation(url);
 }
 
 function getLocations() {

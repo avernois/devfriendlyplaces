@@ -186,5 +186,11 @@
         "lat" : 45.439710,
         "lon" : 4.387387,
         "defaultZoom": "13"
+    },
+    "liege" : {
+        "name" : "Liège",
+        "lat" : 50.6246191,
+        "lon" : 5.5290505,
+        "defaultZoom": "12"
     }
 }

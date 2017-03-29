@@ -1,13 +1,5 @@
 { "places": [
     {
-        "name": "L'Antre Autre",
-        "lat": 45.769194,
-        "lon": 4.83159,
-        "address":  "11 rue Terme 69001 Lyon",
-        "type": "coffee / restaurant",
-        "url": "http://www.lantreautre.fr"
-    },
-    {
         "name": "La Folie Douce",
         "lat": 45.7724217,
         "lon": 4.8343591,

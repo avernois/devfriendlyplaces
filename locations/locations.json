@@ -25,11 +25,17 @@
         "lon": -0.5748,
         "defaultZoom": "13"
     },
-	"brussels": {
+    "brussels": {
         "name": "Brussels",
         "lat": 50.85045,
         "lon": 4.34878,
         "defaultZoom": "14"
+    },
+    "cahors": {
+        "name": "Cahors",
+        "lat": 44.4565006,
+        "lon": 1.3689732,
+        "defaultZoom": "15"
     },
     "cumbria": {
         "name": "Cumbria",

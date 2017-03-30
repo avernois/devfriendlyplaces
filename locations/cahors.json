@@ -4,7 +4,7 @@
         "openHours": "Monday: 12h00 - 19h00, Thusday  to Saturday:8h30 to 19h00",
         "lat": 44.4452062,
         "lon": 1.4432991,
-        "address": 165 Rue nationale, 46000 Cahors",
+        "address": "165 Rue nationale, 46000 Cahors",
         "type" : "Coffee shop",
         "power": {"available": true, "comment": "directly on most of the tables"},
         "wifi": {"available": false},

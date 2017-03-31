@@ -7,7 +7,7 @@
         "address": "165 Rue nationale, 46000 Cahors",
         "type" : "Coffee shop",
         "power": {"available": true, "comment": "directly on most of the tables"},
-        "wifi": {"available": false},
+        "wifi": {"available": true},
         "url": "https://fr-fr.facebook.com/FrenchCoffeeShopCahors?ref=stream&hc_location=stream"
     }
   ]

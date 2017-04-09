@@ -42,6 +42,18 @@
         "pro": "4 min walk from Gare de Lyon",
         "power": {"available": true},
         "wifi": {"available": true}
+    },
+        {
+        "name": "Belushi's Gare du Nord",
+        "lat": 48.8791985,
+        "lon": 2.3580921999999873,
+        "address": "5 Rue de Dunkerque - 75010 Paris, France",
+        "openHours" : "10h-2h",
+        "type": "café + restaurant",
+        "comment" : "Café and restaurant in a youth hostel. Large nice room with wooden table and glass roof. Not the best café / restaurant but nice working place. Few power outlet. Wifi available but I think it's only for hostel residents - in any case, enjoyparis ;)",
+        "url": "http://www.belushis.com/bars/paris/gare-du-nord",
+        "power": {"available": true},
+        "wifi": {"available": false}
     }
 ]
 }

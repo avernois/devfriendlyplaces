@@ -1,0 +1,14 @@
+{ "places": [
+    {
+        "name": "Yelloworking",
+        "lat": 43.522999,
+        "lon": 5.450769,
+        "openHours": "Monday to Friday 8AM - 7PM",
+        "address":  "7 bis avenue Saint Jérôme, 13100 Aix en Provence, France",
+        "type" : "coworking",
+        "url": "http://www.yelloworking/",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+]
+}

@@ -1,4 +1,15 @@
 { "places": [
+        {
+        "name": "Le Café Contretemps",
+        "openHours": "Monday to Saturday: 9h00 - 19h00, Sunday, 14h - 19h",
+        "lat": 43.600525,
+        "lon": 1.442442,
+        "address": "11 rue de la Bourse",
+        "type" : "coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "url": "http://cafecontretemps.com"
+    },
     {
         "name": "Café Contretemps",
         "openHours": "Monday to Saturday: 9h - 21h",

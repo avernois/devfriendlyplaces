@@ -1,5 +1,17 @@
 ﻿{ "places": [
     {
+        "name": "Strada Café",
+        "lat": 48.8469496,
+        "lon": 2.348961,
+        "address": "24 Rue Monge, 75005 Paris",
+        "openHours" : "8h00-18h30",
+        "type": "coffee, restaurant",
+        "comment" : "Laptops are forbidden during week-ends and better not to have them opened at lunchtime too. Very good coffee and juices.",
+        "url": "http://www.stradacafe.fr/rue-monge.html",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
         "name": "O Coffeeshop",
         "lat": 48.8490735,
         "lon": 2.2912079,

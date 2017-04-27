@@ -1,0 +1,41 @@
+{ "places": [
+    {
+      "name": "L'arrière cour",
+      "Opnening": "From tuesday to staurday 11pm to 1.00am",
+      "lat": 48.6710829,
+      "lon": -1.8548069,
+      "address": "18 Quai Gambetta, 35260 Cancale",
+      "type" : "Coffee Bar Restaurant",
+      "power": {"available": true, "comment": "look at the corner of the room"},
+      "wifi": {"available": true, "comment": "personnal login"},
+      "url": "https://www.facebook.com/Larrière-cour-1774041509532295",
+      "comment": "Private garden, various beverages, tasty food"
+    },
+    
+    {
+      "name": "Le Tangon",
+      "openHours": "Everyday 9am to 22pm",
+      "lat": 48.6709927,
+      "lon": -1.8523201,
+      "address": "2 quai Administrateur Chef Thomas, 35260 Cancale",
+      "type" : "café - Bar",
+      "power": {"available": true},
+      "wifi": {"available": true, "comment": ""},
+      "url": "https://www.facebook.com/pages/Cancale-Le-Tangon/268055526628206",
+      "comment": "In front of the sea, Oysters and wine, terrace"
+    },
+    
+    {
+      "name": "Mokamalo",
+      "openHours": "From tuesday to saturday 10pm to 1am and 3am to 7am",
+      "lat": 48.6481759,
+      "lon": -2.0250238,
+      "adress": "5 Rue de l'Orme, 35400 Saint-Malo",
+      "type": "coffee bean roaster place",
+      "power": {"avaible": true},
+      "wifi": {"aviable": true},
+      "url": "http://www.mokamalo.fr",
+      "comment": "Crazy place for Dev"
+      },
+ ]
+}

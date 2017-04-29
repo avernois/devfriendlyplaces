@@ -12,8 +12,32 @@ div#map {
 }
 
 ul#towns {
-    position: absolute;
-    top: 4em;
-    left: 4em;
-    z-index: 2;
-} 
+	position: absolute;
+	top: 5em;
+	z-index: 2;
+	padding: 0;
+	margin-left: 10px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+	list-style-type: none;
+}
+
+ul#towns li {
+	padding: 0;
+	margin: 0;
+	padding: .5em;
+    cursor: pointer;
+	color: #666;
+	font: normal 14px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul#towns li:hover {
+	background-color: #c8facc;
+	color: black;
+}
+
+ul#towns li[data-selected="True"] {
+	background-color: #aedfa3;
+	color: black;
+}

@@ -14,16 +14,20 @@ type alias Model =
 
 
 type alias Town =
-    String
+    { name : String
+    , latitude : Float
+    , longitude : Float
+    }
 
 
 towns : Model
 towns =
     { towns =
-        [ "Toulouse"
-        , "Montpellier"
-        , "Warswaw"
-        , "Barcelona"
+        [ Town "Toulouse" 43.607378 1.4399286
+        , Town "Montpellier" 43.6100219 3.8741615
+        , Town "Warswaw" 52.229676 21.012229
+        , Town "Barcelona" 41.3911671 2.1362266
+        , Town "Lisle sur Tarn" 43.852799 1.810783
         ]
     }
 
@@ -39,7 +43,7 @@ viewTowns : List Town -> Html Msg
 viewTowns towns =
     let
         townsLi =
-            List.map (\town -> li [ onClick (TownSelected town) ] [ text town ]) towns
+            List.map (\town -> li [ onClick (TownSelected town) ] [ text town.name ]) towns
     in
         ul [ id "towns" ] townsLi
 
@@ -55,7 +59,7 @@ port consoleJs : Town -> Cmd msg
 main : Program Never Model Msg
 main =
     Html.program
-        { init = ( towns, consoleJs "" )
+        { init = ( towns, consoleJs (Town "" 0 0) )
         , view = view
         , update = update
         , subscriptions = \_ -> Sub.none

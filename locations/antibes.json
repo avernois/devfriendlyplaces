@@ -1,0 +1,14 @@
+{ "places": [
+    {
+        "name": "Médiathèque Albert Camus",
+        "lat": 43.5785437,
+        "lon": 7.1251804,
+        "openHours": "Tuesday and Thursday 1PM to 6PM - Wednesday and Saturday 9:30AM to 6PM - Friday 1PM to 7PM",
+        "address": "19 Boulevard Gustave Chancel, 06000 Antibes",
+        "type": "Public place",
+        "url": "http://ma-mediatheque.net",
+        "power": { "available": true },
+        "wifi": { "available": true, "comment": "Ask agents for the code. Need to logout/login every 5 hours." }
+    }
+]
+}

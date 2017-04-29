@@ -1,0 +1,13 @@
+{ "places": [
+    {
+        "name": "Hartford Coffee Company",
+        "openHours": "Monday - Thursday: 6am - 9pm, Friday - Satuday: 7am - 10pm, Sunday: 7am - 7pm",
+        "lat": 38.6027557,
+        "lon": -90.2524691,
+        "address":  "3974 Hartford Street",
+        "type" : "Bagels & Coffee Shop",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "url": "http://www.hartfordcoffee.net"
+    }
+]}

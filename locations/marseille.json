@@ -1,0 +1,25 @@
+{ "places": [
+    {
+        "name": "Le Môle",
+        "lat": 43.29531,
+        "lon": 5.36180,
+        "openHours": "Monday 12h00 - 19h00, Wednesday to Saturday, 12h00 - 19h00",
+        "address":  "01 esplanade du J4 - Mucem",
+        "type" : "coffee/restaurant",
+        "url": "http://www.passedat.fr/#!le-mole/",
+        "power": {"available": true},
+        "wifi": {"available": false}
+    },
+    {
+        "name": "Grand Escalier",
+        "lat": 43.301308,
+        "lon": 5.3805723,
+        "openHours": "Monday to Sunday - 6:30am to 10:00pm",
+        "address":  "39, Boulevard Athènes - 13001 Marseille",
+        "type" : "coffee/restaurant",
+        "url": "https://www.facebook.com/pages/Brasserie-Le-Grand-Escalier-Marseille/409279962446559",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    }
+]
+}

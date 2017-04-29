@@ -1,0 +1,15 @@
+{ "places": [
+    {
+        "name": "De pain a sandwich",
+        "openHours": "Monday - Saturday, 8h00 - 19h00",
+        "lat": 43.840777,
+        "lon": 1.389933,
+        "address":  "5 esplanade Pierre Campech",
+        "type" : "Bakery & Coffee Shop",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "comment": "table pour poser son ordi, convivial, bon accueil.",
+        "url": "https://www.facebook.com/depains.a.sandwichs/?fref=ts"
+    }
+]
+}

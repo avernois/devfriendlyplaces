@@ -1,0 +1,14 @@
+{ "places": [
+    {
+        "name": "Graffalgar",
+        "openHours": "Monday - Saturday, 07h00 - 00h00, Sunday, 07h00 - 15h00",
+        "lat": 48.583358,
+        "lon": 7.735684,
+        "address":  "17 Rue Déserte",
+        "type" : "Hotel & Cafetaria",
+        "wifi": {"available": true},
+        "power": {"available": true},
+        "url": "http://www.graffalgar-hotel-strasbourg.com/"
+    }
+]
+}

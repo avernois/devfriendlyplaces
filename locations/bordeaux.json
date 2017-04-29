@@ -1,0 +1,212 @@
+{ "places": [
+    {
+        "name": "Saint Seurin",
+        "lat": 44.8437174,
+        "lon": -0.5868276,
+        "address":  "3, Place Lucien Victor Meunier",
+        "url": "http://restaurant-saint-seurin.com",
+        "openHours": "Monday to Saturday - 10:00am to 2:00am",
+        "type" : "brasserie",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Harriet's Café",
+        "lat": 44.8433988,
+        "lon": -0.577808,
+        "address":  "12, Place des Grands Hommes",
+        "type" : "coffee shop",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "1st floor"
+    },
+    {
+        "name": "Nature Cook",
+        "lat": 44.8368387,
+        "lon": -0.5799406,
+        "address":  "21, Rue des Frères Bonie",
+        "openHours": "Monday to Friday - 7:00am to 4:00pm",
+        "type" : "snack bio",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Médiathèque Jacques Elul",
+        "lat": 44.799583,
+        "lon": -0.642509,
+        "address": "21 Résidence Camponac",
+        "url": "http://mediatheque.mairie-pessac.fr/",
+        "type": "library",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Cinéma Jean-Eustache",
+        "lat": 44.8055904,
+        "lon": -0.6332684,
+        "address": "Place de la 5ème République, 33600 Pessac",
+        "openHours": "Monday - 05:30pm to 09:00pm - Tuesday - 12:15pm to 09:00pm - Wednesday, Friday, Saturday, Sunday - 02:00pm to 09:30pm - Thursday - 03:30pm to 09:30pm",
+        "url": "http://www.webeustache.com/le-cafe/",
+        "type": "coffee shop inside a movie theater",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Le Central",
+        "lat": 44.8000427,
+        "lon": -0.6202214,
+        "address": "130 Avenue du Dr Albert Schweitzer, 33600 Pessac",
+        "openHours": "Monday to Friday - 11:00am to 02:00am",
+        "type": "bar",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Fnac and Columbus",
+        "lat": 44.8399427,
+        "lon": -0.5739308,
+        "openHours": "Monday to Saturday - 10:00am to 7:30pm and Sundays - 11:00am to 7:00pm",
+        "address": "50, rue Ste Catherine",
+        "url": "http://www.fnac.com/Bordeaux/Fnac-Bordeaux/cl116/w-4",
+        "type": "shop and coffee",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "go upstairs, at the top"
+    },
+    {
+        "name": "Café des Arts",
+        "lat": 44.8347446,
+        "lon": -0.5731186,
+        "openHours": "Monday to Sundays - 7:30am to 11:30pm",
+        "address": "138, Cours Victor Hugo",
+        "type": "brasserie/coffee",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Conseil Départemental de Gironde",
+        "lat": 44.83587,
+        "lon": -0.58602,
+        "openHours": "Monday to Thursday - 8:15am to 5:15pm - and Friday - 8:15am to 4:45pm",
+        "address": "1, Esplanade Charles de Gaulle",
+        "url": "http://www.gironde.fr",
+        "type": "public place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "wifi, with your id card"
+    },
+    {
+        "name": "Pause Nature",
+        "lat": 44.840878,
+        "lon": -0.5598081,
+        "openHours": "Monday to Friday - 9:00am to 3:30pm",
+        "address": "26/28, Place de Stalingrad",
+        "url": "http://www.pausenature.fr",
+        "type": "coffee/snack",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Bar des Vedettes - Chez Fred",
+        "lat": 44.83839,
+        "lon": -0.56960,
+        "openHours": "Monday to Friday - 7:30am to 2:00am",
+        "address": "13, place du palais",
+        "url": "http://www.barchezfred.com",
+        "type": "restaurant",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Burger Fermier",
+        "lat": 44.82598,
+        "lon": -0.55744,
+        "openHours": "Monday to Saturday - 9:30am to 11:00pm",
+        "address": "Place de Casablanca",
+        "url": "http://le-burger-fermier.fr",
+        "type": "restaurant",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "CAPC - Musée d'Art Contemporain de Bordeaux",
+        "lat": 44.84888,
+        "lon": -0.57316,
+        "openHours": "11:00am to 6:00pm - wendesday - 11:00am to 8:00pm - closed on Monday",
+        "address": "7, rue Ferrère",
+        "url": "http://www.capc-bordeaux.fr",
+        "type": "museum",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "Billy Factory",
+        "lat": 44.8214926,
+        "lon": -0.5825119,
+        "openHours": "Monday to Saturday - 11:30am to 9:00pm - Saturday - 10:00am to 9:00pm",
+        "address": "5, Place Louis Barthou",
+        "url": "http://www.billyfactory.com",
+        "type": "coffee shop",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "Trolley: Barrière St Genès"
+    },
+    {
+        "name": "Brasserie Terminus",
+        "lat": 44.8265365,
+        "lon": -0.5568704,
+        "openHours": "Monday to Sunday - 11:00am to 10:30pm",
+        "address": "28, Rue Charles Domercq",
+        "type": "brasserie",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "Trolley: Gare Saint-Jean"
+    },
+    {
+        "name": "Le Garage Moderne",
+        "lat": 44.86527,
+        "lon": -0.55104,
+        "openHours": "Monday to Friday - 9:00am to 6:00pm",
+        "address": "1, Rue des étrangers",
+        "url": "http://www.legaragemoderne.org",
+        "type": "coop place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "Friendly and original place"
+    },
+    {
+        "name": "Cap Sciences",
+        "lat": 44.85963,
+        "lon": -0.55422,
+        "openHours": "Monday to Friday - 2:00pm to 6:00pm - Thursday - 2:00pm to 9:00pm - Saturday and Sunday - 2:00pm to 7:00pm",
+        "address": "Hangar 20 - Quai de Bacalan",
+        "url": "http://www.cap-sciences.net",
+        "type": "public place",
+        "power": {"available": true},
+        "wifi": {"available": true},
+        "comment": "1st floor"
+    },
+    {
+        "name": "Golden Apple",
+        "lat": 44.8545868,
+        "lon": -0.5697613,
+        "openHours": "Monday - 11:30pm to 3:00pm and 6:00 pm to 11:45pm Tuesday to Thursday - 11:30pm to 3:00pm and 6:00 pm to 2:00pm - Saturday - 12:00pm to 2:00pm",
+        "address": "46, Rue Borie",
+        "url": "http://www.golden-apple.fr",
+        "type": "pub",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
+        "name": "French Coffee Shop",
+        "lat": 44.8405389,
+        "lon": -0.5732745,
+        "openHours": "Tuesday to Saturday - 11:00am to 7:00pm",
+        "address": "20, Rue du Parlement Sainte Catherine",
+        "url": "http://www.frenchcoffeeshop.com",
+        "type": "coffee shop",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    }
+]
+}

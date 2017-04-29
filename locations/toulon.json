@@ -1,0 +1,14 @@
+{ "places": [
+    {
+        "name": "Café Culture",
+        "lat": 43.12314,
+        "lon": 5.93433,
+        "openHours": "Friday to Wednesday - 9:00am to 1pm and 2:00pm to 7:00pm - Tuesday - 9:00am to 1pm and 2:00pm to 10:00pm - Thursday an Saturday - 8:00am to 1pm and 2:00pm to 7:00pm",
+        "address":  "24, Rue Paul Lendrin",
+        "url": "http://www.cultures-et-communication.org",
+        "type": "Coffee Shop",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    }
+]
+}

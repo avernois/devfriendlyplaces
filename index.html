@@ -5,15 +5,16 @@
 <script src=https://unpkg.com/leaflet@1.0.3/dist/leaflet.js></script>
 <script src=devfriendly.js></script>
 
-<div id=map ></div>
+<div id=map></div>
 
-
-<script>Elm.Devfriendly.fullscreen()</script>
 <script>
-    var map = L.map('map').setView([43.610769, 3.876716], 13);
+    const app = Elm.Devfriendly.fullscreen()
+    app.ports.consoleJs.subscribe(
+       ({towns}) => { console.log('towns', towns) })
+
+    const map = L.map('map').setView([43.610769, 3.876716], 13)
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href=http://osm.org/copyright>OpenStreetMap</a> contributors'
-    }).addTo(map);
-
+    }).addTo(map)
 </script>

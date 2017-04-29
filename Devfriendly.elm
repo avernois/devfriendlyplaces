@@ -1,4 +1,4 @@
-module Devfriendly exposing (..)
+port module Devfriendly exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -32,7 +32,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected ->
-            ( Debug.log "" model, Cmd.none )
+            ( model, consoleJs model )
 
 
 viewTowns : List Town -> Html Msg
@@ -49,10 +49,13 @@ view model =
     viewTowns model.towns
 
 
+port consoleJs : Model -> Cmd msg
+
+
 main : Program Never Model Msg
 main =
     Html.program
-        { init = ( towns, Cmd.none )
+        { init = ( towns, consoleJs towns )
         , view = view
         , update = update
         , subscriptions = \_ -> Sub.none

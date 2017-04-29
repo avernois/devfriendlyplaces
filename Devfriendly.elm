@@ -5,8 +5,17 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 
 
-type Msg
-    = TownSelected Town
+-- PORTS
+
+
+port consoleJs : Town -> Cmd msg
+
+
+port moveMap : Town -> Cmd msg
+
+
+
+-- MODEL
 
 
 type alias Model =
@@ -32,11 +41,23 @@ towns =
     }
 
 
+
+-- UPDATE
+
+
+type Msg
+    = TownSelected Town
+
+
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
             ( model, Cmd.batch [ consoleJs town, moveMap town ] )
+
+
+
+-- VIEW
 
 
 viewTowns : List Town -> Html Msg
@@ -53,10 +74,8 @@ view model =
     viewTowns model.towns
 
 
-port consoleJs : Town -> Cmd msg
 
-
-port moveMap : Town -> Cmd msg
+-- MAIN
 
 
 main : Program Never Model Msg

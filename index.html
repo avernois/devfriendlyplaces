@@ -20,6 +20,6 @@
     app.ports.moveMap.subscribe(
        (town) => { 
                console.log('moving map to ' + town.latitude + ":" + town.longitude)
-               map.setView([town.latitude, town.longitude], 13)
+               map.setView([town.latitude, town.longitude], town.defaultZoom)
            })
 </script>

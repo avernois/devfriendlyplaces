@@ -10,7 +10,11 @@ type Msg
 
 
 type alias Model =
-    { towns : List String }
+    { towns : List Town }
+
+
+type alias Town =
+    String
 
 
 towns : Model
@@ -31,14 +35,18 @@ update msg model =
             ( Debug.log "" model, Cmd.none )
 
 
+viewTowns : List Town -> Html Msg
+viewTowns towns =
+    let
+        townsLi =
+            List.map (\town -> li [ onClick TownSelected ] [ text town ]) towns
+    in
+        ul [ id "towns" ] townsLi
+
+
 view : Model -> Html Msg
 view model =
-    ul [ id "towns" ]
-        [ li [ onClick TownSelected ] [ text "Montpellier" ]
-        , li [ onClick TownSelected ] [ text "Toulouse" ]
-        , li [ onClick TownSelected ] [ text "Paris" ]
-        , li [ onClick TownSelected ] [ text "Warsaw" ]
-        ]
+    viewTowns model.towns
 
 
 main : Program Never Model Msg

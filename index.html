@@ -10,7 +10,7 @@
 <script>
     const app = Elm.Devfriendly.fullscreen()
     app.ports.consoleJs.subscribe(
-       ({towns}) => { console.log('towns', towns) })
+       (town) => { console.log('selected town', town) })
 
     const map = L.map('map').setView([43.610769, 3.876716], 13)
 

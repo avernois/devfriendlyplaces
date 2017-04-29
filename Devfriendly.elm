@@ -6,7 +6,7 @@ import Html.Events exposing (onClick)
 
 
 type Msg
-    = TownSelected
+    = TownSelected Town
 
 
 type alias Model =
@@ -31,15 +31,15 @@ towns =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        TownSelected ->
-            ( model, consoleJs model )
+        TownSelected town ->
+            ( model, consoleJs town )
 
 
 viewTowns : List Town -> Html Msg
 viewTowns towns =
     let
         townsLi =
-            List.map (\town -> li [ onClick TownSelected ] [ text town ]) towns
+            List.map (\town -> li [ onClick (TownSelected town) ] [ text town ]) towns
     in
         ul [ id "towns" ] townsLi
 
@@ -49,13 +49,13 @@ view model =
     viewTowns model.towns
 
 
-port consoleJs : Model -> Cmd msg
+port consoleJs : Town -> Cmd msg
 
 
 main : Program Never Model Msg
 main =
     Html.program
-        { init = ( towns, consoleJs towns )
+        { init = ( towns, consoleJs "" )
         , view = view
         , update = update
         , subscriptions = \_ -> Sub.none

@@ -8,11 +8,18 @@
 <div id=map></div>
 
 <script>
+    const map = L.map('map').setView([43.610769, 3.876716], 13)
+
     const app = Elm.Devfriendly.fullscreen()
     app.ports.consoleJs.subscribe(
        (town) => { console.log('selected town', town) })
 
-    const map = L.map('map').setView([43.610769, 3.876716], 13)
+    app.ports.moveMap.subscribe(
+       (town) => { 
+               console.log('moving map to ' + town.latitude + ":" + town.longitude)
+               map.setView([town.latitude, town.longitude], 13)
+           })
+
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href=http://osm.org/copyright>OpenStreetMap</a> contributors'

@@ -36,7 +36,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
-            ( model, consoleJs town )
+            ( model, Cmd.batch [ consoleJs town, moveMap town ] )
 
 
 viewTowns : List Town -> Html Msg
@@ -54,6 +54,9 @@ view model =
 
 
 port consoleJs : Town -> Cmd msg
+
+
+port moveMap : Town -> Cmd msg
 
 
 main : Program Never Model Msg

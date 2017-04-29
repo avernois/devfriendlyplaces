@@ -3,6 +3,7 @@ port module Devfriendly exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
+import Json.Decode as Decode exposing (Decoder, field, list)
 
 
 -- PORTS
@@ -32,14 +33,16 @@ type alias Town =
 
 towns : Model
 towns =
-    { towns =
-        [ Town "Toulouse" 43.607378 1.4399286 13
-        , Town "Montpellier" 43.6100219 3.8741615 13
-        , Town "Warswaw" 52.229676 21.012229 13
-        , Town "Barcelona" 41.3911671 2.1362266 13
-        , Town "Lisle sur Tarn" 43.852799 1.810783 13
-        ]
-    }
+    let
+        townsList =
+            case jsonToTowns jsonTowns of
+                Ok towns ->
+                    Debug.log "Ok: " towns
+
+                Err error ->
+                    Debug.log ("Error: " ++ error) []
+    in
+        { towns = townsList }
 
 
 
@@ -87,3 +90,51 @@ main =
         , update = update
         , subscriptions = \_ -> Sub.none
         }
+
+
+jsonToTowns : String -> Result String (List Town)
+jsonToTowns json =
+    Decode.decodeString (Decode.list townsDecoder) json
+
+
+
+-- Decoder
+
+
+townsDecoder : Decoder Town
+townsDecoder =
+    Decode.map4 Town
+        (field "name" Decode.string)
+        (field "lat" Decode.float)
+        (field "lon" Decode.float)
+        (field "defaultZoom" Decode.int)
+
+
+
+-- data
+
+
+jsonTowns : String
+jsonTowns =
+    """
+[
+    {
+        "name": "Amsterdam",
+        "lat": 52.3726,
+        "lon": 4.9174,
+        "defaultZoom": 13
+    },
+    {
+        "name": "Antibes",
+        "lat": 43.5822762,
+        "lon": 7.069828,
+        "defaultZoom": 13
+    },
+    {
+        "name": "Berlin",
+        "lat": 52.5169444,
+        "lon": 13.4106924,
+        "defaultZoom": 13
+    }
+]
+    """

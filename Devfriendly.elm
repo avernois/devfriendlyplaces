@@ -10,7 +10,10 @@ import Http
 -- PORTS
 
 
-port moveMap : ( Town, List Place ) -> Cmd msg
+port moveMap : Town -> Cmd msg
+
+
+port addPlaces : List Place -> Cmd msg
 
 
 
@@ -52,7 +55,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
-            ( model, moveMap ( town, model.places ) )
+            ( model, moveMap town )
 
         GetTowns (Ok towns) ->
             ( { model | towns = towns }, Cmd.none )
@@ -65,7 +68,7 @@ update msg model =
                 ( { model | towns = [] }, Cmd.none )
 
         GetPlaces (Ok places) ->
-            ( { model | places = places }, Cmd.none )
+            ( { model | places = places }, addPlaces places )
 
         GetPlaces (Err error) ->
             let

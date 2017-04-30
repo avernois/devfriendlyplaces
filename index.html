@@ -16,11 +16,12 @@
     const app = Elm.Devfriendly.fullscreen()
 
     app.ports.moveMap.subscribe(
-       (townAndPlaces) => {
-               const town = townAndPlaces[0]
-               const places = townAndPlaces[1] 
+       (town) => { 
                map.setView([town.latitude, town.longitude], town.defaultZoom)
-               
+           })
+           
+     app.ports.addPlaces.subscribe(
+       (places) => {
                places.map( place => {
                     L.marker([place.latitude, place.longitude]).addTo(map)
                         .bindPopup(place.name)

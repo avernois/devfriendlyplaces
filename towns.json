@@ -1,5 +1,11 @@
 [
     {
+        "name": "Toulouse",
+        "lat": 43.607378,
+        "lon": 1.4399286,
+        "defaultZoom": 14
+    },
+    {
         "name": "Amsterdam",
         "lat": 52.3726,
         "lon": 4.9174,

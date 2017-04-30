@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Presse Café",
         "lat": 14.667021,
@@ -10,4 +10,3 @@
         "wifi": {"available": true}
     }
 ]
-}

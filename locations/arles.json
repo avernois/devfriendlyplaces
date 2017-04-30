@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Médiathèque d'Arles",
         "lat": 43.67624,
@@ -11,4 +11,3 @@
         "wifi": {"available": false }
     }
 ]
-}

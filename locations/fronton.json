@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "De pain a sandwich",
         "openHours": "Monday - Saturday, 8h00 - 19h00",
@@ -12,4 +12,3 @@
         "url": "https://www.facebook.com/depains.a.sandwichs/?fref=ts"
     }
 ]
-}

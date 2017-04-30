@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Les Grisettes",
         "lat": 43.58390,
@@ -302,6 +302,5 @@
         "wifi": {"available": true }
     }
 ]
-}
 
 

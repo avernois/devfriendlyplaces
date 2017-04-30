@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Saint Seurin",
         "lat": 44.8437174,
@@ -209,4 +209,3 @@
         "wifi": {"available": true}
     }
 ]
-}

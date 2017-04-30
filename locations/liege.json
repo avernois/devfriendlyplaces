@@ -1,14 +1,13 @@
-{ "places": [
+[
     {
       "name": "La chocolateria",
 	  "openHours": "Mon-Sun 07:30-19:00",
       "lat": 50.64644,
       "lon": 5.57522,
-      "address": "3 rue du Palais, 4000 Liège, Belgium",
+      "address": "3 rue du Palais, 4000 LiÃ¨ge, Belgium",
       "type" : "Chocolate shop",
       "power": {"available": false},
       "wifi": {"available": true},
       "url": "http://www.la-chocolateria.com/"
     }
-  ]
-}
+]

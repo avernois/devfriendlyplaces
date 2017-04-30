@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Mac Callaghan",
         "lat": 47.324530,
@@ -23,4 +23,3 @@
         "comment": "Power plug on the terrace"
     }
 ]
-}

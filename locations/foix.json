@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "L'Equitable",
         "openHours": "Thusday - Friday, 12h00 - 19h00",
@@ -11,4 +11,3 @@
         "url": "http://www.lequitable.org/"
     }
 ]
-}

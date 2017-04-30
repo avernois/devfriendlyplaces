@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Starbucks",
         "lat": 54.89507,
@@ -18,4 +18,3 @@
         "wifi": {"available": true}
     }
 ]
-}

@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
       "name": "Mille Potes",
       "Opnening": "From tuesday to staurday 5.30pm to 1.00am",
@@ -11,7 +11,6 @@
       "url": "https://www.facebook.com/Mille-Potes-483203295133261/",
       "comment": "Wikipedia hub on thursday, Pinte of science & biomimicry makers sometimes. Not so far from train station & subway"
     },
-    
     {
       "name": "Le 4C",
       "openHours": "Étage du pôle Vie du Citoyen- Tuesday to friday 12am to 7pm & satruday & sunday 2pm to 7pm",
@@ -24,8 +23,7 @@
       "url": "http://www.leschampslibres.fr/les-rendez-vous-4c/",
       "comment": "Citizen place, whiteboard,Books, museum, science hall inside, train station very close"
     },
-    
-        {
+    {
       "name": "Le petit Bacchus",
       "openHours": "Monday to saturday 9pm to 8am",
       "lat": 48.1084225,
@@ -37,7 +35,6 @@
       "url": "https://www.facebook.com/martine.lecomte.370",
       "comment": "poolroom, coffee, wine, power outlet, Often calm and bright"
     },
-    
     {
     "name": "Le Panama",
     "openHours": "Fronm Monday to Saturday 10.00am to 1.00am",
@@ -50,6 +47,4 @@
     "url": "https://www.facebook.com/Le-Panama-232727366835587/",
     "comment" : "garden, BBQ, crazy place for crazy people"
     }
-    
  ]
-}

@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Red Rock Coffee",
         "openHours": "Monday - Sunday:7am - 11pm",
@@ -10,4 +10,4 @@
         "power": {"available": true},
         "url": "http://www.redrockcoffee.org/"
     }
-]}
+]

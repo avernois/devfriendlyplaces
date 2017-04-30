@@ -1,10 +1,10 @@
-{ "places": [
+[
     {
       "name": "Exki Porte de Namur",
 	  "openHours": "Mon-Fri 07:30-22:00; Sat 09:00-22:00; Sun 09:00-20:00",
       "lat": 50.837937,
       "lon": 4.362154,
-      "address": "Chaussée d'Ixelles 12, 1050 Ixelles",
+      "address": "ChaussÃ©e d'Ixelles 12, 1050 Ixelles",
       "type" : "Food & coffee",
       "power": {"available": false},
       "wifi": {"available": true},
@@ -22,7 +22,7 @@
       "comment": "Can be noisy and crowded at weekends"
     },
 	{
-      "name": "Natural Caffè Mont des Arts",
+      "name": "Natural CaffÃ¨ Mont des Arts",
 	  "openHours": "Mon-Fri 7.30am-7pm; Sat-Sun 11am-7pm",
       "lat": 50.844132,
       "lon": 4.358031,
@@ -31,8 +31,8 @@
       "power": {"available": false},
       "wifi": {"available": true}
     },
-	{
-      "name": "Natural Caffè Louise",
+	  {
+      "name": "Natural CaffÃ¨ Louise",
 	  "openHours": "Mon-Fri 7.30am-7pm; Sat 9am-7pm; Sun 10am-6pm",
       "lat": 50.827487,
       "lon": 4.364330,
@@ -41,5 +41,4 @@
       "power": {"available": false},
       "wifi": {"available": true}
     }
-  ]
-}
+]

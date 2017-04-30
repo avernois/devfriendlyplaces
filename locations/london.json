@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Timberyard",
         "lat": 51.524126,
@@ -176,4 +176,3 @@
         "wifi": { "available": true }
     }
 ]
-}

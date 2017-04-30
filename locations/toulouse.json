@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Café Contretemps",
         "openHours": "Monday to Saturday: 9h - 21h",
@@ -240,4 +240,3 @@
         "url": "https://fr-fr.facebook.com/sweethomecafe31/"
     }
 ]
-}

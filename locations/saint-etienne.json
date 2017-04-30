@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Le Mixeur",
         "lat": 45.449602,
@@ -34,4 +34,3 @@
         "coment": "Excellent but cheap burgers and hot-dogs. Very nice place."
     }
 ]
-}

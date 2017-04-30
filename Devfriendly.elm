@@ -155,12 +155,12 @@ placesDecode jsonPlaces =
 
 townsUrl : String
 townsUrl =
-    "http://localhost:8000/towns.json"
+    "http://localhost:8000/locations/locations.json"
 
 
 placesUrl : String
 placesUrl =
-    "http://localhost:8000/places.json"
+    "http://localhost:8000/locations/foix.json"
 
 
 main : Program Never Model Msg

@@ -1,4 +1,4 @@
-﻿{ "places": [
+[
     {
         "name": "Strada Café",
         "lat": 48.8469496,
@@ -91,4 +91,3 @@
         "wifi": {"available": false}
     }
 ]
-}

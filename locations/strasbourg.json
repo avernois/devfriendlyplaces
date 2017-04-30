@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Graffalgar",
         "openHours": "Monday - Saturday, 07h00 - 00h00, Sunday, 07h00 - 15h00",
@@ -11,4 +11,3 @@
         "url": "http://www.graffalgar-hotel-strasbourg.com/"
     }
 ]
-}

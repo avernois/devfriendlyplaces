@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "French Coffee Shop",
         "openHours": "Monday: 12h00 - 19h00, Thusday  to Saturday:8h30 to 19h00",
@@ -10,5 +10,4 @@
         "wifi": {"available": true},
         "url": "https://fr-fr.facebook.com/FrenchCoffeeShopCahors?ref=stream&hc_location=stream"
     }
-  ]
-}
+]

@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Hartford Coffee Company",
         "openHours": "Monday - Thursday: 6am - 9pm, Friday - Satuday: 7am - 10pm, Sunday: 7am - 7pm",
@@ -10,4 +10,4 @@
         "power": {"available": true},
         "url": "http://www.hartfordcoffee.net"
     }
-]}
+]

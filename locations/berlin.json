@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Sankt Oberholz",
         "lat": 52.5295476,
@@ -10,4 +10,3 @@
         "wifi": {"available": true}
     }
 ]
-}

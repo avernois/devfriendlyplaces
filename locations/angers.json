@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Multiplexe Angers",
         "lat": 47.478928,
@@ -11,4 +11,3 @@
         "wifi": {"available": true }
     }
 ]
-}

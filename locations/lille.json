@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Le Monde Moderne",
         "lat": 50.637486,
@@ -59,4 +59,3 @@
         "comment": "A community coffee with organic and local food an drinks."
     }
 ]
-}

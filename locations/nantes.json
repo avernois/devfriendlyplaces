@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Lieu Unique",
         "openHours": "Monday - 11:00am to 8:00pm - From Tuesday to Wednesday - 11:00am to 1:00pm - Thursday - 11:00am to 2:00pm - From Thursday to Saturday - 11:00am to 3:00pm - Sunday - 3:00pm to 8:00pm",
@@ -55,4 +55,3 @@
         "url": "http://www.delightcafe.fr/"
     }
 ]
-}

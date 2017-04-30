@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Bar du Chateau",
         "openHours": "Tuesday - Sunday, 10:00am to 7:00pm",
@@ -10,4 +10,3 @@
         "power": {"available": true}
     }
 ]
-}

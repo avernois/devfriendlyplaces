@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Café Culture",
         "lat": 43.12314,
@@ -11,4 +11,3 @@
         "wifi": {"available": true}
     }
 ]
-}

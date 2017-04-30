@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "La Folie Douce",
         "lat": 45.7724217,
@@ -17,6 +17,4 @@
         "power": {"available": true},
         "wifi": {"available": true}
     }
-
 ]
-}

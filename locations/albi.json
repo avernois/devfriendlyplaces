@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Capulus Bagels & Coffee Shop",
         "openHours": "Monday - Saturday, 10h00 - 19h00",
@@ -22,4 +22,3 @@
         "url": "https://www.facebook.com/LePontie/"
     }
 ]
-}

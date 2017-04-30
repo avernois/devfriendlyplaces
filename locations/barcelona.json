@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "L'Antiga Estació",
         "lat": 41.394142,
@@ -111,5 +111,4 @@
         "wifi": {"available": true }
     }
 ]
-}
 

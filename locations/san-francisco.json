@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "San Francisco Public Library",
         "openHours": "Monday: 12am - 5pm, Tuesday - Thursday: 9am - 8pm, Friday: 12am - 6pm, Saturday: 10am - 6pm, Sunday: 12pm - 5pm",
@@ -76,4 +76,4 @@
         "power": {"available": true},
         "url": "https://www.peets.com/"
     }
-]}
+]

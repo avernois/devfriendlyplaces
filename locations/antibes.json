@@ -1,4 +1,4 @@
-{ "places": [
+[
     {
         "name": "Médiathèque Albert Camus",
         "lat": 43.5785437,
@@ -11,4 +11,3 @@
         "wifi": { "available": true, "comment": "Ask agents for the code. Need to logout/login every 5 hours." }
     }
 ]
-}

@@ -45,6 +45,7 @@ type alias Place =
 type Msg
     = TownSelected Town
     | GetTowns (Result Http.Error (List Town))
+    | GetPlaces (Result Http.Error (List Place))
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -62,6 +63,16 @@ update msg model =
                     Debug.log "Get Towns Failed" error
             in
                 ( { model | towns = [] }, Cmd.none )
+
+        GetPlaces (Ok places) ->
+            ( { model | places = places }, Cmd.none )
+
+        GetPlaces (Err error) ->
+            let
+                _ =
+                    Debug.log "Get Towns Failed" error
+            in
+                ( { model | places = [] }, Cmd.none )
 
 
 
@@ -91,6 +102,13 @@ loadTowns url =
     Decode.list townDecoder
         |> Http.get townsUrl
         |> Http.send GetTowns
+
+
+loadPlaces : String -> Cmd Msg
+loadPlaces url =
+    Decode.list placeDecoder
+        |> Http.get placesUrl
+        |> Http.send GetPlaces
 
 
 
@@ -137,68 +155,20 @@ townsUrl =
     "http://localhost:8000/towns.json"
 
 
+placesUrl : String
+placesUrl =
+    "http://localhost:8000/places.json"
+
+
 main : Program Never Model Msg
 main =
     let
         initialModel =
-            { towns = [], places = placesDecode jsonPlaces }
+            { towns = [], places = [] }
     in
         Html.program
-            { init = ( initialModel, loadTowns townsUrl )
+            { init = ( initialModel, Cmd.batch [ loadTowns townsUrl, loadPlaces placesUrl ] )
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none
             }
-
-
-jsonPlaces : String
-jsonPlaces =
-    """
-[
-    {
-        "name": "Café Contretemps",
-        "lat": 43.600479,
-        "lon": 1.442523
-    },
-    {
-        "name": "Le Café Cerise",
-        "lat": 43.600071,
-        "lon": 1.440335
-    },
-    {
-        "name": "La fabrique",
-        "lat": 43.607378,
-        "lon": 1.4399286
-    },
-    {
-        "name": "Brasserie Père Léon",
-        "lat": 43.600474,
-        "lon": 1.443858999999975
-    },
-    {
-        "name": "The George and Dragon",
-        "lat": 43.607414,
-        "lon": 1.4396000000000413
-    },
-    {
-        "name": "L'impro",
-        "lat": 43.602984,
-        "lon": 1.4416109999999662
-    },
-    {
-        "name": "Les coudes sur la table",
-        "lat": 43.607103,
-        "lon": 1.439847
-    },
-    {
-        "name": "Le Cyrano",
-        "lat": 43.6039657,
-        "lon": 1.4472385
-    },
-    {
-        "name": "Ombres blanches",
-        "lat": 43.603361,
-        "lon": 1.442201
-    }
-]
-"""

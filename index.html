@@ -19,8 +19,6 @@
        (townAndPlaces) => {
                const town = townAndPlaces[0]
                const places = townAndPlaces[1] 
-               console.log('town ', town)
-               console.log('places ', places)
                map.setView([town.latitude, town.longitude], town.defaultZoom)
                
                places.map( place => {

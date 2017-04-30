@@ -55,7 +55,11 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
-            ( model, moveMap town )
+            let
+                placesUrl =
+                    placesUrlFor town.name
+            in
+                ( model, Cmd.batch [ moveMap town, loadPlaces placesUrl ] )
 
         GetTowns (Ok towns) ->
             ( { model | towns = towns }, Cmd.none )
@@ -68,7 +72,7 @@ update msg model =
                 ( { model | towns = [] }, Cmd.none )
 
         GetPlaces (Ok places) ->
-            ( { model | places = places }, addPlaces places )
+            ( { model | places = List.append model.places places }, addPlaces places )
 
         GetPlaces (Err error) ->
             let
@@ -103,14 +107,14 @@ view model =
 loadTowns : String -> Cmd Msg
 loadTowns url =
     Decode.list townDecoder
-        |> Http.get townsUrl
+        |> Http.get url
         |> Http.send GetTowns
 
 
 loadPlaces : String -> Cmd Msg
 loadPlaces url =
     Decode.list placeDecoder
-        |> Http.get placesUrl
+        |> Http.get url
         |> Http.send GetPlaces
 
 
@@ -153,14 +157,19 @@ placesDecode jsonPlaces =
 -- MAIN
 
 
+baseUrl : String
+baseUrl =
+    "http://localhost:8000/locations/"
+
+
+placesUrlFor : String -> String
+placesUrlFor town =
+    baseUrl ++ (String.toLower town) ++ ".json"
+
+
 townsUrl : String
 townsUrl =
     "http://localhost:8000/locations/locations.json"
-
-
-placesUrl : String
-placesUrl =
-    "http://localhost:8000/locations/foix.json"
 
 
 main : Program Never Model Msg
@@ -170,7 +179,7 @@ main =
             { towns = [], places = [] }
     in
         Html.program
-            { init = ( initialModel, Cmd.batch [ loadTowns townsUrl, loadPlaces placesUrl ] )
+            { init = ( initialModel, Cmd.batch [ loadTowns townsUrl, loadPlaces (placesUrlFor "montpellier") ] )
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none

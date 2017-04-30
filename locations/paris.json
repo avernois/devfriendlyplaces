@@ -1,5 +1,17 @@
 ﻿{ "places": [
     {
+        "name": "Gaîté Lyrique",
+        "lat": 48.8666934,
+        "lon": 2.3520315,
+        "address": "3bis Rue Papin, 75003 Paris",
+        "openHours" : "14h00-20h00",
+        "type": "library, café, multimedia, events",
+        "comment" : "Loads of space, books ande to possibly organise events. SSH port blocked. Not opened on Mondays.",
+        "url": "https://gaite-lyrique.net/",
+        "power": {"available": true},
+        "wifi": {"available": true}
+    },
+    {
         "name": "Strada Café",
         "lat": 48.8469496,
         "lon": 2.348961,

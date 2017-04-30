@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Amsterdam",
+        "lat": 52.3726,
+        "lon": 4.9174,
+        "defaultZoom": 13
+    },
+    {
+    	"name": "Antibes",
+    	"lat": 43.5822762,
+    	"lon": 7.069828,
+    	"defaultZoom": 13
+    },
+    {
+        "name": "Berlin",
+        "lat": 52.5169444,
+        "lon": 13.4106924,
+        "defaultZoom":  13
+    },
+    {
+        "name": "Bordeaux",
+        "lat": 44.8382,
+        "lon": -0.5748,
+        "defaultZoom": 13
+    },
+    {
+        "name": "Brussels",
+        "lat": 50.85045,
+        "lon": 4.34878,
+        "defaultZoom": 14
+    },
+    {
+        "name": "Cahors",
+        "lat": 44.4566,
+        "lon": 1.4390,
+        "defaultZoom": 15
+    },
+    {
+        "name": "Cumbria",
+        "lat": 54.6190,
+        "lon": -2.9004,
+        "defaultZoom": 9
+    },
+    {
+        "name": "Dijon",
+        "lat": 47.321753,
+        "lon": 5.040632,
+        "defaultZoom":  13
+    },
+    {
+        "name": "Fronton",
+        "lat": 43.840098,
+        "lon": 1.389654,
+        "defaultZoom":  13
+    },
+    {
+        "name": "Lille",
+        "lat": 50.6303,
+        "lon": 3.053802,
+        "defaultZoom":  14
+    },
+    {
+        "name": "Herault",
+        "lat": 43.7453,
+        "lon": 3.6172,
+        "defaultZoom": 10
+    },
+    {
+        "name": "London",
+        "lat": 51.5073219,
+        "lon": -0.1276474,
+        "defaultZoom":  14
+    },
+    {
+        "name": "Lyon",
+        "lat": 45.7662954,
+        "lon": 4.879662199999984,
+        "defaultZoom":  13
+    },
+
+
+    {
+        "name" : "Angers",
+        "lat" : 47.4818884,
+        "lon" : -0.5629345,
+        "defaultZoom":  14
+    },
+    {
+        "name" : "Barcelona",
+        "lat" : 41.3911671,
+        "lon" : 2.1362266,
+        "defaultZoom":  13
+    },
+    {
+        "name" : "Saint-Étienne",
+        "lat" : 45.439710,
+        "lon" : 4.387387,
+        "defaultZoom":  13
+    },
+    {
+        "name" : "Liège",
+        "lat" : 50.6246191,
+        "lon" : 5.5290505,
+        "defaultZoom":  12
+    }
+]

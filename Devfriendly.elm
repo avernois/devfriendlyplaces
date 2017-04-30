@@ -4,6 +4,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder, field, list)
+import Http
 
 
 -- PORTS
@@ -31,26 +32,13 @@ type alias Town =
     }
 
 
-towns : Model
-towns =
-    let
-        townsList =
-            case jsonToTowns jsonTowns of
-                Ok towns ->
-                    Debug.log "Ok: " towns
-
-                Err error ->
-                    Debug.log ("Error: " ++ error) []
-    in
-        { towns = townsList }
-
-
 
 -- UPDATE
 
 
 type Msg
     = TownSelected Town
+    | GetTowns (Result Http.Error (List Town))
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -58,6 +46,16 @@ update msg model =
     case msg of
         TownSelected town ->
             ( model, Cmd.batch [ consoleJs town, moveMap town ] )
+
+        GetTowns (Ok towns) ->
+            ( { model | towns = towns }, Cmd.none )
+
+        GetTowns (Err error) ->
+            let
+                _ =
+                    Debug.log "Get Towns Failed" error
+            in
+                ( { model | towns = [] }, Cmd.none )
 
 
 
@@ -79,30 +77,22 @@ view model =
 
 
 
--- MAIN
+-- Commands
 
 
-main : Program Never Model Msg
-main =
-    Html.program
-        { init = ( towns, consoleJs (Town "" 0 0 0) )
-        , view = view
-        , update = update
-        , subscriptions = \_ -> Sub.none
-        }
-
-
-jsonToTowns : String -> Result String (List Town)
-jsonToTowns json =
-    Decode.decodeString (Decode.list townsDecoder) json
+loadTowns : String -> Cmd Msg
+loadTowns url =
+    Decode.list townDecoder
+        |> Http.get townsUrl
+        |> Http.send GetTowns
 
 
 
 -- Decoder
 
 
-townsDecoder : Decoder Town
-townsDecoder =
+townDecoder : Decoder Town
+townDecoder =
     Decode.map4 Town
         (field "name" Decode.string)
         (field "lat" Decode.float)
@@ -111,30 +101,19 @@ townsDecoder =
 
 
 
--- data
+-- MAIN
 
 
-jsonTowns : String
-jsonTowns =
-    """
-[
-    {
-        "name": "Amsterdam",
-        "lat": 52.3726,
-        "lon": 4.9174,
-        "defaultZoom": 13
-    },
-    {
-        "name": "Antibes",
-        "lat": 43.5822762,
-        "lon": 7.069828,
-        "defaultZoom": 13
-    },
-    {
-        "name": "Berlin",
-        "lat": 52.5169444,
-        "lon": 13.4106924,
-        "defaultZoom": 13
-    }
-]
-    """
+townsUrl : String
+townsUrl =
+    "http://localhost:8000/towns.json"
+
+
+main : Program Never Model Msg
+main =
+    Html.program
+        { init = ( { towns = [] }, loadTowns townsUrl )
+        , view = view
+        , update = update
+        , subscriptions = \_ -> Sub.none
+        }

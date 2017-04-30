@@ -10,7 +10,7 @@ import Http
 -- PORTS
 
 
-port moveMap : Town -> Cmd msg
+port moveMap : ( Town, List Place ) -> Cmd msg
 
 
 
@@ -18,7 +18,9 @@ port moveMap : Town -> Cmd msg
 
 
 type alias Model =
-    { towns : List Town }
+    { towns : List Town
+    , places : List Place
+    }
 
 
 type alias Town =
@@ -26,6 +28,13 @@ type alias Town =
     , latitude : Float
     , longitude : Float
     , defaultZoom : Int
+    }
+
+
+type alias Place =
+    { name : String
+    , latitude : Float
+    , longitude : Float
     }
 
 
@@ -42,7 +51,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
-            ( model, moveMap town )
+            ( model, moveMap ( town, model.places ) )
 
         GetTowns (Ok towns) ->
             ( { model | towns = towns }, Cmd.none )
@@ -108,9 +117,20 @@ townsUrl =
 
 main : Program Never Model Msg
 main =
-    Html.program
-        { init = ( { towns = [] }, loadTowns townsUrl )
-        , view = view
-        , update = update
-        , subscriptions = \_ -> Sub.none
-        }
+    let
+        initialModel =
+            { towns = [], places = places }
+    in
+        Html.program
+            { init = ( initialModel, loadTowns townsUrl )
+            , view = view
+            , update = update
+            , subscriptions = \_ -> Sub.none
+            }
+
+
+places : List Place
+places =
+    [ Place "L'anartiste" 43.598183 1.4418379
+    , Place "Partisan Café" 44.8305 -0.56764
+    ]

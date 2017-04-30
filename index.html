@@ -15,8 +15,6 @@
 
 
     const app = Elm.Devfriendly.fullscreen()
-    app.ports.consoleJs.subscribe(
-       (town) => { console.log('selected town', town) })
     app.ports.moveMap.subscribe(
        (town) => { 
                console.log('moving map to ' + town.latitude + ":" + town.longitude)

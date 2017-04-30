@@ -10,9 +10,6 @@ import Http
 -- PORTS
 
 
-port consoleJs : Town -> Cmd msg
-
-
 port moveMap : Town -> Cmd msg
 
 
@@ -45,7 +42,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
-            ( model, Cmd.batch [ consoleJs town, moveMap town ] )
+            ( model, moveMap town )
 
         GetTowns (Ok towns) ->
             ( { model | towns = towns }, Cmd.none )

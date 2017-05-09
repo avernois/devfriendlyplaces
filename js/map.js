@@ -23,6 +23,20 @@ function extractLocationFromUrl(hostname) {
     return location;
 }
 
+function slugifyLocation(location) {
+    return location.toUpperCase()
+        .replace("À", "A")
+        .replace(/[È,É]/, "E")
+        .replace(" ", "-")
+        .toLowerCase();
+}
+
+function getLocationInfo(locations, location) {
+    return locations.filter(
+        l => slugifyLocation(l.name) === location
+    )[0]
+}
+
 function getLocations() {
     return getJSON("/locations/locations.json");
 }
@@ -42,7 +56,8 @@ function getJSON(url) {
 function buildMapFor(location) {
     var defaultZoom = 14;
     var locations = getLocations();
-    var map = L.map('map').setView([locations[location].lat, locations[location].lon], locations[location].defaultZoom);
+    var locationInfo = getLocationInfo(locations, location);
+    var map = L.map('map').setView([locationInfo.lat, locationInfo.lon], locationInfo.defaultZoom);
     map.on('moveend', onMoveEnd(map, locations));
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
@@ -138,12 +153,11 @@ function displayPlacesFromLocation(map, location) {
 
 function onMoveEnd(map, locations) {
     return function() {
-        for (var key in locations) {
-            var location = locations[key];
+        locations.map(location => {
             if (map.getBounds().contains([location.lat, location.lon])) {
                 displayPlacesFromLocation(map, key);
             }
-        };
+        });
     }
 }
 

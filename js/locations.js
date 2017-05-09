@@ -8,33 +8,31 @@ function getJSON(url) {
     return JSON.parse(request.responseText);
 }
 
+function slugifyLocation(location) {
+    return location.toUpperCase()
+        .replace("À", "A")
+        .replace(/[È,É]/, "E")
+        .replace(" ", "-")
+        .toLowerCase();
+}
+
 function getLocations() {
   return getJSON("/locations/locations.json");
 }
 
 function sortKeys(locations) {
-    var keys = [];
-
-    for (var key in locations) {
-        keys.push(key);
-    }
-
-    return keys.sort();
+    return locations.map(l => l.name).sort()
 }
 
 function buildLocations() {
   var locations = getLocations();
-
   var listContainer = document.createElement("div");
-    document.getElementById("locations").appendChild(listContainer);
-    var listElement = document.createElement("ul");
-
-    listContainer.appendChild(listElement);
-
-  sortKeys(locations).map(function(location) {
+  var listElement = document.createElement("ul");
+  document.getElementById("locations").appendChild(listContainer);
+  listContainer.appendChild(listElement);
+  sortKeys(locations).map(location => {
         var listItem = document.createElement("li");
-
-        listItem.innerHTML = "<a href=\"https://" + location + ".devfriendlyplaces.net\">" + locations[location].name + "</a>";
+        listItem.innerHTML = "<a href=\"https://" + slugifyLocation(location) + ".devfriendlyplaces.net\">" + location + "</a>";
         listElement.appendChild(listItem);
     });
 }

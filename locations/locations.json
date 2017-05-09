@@ -84,12 +84,6 @@
         "defaultZoom": 13
     },
     {
-        "name": "Lyon",
-        "lat": 45.7662954,
-        "lon": 4.879662199999984,
-        "defaultZoom": 13
-    },
-    {
         "name": "Paris",
         "lat": 48.8568,
         "lon": 2.351828,

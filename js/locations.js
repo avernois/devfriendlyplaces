@@ -1,5 +1,18 @@
 "use strict";
 
+
+function extractLocationFromUrl(hostname) {
+    var split = hostname.split(".");
+    var location = split[0];
+
+    if ((split.length < 3) || (location == "www")) {
+        throw "No location in the url";;
+    }
+
+    return location;
+}
+
+
 function getJSON(url) {
     var request = new XMLHttpRequest();
     request.open("GET", url, false);
@@ -7,6 +20,7 @@ function getJSON(url) {
 
     return JSON.parse(request.responseText);
 }
+
 
 function slugifyLocation(location) {
     return location.toUpperCase()
@@ -16,23 +30,25 @@ function slugifyLocation(location) {
         .toLowerCase();
 }
 
+
 function getLocations() {
+  // Possible to get an absolute url : https://raw.githubusercontent.com/...
   return getJSON("/locations/locations.json");
 }
+
+
+function getPlaces(location) {
+    return getJSON("/locations/" + location + ".json");
+}
+
 
 function sortKeys(locations) {
     return locations.map(l => l.name).sort()
 }
 
-function buildLocations() {
-  var locations = getLocations();
-  var listContainer = document.createElement("div");
-  var listElement = document.createElement("ul");
-  document.getElementById("locations").appendChild(listContainer);
-  listContainer.appendChild(listElement);
-  sortKeys(locations).map(location => {
-        var listItem = document.createElement("li");
-        listItem.innerHTML = "<a href=\"https://" + slugifyLocation(location) + ".devfriendlyplaces.net\">" + location + "</a>";
-        listElement.appendChild(listItem);
-    });
+
+function getLocationInfo(locations, location) {
+    return locations.filter(
+        l => slugifyLocation(l.name) === location
+    )[0]
 }

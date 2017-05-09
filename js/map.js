@@ -12,46 +12,6 @@ for(var i = 0; i < 4; i++) {
     );
 }
 
-function extractLocationFromUrl(hostname) {
-    var split = hostname.split(".");
-    var location = split[0];
-
-    if ((split.length < 3) || (location == "www")) {
-        throw "No location in the url";;
-    }
-
-    return location;
-}
-
-function slugifyLocation(location) {
-    return location.toUpperCase()
-        .replace("À", "A")
-        .replace(/[È,É]/, "E")
-        .replace(" ", "-")
-        .toLowerCase();
-}
-
-function getLocationInfo(locations, location) {
-    return locations.filter(
-        l => slugifyLocation(l.name) === location
-    )[0]
-}
-
-function getLocations() {
-    return getJSON("/locations/locations.json");
-}
-
-function getPlaces(location) {
-    return getJSON("/locations/" + location + ".json");
-}
-
-function getJSON(url) {
-    var request = new XMLHttpRequest();
-    request.open("GET", url, false);
-    request.send(null);
-
-    return JSON.parse(request.responseText);
-}
 
 function buildMapFor(location) {
     var defaultZoom = 14;
@@ -68,6 +28,7 @@ function buildMapFor(location) {
     displayPlacesFromLocation(map, location);
 }
 
+
 function placeToHtml(place) {
     return "<b>" + place.name + "</b><br>" +
         optionalFieldToHtml("address", place.address) +
@@ -78,6 +39,7 @@ function placeToHtml(place) {
         optionToHtml("wifi", place.wifi) +
         optionalFieldToHtml("comment", place.comment);
 }
+
 
 function iconForPlace(place) {
     var weights = {wifi: 1, power: 2};
@@ -90,17 +52,21 @@ function iconForPlace(place) {
     return marker_icons[iconIndex];
 }
 
+
 function optionalFieldToHtml(label, value) {
     return value ? label + ": " + value + "<br>" : "";
 }
+
 
 function optionalUrlToLink(label, value){
     return value ? label + ": " + "<a href='" + value + "'>" + value + "</a>" + "<br>" : "";
 }
 
+
 function optionToHtml(label, value) {
     return label + ": " + optionText(value) + "<br>";
 }
+
 
 function optionText(value) {
     if (value !== undefined) {
@@ -110,12 +76,14 @@ function optionText(value) {
     }
 }
 
+
 function optionValue(value) {
     if (value !== undefined) {
         return boolToInt(value.available);
     }
     return 0;
 }
+
 
 function boolToStr(value) {
     if (value !== undefined) {
@@ -125,6 +93,7 @@ function boolToStr(value) {
     }
 }
 
+
 function boolToInt(value){
     if (value !== undefined) {
         return value ? 1 : 0;
@@ -133,9 +102,11 @@ function boolToInt(value){
     }
 }
 
+
 function optionalComment(value) {
     return value ? "(" + value + ")" : "";
 }
+
 
 function displayPlacesFromLocation(map, location) {
     if (isLocationDisplayedOnMap(map, location)) {return;}
@@ -151,6 +122,7 @@ function displayPlacesFromLocation(map, location) {
     map.isDisplayedLocation[location] = true;
 }
 
+
 function onMoveEnd(map, locations) {
     return function() {
         locations.map(location => {
@@ -160,6 +132,7 @@ function onMoveEnd(map, locations) {
         });
     }
 }
+
 
 function isLocationDisplayedOnMap(map, location) {
     return map.isDisplayedLocation[location];

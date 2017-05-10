@@ -37,7 +37,7 @@ ul#towns li:hover {
 	color: black;
 }
 
-ul#towns li[data-selected="True"] {
+ul#towns li[data-selected-town="True"] {
 	background-color: #aedfa3;
 	color: black;
 }

@@ -23,6 +23,7 @@ port addPlaces : List Place -> Cmd msg
 type alias Model =
     { towns : List Town
     , places : List Place
+    , selectedTown : String
     }
 
 
@@ -55,11 +56,16 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         TownSelected town ->
-            let
-                placesUrl =
-                    placesUrlFor town.name
-            in
-                ( model, Cmd.batch [ moveMap town, loadPlaces placesUrl ] )
+            case (town.name /= model.selectedTown) of
+                True ->
+                    let
+                        placesUrl =
+                            placesUrlFor town.name
+                    in
+                        ( { model | selectedTown = town.name }, Cmd.batch [ moveMap town, loadPlaces placesUrl ] )
+
+                False ->
+                    ( model, Cmd.none )
 
         GetTowns (Ok towns) ->
             ( { model | towns = towns }, Cmd.none )
@@ -86,18 +92,18 @@ update msg model =
 -- VIEW
 
 
-viewTowns : List Town -> Html Msg
-viewTowns towns =
+viewTowns : Model -> Html Msg
+viewTowns model =
     let
         townsLi =
-            List.map (\town -> li [ onClick (TownSelected town) ] [ text town.name ]) towns
+            List.map (\town -> li [ onClick (TownSelected town), attribute "data-selected-town" (toString (model.selectedTown == town.name)) ] [ text town.name ]) model.towns
     in
         ul [ id "towns" ] townsLi
 
 
 view : Model -> Html Msg
 view model =
-    viewTowns model.towns
+    viewTowns model
 
 
 
@@ -176,10 +182,10 @@ main : Program Never Model Msg
 main =
     let
         initialModel =
-            { towns = [], places = [] }
+            { towns = [], places = [], selectedTown = "toulouse" }
     in
         Html.program
-            { init = ( initialModel, Cmd.batch [ loadTowns townsUrl, loadPlaces (placesUrlFor "montpellier") ] )
+            { init = ( initialModel, Cmd.batch [ loadPlaces (placesUrlFor initialModel.selectedTown), loadTowns townsUrl ] )
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none

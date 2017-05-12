@@ -1,5 +1,5 @@
 <meta charset=UTF-8>
-<title>Document</title>
+<title>DevFriendlyPlaces</title>
 <link rel=stylesheet href=https://unpkg.com/leaflet@1.0.3/dist/leaflet.css >
 <link rel=stylesheet href=devfriendly.css >
 <script src=https://unpkg.com/leaflet@1.0.3/dist/leaflet.js></script>
@@ -8,7 +8,7 @@
 <div id=map></div>
 
 <script>
-    var map = L.map('map').setView([43.610769, 3.876716], 13)
+    const map = L.map('map').setView([43.610769, 3.876716], 13)
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href=http://osm.org/copyright>OpenStreetMap</a> contributors'
     }).addTo(map)
@@ -16,15 +16,15 @@
     const app = Elm.Devfriendly.fullscreen()
 
     app.ports.moveMap.subscribe(
-       (town) => { 
-               map.setView([town.latitude, town.longitude], town.defaultZoom)
-           })
+        town => map.setView([town.latitude, town.longitude], town.defaultZoom)
+    )
            
-     app.ports.addPlaces.subscribe(
-       (places) => {
-               places.map( place => {
-                    L.marker([place.latitude, place.longitude]).addTo(map)
-                        .bindPopup(place.name)
-               })
-           })
+    app.ports.addPlaces.subscribe(
+        places => 
+            places.map( place =>
+                L.marker([place.latitude, place.longitude])
+                    .addTo(map)
+                    .bindPopup(place.name)
+            )
+    )
 </script>

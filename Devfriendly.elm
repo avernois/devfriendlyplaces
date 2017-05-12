@@ -62,13 +62,32 @@ update msg model =
                         placesUrl =
                             placesUrlFor town.name
                     in
-                        ( { model | selectedTown = town.name }, Cmd.batch [ moveMap town, loadPlaces placesUrl ] )
+                        ( { model | selectedTown = town.name }
+                        , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
+                        )
 
                 False ->
                     ( model, Cmd.none )
 
         GetTowns (Ok towns) ->
-            ( { model | towns = towns }, Cmd.none )
+            let
+                defaultTown =
+                    towns
+                        |> List.filter (\town -> town.name == "Montpellier")
+                        |> List.head
+            in
+                case defaultTown of
+                    Just town ->
+                        let
+                            placesUrl =
+                                placesUrlFor town.name
+                        in
+                            ( { model | towns = towns, selectedTown = town.name }
+                            , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
+                            )
+
+                    Nothing ->
+                        ( { model | towns = towns }, Cmd.none )
 
         GetTowns (Err error) ->
             let
@@ -96,7 +115,15 @@ viewTowns : Model -> Html Msg
 viewTowns model =
     let
         townsLi =
-            List.map (\town -> li [ onClick (TownSelected town), attribute "data-selected-town" (toString (model.selectedTown == town.name)) ] [ text town.name ]) model.towns
+            List.map
+                (\town ->
+                    li
+                        [ onClick (TownSelected town)
+                        , attribute "data-selected-town" (toString (model.selectedTown == town.name))
+                        ]
+                        [ text town.name ]
+                )
+                (List.sortBy .name model.towns)
     in
         ul [ id "towns" ] townsLi
 

@@ -2,7 +2,7 @@ port module Devfriendly exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Html.Events exposing (onClick)
+import Html.Events exposing (..)
 import Json.Decode as Decode exposing (Decoder, field, list)
 import Http
 
@@ -47,7 +47,7 @@ type alias Place =
 
 
 type Msg
-    = TownSelected Town
+    = TownSelected String
     | GetTowns (Result Http.Error (List Town))
     | GetPlaces (Result Http.Error (List Place))
 
@@ -55,25 +55,31 @@ type Msg
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        TownSelected town ->
-            case (town.name /= model.selectedTown) of
-                True ->
-                    let
-                        placesUrl =
-                            placesUrlFor town.name
-                    in
-                        ( { model | selectedTown = town.name }
-                        , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
-                        )
+        TownSelected townName ->
+            let
+                selectedTown =
+                    model.towns
+                        |> List.filter (\t -> t.name == townName)
+                        |> List.head
+            in
+                case selectedTown of
+                    Just town ->
+                        let
+                            placesUrl =
+                                placesUrlFor town.name
+                        in
+                            ( { model | selectedTown = town.name }
+                            , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
+                            )
 
-                False ->
-                    ( model, Cmd.none )
+                    Nothing ->
+                        ( model, Cmd.none )
 
         GetTowns (Ok towns) ->
             let
                 defaultTown =
                     towns
-                        |> List.filter (\town -> town.name == "Montpellier")
+                        |> List.filter (\t -> t.name == "Montpellier")
                         |> List.head
             in
                 case defaultTown of
@@ -111,26 +117,29 @@ update msg model =
 -- VIEW
 
 
-viewTowns : Model -> Html Msg
-viewTowns model =
+onChange : (String -> msg) -> Html.Attribute msg
+onChange tagger =
+    on "change" (Decode.map tagger Html.Events.targetValue)
+
+
+viewMenu : Model -> Html Msg
+viewMenu model =
     let
-        townsLi =
+        townsOption =
             List.map
                 (\town ->
-                    li
-                        [ onClick (TownSelected town)
-                        , attribute "data-selected-town" (toString (model.selectedTown == town.name))
-                        ]
+                    option
+                        [ selected (model.selectedTown == town.name) ]
                         [ text town.name ]
                 )
                 (List.sortBy .name model.towns)
     in
-        ul [ id "towns" ] townsLi
+        select [ id "towns", onChange TownSelected ] townsOption
 
 
 view : Model -> Html Msg
 view model =
-    viewTowns model
+    viewMenu model
 
 
 

@@ -6,6 +6,7 @@ import Html.Events exposing (..)
 import Json.Decode as Decode exposing (Decoder, field, list)
 import Http
 import Navigation
+import UrlParser
 
 
 -- PORTS
@@ -272,7 +273,7 @@ main =
             ({ towns = [], places = [], selectedTown = defaultTown, visitedTowns = [ defaultTown ] }
             , Cmd.batch [ loadPlaces (placesUrlFor defaultTown), loadTowns townsUrl ] )
     in
-        Html.program
+        Html.Program
             { init = initialModel
             , view = view
             , update = update

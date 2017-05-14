@@ -84,12 +84,6 @@
         "defaultZoom": 13
     },
     {
-        "name": "Lyon",
-        "lat": 45.7662954,
-        "lon": 4.879662199999984,
-        "defaultZoom": 13
-    },
-    {
         "name": "Paris",
         "lat": 48.8568,
         "lon": 2.351828,
@@ -105,12 +99,6 @@
         "name": "Toulon",
         "lat": 43.117,
         "lon": 5.9333,
-        "defaultZoom": 14
-    },
-    {
-        "name": "Toulouse",
-        "lat": 43.607378,
-        "lon": 1.4399286,
         "defaultZoom": 14
     },
     {
@@ -151,9 +139,9 @@
     },
     {
         "name" : "Rennes",
-        "lat" : 48.1158943,
-        "lon" : -1.7584942,
-        "defaultZoom": 14
+        "lat" : 48.1117,
+        "lon" : -1.6800,
+        "defaultZoom": 13
     },
     {
         "name" : "Saint-Louis",

@@ -6,7 +6,6 @@ import Html.Events exposing (..)
 import Json.Decode as Decode exposing (Decoder, field, list)
 import Http
 import Navigation
-import UrlParser
 
 
 -- PORTS
@@ -23,14 +22,15 @@ port addPlaces : List Place -> Cmd msg
 
 
 type alias Model =
-    { towns : List Town
+    { history : List Navigation.Location
+    , towns : List Town
     , places : List Place
-    , selectedTown : TownName
-    , visitedTowns : List TownName
+    , selectedTown : TownSlug
+    , visitedTowns : List TownSlug
     }
 
 
-type alias TownName =
+type alias TownSlug =
     String
 
 
@@ -57,36 +57,41 @@ type Msg
     = TownSelected String
     | GetTowns (Result Http.Error (List Town))
     | GetPlaces (Result Http.Error (List Place))
+    | UrlChange Navigation.Location
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        UrlChange location ->
+            ( { model | history = location :: model.history }, Cmd.none )
+
         TownSelected townName ->
             let
+                townSlug = (slugifyTownName townName)
                 selectedTown =
                     model.towns
-                        |> List.filter (\t -> t.name == townName)
+                        |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
                         |> List.head
 
                 visitedTowns =
-                    case List.member townName model.visitedTowns of
+                    case List.member townSlug model.visitedTowns of
                         True ->
                             model.visitedTowns
 
                         False ->
-                            List.append [ townName ] model.visitedTowns
+                            List.append [ townSlug ] model.visitedTowns
             in
                 case selectedTown of
                     Just town ->
                         let
                             placesUrl =
-                                placesUrlFor town.name
+                                placesUrlFor townSlug
 
                             townUrl = 
                                 "#" ++ (slugifyTownName town.name)
                         in
-                            ( { model | selectedTown = town.name, visitedTowns = visitedTowns }
+                            ( { model | selectedTown = (slugifyTownName town.name), visitedTowns = visitedTowns }
                             , Cmd.batch
                                 (case List.member town.name model.visitedTowns of
                                     True ->
@@ -104,7 +109,7 @@ update msg model =
             let
                 defaultTown =
                     towns
-                        |> List.filter (\t -> t.name == model.selectedTown)
+                        |> List.filter (\t -> (slugifyTownName t.name) == model.selectedTown)
                         |> List.head
             in
                 case defaultTown of
@@ -154,7 +159,7 @@ viewMenu model =
             List.map
                 (\town ->
                     option
-                        [ selected (model.selectedTown == town.name) ]
+                        [ selected (model.selectedTown == (slugifyTownName town.name)) ]
                         [ text town.name ]
                 )
                 (List.sortBy .name model.towns)
@@ -223,16 +228,16 @@ placesDecode jsonPlaces =
 
 -- MAIN
 
-defaultTown: TownName
+defaultTown: TownSlug
 defaultTown =
-    "Montpellier"
+    "montpellier"
 
 baseUrl : String
 baseUrl =
     "http://localhost:8000/locations/"
 
 
-slugifyTownName : TownName -> TownName
+slugifyTownName : String -> String
 slugifyTownName town =
     town
         |> String.toLower
@@ -257,8 +262,8 @@ slugifyTownName town =
 
 
 placesUrlFor : String -> String
-placesUrlFor town =
-    baseUrl ++ (slugifyTownName town) ++ ".json"
+placesUrlFor townSlug =
+    baseUrl ++ townSlug ++ ".json"
 
 
 townsUrl : String
@@ -266,14 +271,20 @@ townsUrl =
     "http://localhost:8000/locations/locations.json"
 
 
-main : Program Never Model Msg
 main =
     let
-        initialModel =
-            ({ towns = [], places = [], selectedTown = defaultTown, visitedTowns = [ defaultTown ] }
-            , Cmd.batch [ loadPlaces (placesUrlFor defaultTown), loadTowns townsUrl ] )
+        initialTown location =
+            case (String.dropLeft 1 location.hash) of
+                "" ->
+                    defaultTown
+                hash -> 
+                    hash
+                    
+        initialModel location =
+            ({ history = [location], towns = [], places = [], selectedTown = initialTown location, visitedTowns = [ initialTown location] }
+            , Cmd.batch [ loadPlaces (placesUrlFor (initialTown location)), loadTowns townsUrl ] )
     in
-        Html.Program
+        Navigation.program UrlChange
             { init = initialModel
             , view = view
             , update = update

@@ -22,7 +22,8 @@ port addPlaces : List Place -> Cmd msg
 
 
 type alias Model =
-    { towns : List Town
+    { history : List Navigation.Location
+    , towns : List Town
     , places : List Place
     , selectedTown : TownName
     , visitedTowns : List TownName
@@ -56,11 +57,15 @@ type Msg
     = TownSelected String
     | GetTowns (Result Http.Error (List Town))
     | GetPlaces (Result Http.Error (List Place))
+    | UrlChange Navigation.Location
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        UrlChange location ->
+            ( Debug.log "location" { model | history = location :: model.history }, Cmd.none )
+
         TownSelected townName ->
             let
                 selectedTown =
@@ -81,15 +86,18 @@ update msg model =
                         let
                             placesUrl =
                                 placesUrlFor town.name
+
+                            townUrl = 
+                                "#" ++ (slugifyTownName town.name)
                         in
                             ( { model | selectedTown = town.name, visitedTowns = visitedTowns }
                             , Cmd.batch
                                 (case List.member town.name model.visitedTowns of
                                     True ->
-                                        [ moveMap town ]
+                                        [ moveMap town, Navigation.newUrl townUrl ]
 
                                     False ->
-                                        [ moveMap town, loadPlaces placesUrl ]
+                                        [ moveMap town, loadPlaces placesUrl, Navigation.newUrl townUrl ]
                                 )
                             )
 
@@ -219,6 +227,9 @@ placesDecode jsonPlaces =
 
 -- MAIN
 
+defaultTown: TownName
+defaultTown =
+    "Montpellier"
 
 baseUrl : String
 baseUrl =
@@ -259,14 +270,14 @@ townsUrl =
     "http://localhost:8000/locations/locations.json"
 
 
-main : Program Never Model Msg
 main =
     let
-        initialModel =
-            { towns = [], places = [], selectedTown = "Montpellier", visitedTowns = [ "Montpellier" ] }
+        initialModel location =
+            ({ history = [location], towns = [], places = [], selectedTown = defaultTown, visitedTowns = [ defaultTown ] }
+            , Cmd.batch [ loadPlaces (placesUrlFor defaultTown), loadTowns townsUrl ] )
     in
-        Html.program
-            { init = ( initialModel, Cmd.batch [ loadPlaces (placesUrlFor initialModel.selectedTown), loadTowns townsUrl ] )
+        Navigation.program UrlChange
+            { init = initialModel
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none

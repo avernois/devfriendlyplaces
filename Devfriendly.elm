@@ -77,18 +77,18 @@ update msg model =
 
         GetTowns (Ok towns) ->
             let
-                defaultTown =
+                selectedTown =
                     towns
-                        |> List.filter (\t -> t.name == "Montpellier")
+                        |> List.filter (\t -> t.name == model.selectedTown)
                         |> List.head
             in
-                case defaultTown of
+                case selectedTown of
                     Just town ->
                         let
                             placesUrl =
                                 placesUrlFor town.name
                         in
-                            ( { model | towns = towns, selectedTown = town.name }
+                            ( { model | towns = towns }
                             , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
                             )
 
@@ -218,10 +218,10 @@ main : Program Never Model Msg
 main =
     let
         initialModel =
-            { towns = [], places = [], selectedTown = "toulouse" }
+            { towns = [], places = [], selectedTown = "Montpellier" }
     in
         Html.program
-            { init = ( initialModel, Cmd.batch [ loadPlaces (placesUrlFor initialModel.selectedTown), loadTowns townsUrl ] )
+            { init = ( initialModel, Cmd.batch [ loadTowns townsUrl ] )
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none

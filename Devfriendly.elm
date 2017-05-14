@@ -224,9 +224,33 @@ baseUrl =
     "http://localhost:8000/locations/"
 
 
+slugifyTownName : TownName -> TownName
+slugifyTownName town =
+    town
+        |> String.toLower
+        |> String.map
+            (\c ->
+                case c of
+                    ' ' ->
+                        '-'
+
+                    'é' ->
+                        'e'
+
+                    'è' ->
+                        'e'
+
+                    'à' ->
+                        'a'
+
+                    _ ->
+                        c
+            )
+
+
 placesUrlFor : String -> String
 placesUrlFor town =
-    baseUrl ++ (String.toLower town) ++ ".json"
+    baseUrl ++ (slugifyTownName town) ++ ".json"
 
 
 townsUrl : String

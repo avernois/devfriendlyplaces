@@ -22,8 +22,7 @@ port addPlaces : List Place -> Cmd msg
 
 
 type alias Model =
-    { history : List Navigation.Location
-    , towns : List Town
+    { towns : List Town
     , places : List Place
     , selectedTown : TownName
     , visitedTowns : List TownName
@@ -57,15 +56,11 @@ type Msg
     = TownSelected String
     | GetTowns (Result Http.Error (List Town))
     | GetPlaces (Result Http.Error (List Place))
-    | UrlChange Navigation.Location
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        UrlChange location ->
-            ( Debug.log "location" { model | history = location :: model.history }, Cmd.none )
-
         TownSelected townName ->
             let
                 selectedTown =
@@ -270,13 +265,14 @@ townsUrl =
     "http://localhost:8000/locations/locations.json"
 
 
+main : Program Never Model Msg
 main =
     let
-        initialModel location =
-            ({ history = [location], towns = [], places = [], selectedTown = defaultTown, visitedTowns = [ defaultTown ] }
+        initialModel =
+            ({ towns = [], places = [], selectedTown = defaultTown, visitedTowns = [ defaultTown ] }
             , Cmd.batch [ loadPlaces (placesUrlFor defaultTown), loadTowns townsUrl ] )
     in
-        Navigation.program UrlChange
+        Html.program
             { init = initialModel
             , view = view
             , update = update

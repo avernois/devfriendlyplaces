@@ -23,8 +23,13 @@ port addPlaces : List Place -> Cmd msg
 type alias Model =
     { towns : List Town
     , places : List Place
-    , selectedTown : String
+    , selectedTown : TownName
+    , visitedTowns : List TownName
     }
+
+
+type alias TownName =
+    String
 
 
 type alias Town =
@@ -61,6 +66,14 @@ update msg model =
                     model.towns
                         |> List.filter (\t -> t.name == townName)
                         |> List.head
+
+                visitedTowns =
+                    case List.member townName model.visitedTowns of
+                        True ->
+                            model.visitedTowns
+
+                        False ->
+                            List.append [ townName ] model.visitedTowns
             in
                 case selectedTown of
                     Just town ->
@@ -68,8 +81,15 @@ update msg model =
                             placesUrl =
                                 placesUrlFor town.name
                         in
-                            ( { model | selectedTown = town.name }
-                            , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
+                            ( { model | selectedTown = town.name, visitedTowns = visitedTowns }
+                            , Cmd.batch
+                                (case List.member town.name model.visitedTowns of
+                                    True ->
+                                        [ moveMap town ]
+
+                                    False ->
+                                        [ moveMap town, loadPlaces placesUrl ]
+                                )
                             )
 
                     Nothing ->
@@ -77,12 +97,12 @@ update msg model =
 
         GetTowns (Ok towns) ->
             let
-                selectedTown =
+                defaultTown =
                     towns
                         |> List.filter (\t -> t.name == model.selectedTown)
                         |> List.head
             in
-                case selectedTown of
+                case defaultTown of
                     Just town ->
                         let
                             placesUrl =
@@ -218,10 +238,10 @@ main : Program Never Model Msg
 main =
     let
         initialModel =
-            { towns = [], places = [], selectedTown = "Montpellier" }
+            { towns = [], places = [], selectedTown = "Montpellier", visitedTowns = [ "Montpellier" ] }
     in
         Html.program
-            { init = ( initialModel, Cmd.batch [ loadTowns townsUrl ] )
+            { init = ( initialModel, Cmd.batch [ loadPlaces (placesUrlFor initialModel.selectedTown), loadTowns townsUrl ] )
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none

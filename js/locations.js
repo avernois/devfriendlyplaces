@@ -33,12 +33,12 @@ function slugifyLocation(location) {
 
 function getLocations() {
   // Possible to get an absolute url : https://raw.githubusercontent.com/...
-  return getJSON("/locations/locations.json");
+  return getJSON("https://raw.githubusercontent.com/devfriendlyplaces/data/data/locations/locations.json");
 }
 
 
 function getPlaces(location) {
-    return getJSON("/locations/" + location + ".json");
+    return getJSON("https://raw.githubusercontent.com/devfriendlyplaces/data/data/locations/" + location + ".json");
 }
 
 

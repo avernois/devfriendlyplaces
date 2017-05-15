@@ -113,7 +113,7 @@ function displayPlacesFromLocation(map, location) {
 
     var places = getPlaces(location);
 
-    places.places.forEach(function(place) {
+    places.forEach(function(place) {
         L.marker([place.lat, place.lon], { icon: iconForPlace(place) } )
         .bindPopup(placeToHtml(place))
         .addTo(map);

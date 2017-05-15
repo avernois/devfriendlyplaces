@@ -317,18 +317,18 @@ townsUrl =
 main : Program Never Model Msg
 main =
     let
-        initialTown location =
-            case (String.dropLeft 1 location.hash) of
-                "" ->
-                    defaultTown
-
-                hash ->
-                    hash
-
         initialModel location =
-            ( { towns = [], places = [], selectedTown = initialTown location, visitedTowns = [] }
-            , Cmd.batch [ loadPlaces (placesUrlFor (initialTown location)), loadTowns townsUrl ]
-            )
+            let
+                townSlug =
+                    urlToTownSlug location
+            in
+                ( { towns = []
+                  , places = []
+                  , selectedTown = townSlug
+                  , visitedTowns = []
+                  }
+                , Cmd.batch [ loadTowns townsUrl ]
+                )
     in
         Navigation.program UrlChange
             { init = initialModel

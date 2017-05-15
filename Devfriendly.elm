@@ -67,14 +67,16 @@ update msg model =
                 townSlug =
                     urlToTownSlug location
 
-                isTownExists =
-                    isTown townSlug model.towns
+                town =
+                    findTown townSlug model.towns
             in
-                case isTownExists of
-                    True ->
-                        ( { model | selectedTown = townSlug }, Cmd.none )
+                case town of
+                    Just town ->
+                        ( { model | selectedTown = townSlug }
+                        , Cmd.batch (cmdsDisplayTown town model.visitedTowns)
+                        )
 
-                    False ->
+                    Nothing ->
                         let
                             _ =
                                 Debug.log "No Towns:" townSlug
@@ -191,6 +193,23 @@ loadPlaces url =
         |> Http.send GetPlaces
 
 
+cmdsDisplayTown : Town -> List TownSlug -> List (Cmd Msg)
+cmdsDisplayTown town visitedTowns =
+    let
+        townSlug =
+            slugifyTownName town.name
+
+        isVisited =
+            List.member townSlug visitedTowns
+    in
+        case isVisited of
+            False ->
+                [ moveMap town, loadPlaces (placesUrlFor townSlug) ]
+
+            True ->
+                [ moveMap town ]
+
+
 
 -- Decoder
 
@@ -269,16 +288,6 @@ findTown townSlug towns =
     towns
         |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
         |> List.head
-
-
-isTown : TownSlug -> List Town -> Bool
-isTown townSlug towns =
-    case findTown townSlug towns of
-        Just _ ->
-            True
-
-        Nothing ->
-            False
 
 
 

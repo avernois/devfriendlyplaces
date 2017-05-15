@@ -29,18 +29,6 @@ type alias Model =
     }
 
 
-type alias TownSlug =
-    String
-
-
-type alias Town =
-    { name : String
-    , latitude : Float
-    , longitude : Float
-    , defaultZoom : Int
-    }
-
-
 type alias Place =
     { name : String
     , latitude : Float
@@ -92,23 +80,10 @@ update msg model =
 
         GetTowns (Ok towns) ->
             let
-                defaultTown =
-                    towns
-                        |> List.filter (\t -> (slugifyTownName t.name) == model.selectedTown)
-                        |> List.head
+                hash =
+                    "#" ++ model.selectedTown
             in
-                case defaultTown of
-                    Just town ->
-                        let
-                            placesUrl =
-                                placesUrlFor town.name
-                        in
-                            ( { model | towns = towns }
-                            , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
-                            )
-
-                    Nothing ->
-                        ( { model | towns = towns }, Cmd.none )
+                ( { model | towns = towns }, Navigation.newUrl hash )
 
         GetTowns (Err error) ->
             let
@@ -247,6 +222,18 @@ placesDecode jsonPlaces =
 
 
 -- Town
+
+
+type alias TownSlug =
+    String
+
+
+type alias Town =
+    { name : String
+    , latitude : Float
+    , longitude : Float
+    , defaultZoom : Int
+    }
 
 
 slugifyTownName : String -> String

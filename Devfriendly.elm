@@ -22,8 +22,7 @@ port addPlaces : List Place -> Cmd msg
 
 
 type alias Model =
-    { history : List Navigation.Location
-    , towns : List Town
+    { towns : List Town
     , places : List Place
     , selectedTown : TownSlug
     , visitedTowns : List TownSlug
@@ -64,11 +63,13 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         UrlChange location ->
-            ( { model | history = location :: model.history }, Cmd.none )
+            ( model, Cmd.none )
 
         TownSelected townName ->
             let
-                townSlug = (slugifyTownName townName)
+                townSlug =
+                    (slugifyTownName townName)
+
                 selectedTown =
                     model.towns
                         |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
@@ -88,7 +89,7 @@ update msg model =
                             placesUrl =
                                 placesUrlFor townSlug
 
-                            townUrl = 
+                            townUrl =
                                 "#" ++ (slugifyTownName town.name)
                         in
                             ( { model | selectedTown = (slugifyTownName town.name), visitedTowns = visitedTowns }
@@ -228,9 +229,11 @@ placesDecode jsonPlaces =
 
 -- MAIN
 
-defaultTown: TownSlug
+
+defaultTown : TownSlug
 defaultTown =
     "montpellier"
+
 
 baseUrl : String
 baseUrl =
@@ -277,12 +280,14 @@ main =
             case (String.dropLeft 1 location.hash) of
                 "" ->
                     defaultTown
-                hash -> 
+
+                hash ->
                     hash
-                    
+
         initialModel location =
-            ({ history = [location], towns = [], places = [], selectedTown = initialTown location, visitedTowns = [ initialTown location] }
-            , Cmd.batch [ loadPlaces (placesUrlFor (initialTown location)), loadTowns townsUrl ] )
+            ( { towns = [], places = [], selectedTown = initialTown location, visitedTowns = [ initialTown location ] }
+            , Cmd.batch [ loadPlaces (placesUrlFor (initialTown location)), loadTowns townsUrl ]
+            )
     in
         Navigation.program UrlChange
             { init = initialModel

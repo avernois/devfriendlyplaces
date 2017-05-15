@@ -41,7 +41,7 @@ type alias Place =
 
 
 type Msg
-    = TownSelected String
+    = TownOnChange String
     | GetTowns (Result Http.Error (List Town))
     | GetPlaces (Result Http.Error (List Place))
     | UrlChange Navigation.Location
@@ -67,11 +67,11 @@ update msg model =
                     Nothing ->
                         let
                             _ =
-                                Debug.log "No Towns:" townSlug
+                                Debug.log "Not a town" townSlug
                         in
                             ( model, Cmd.none )
 
-        TownSelected townName ->
+        TownOnChange townName ->
             let
                 hash =
                     "#" ++ slugifyTownName townName
@@ -107,7 +107,7 @@ update msg model =
                                 [ model.selectedTown ] ++ model.visitedTowns
             in
                 ( { model
-                    | places = List.append model.places places
+                    | places = places ++ model.places
                     , visitedTowns = visitedTowns
                   }
                 , addPlaces places
@@ -142,7 +142,7 @@ viewMenu model =
                 )
                 (List.sortBy .name model.towns)
     in
-        select [ id "towns", onChange TownSelected ] townsOption
+        select [ id "towns", onChange TownOnChange ] townsOption
 
 
 view : Model -> Html Msg
@@ -221,7 +221,7 @@ placesDecode jsonPlaces =
 
 
 
--- Town
+-- Towns
 
 
 type alias TownSlug =
@@ -236,7 +236,7 @@ type alias Town =
     }
 
 
-slugifyTownName : String -> String
+slugifyTownName : String -> TownSlug
 slugifyTownName town =
     town
         |> String.toLower
@@ -283,7 +283,12 @@ findTown townSlug towns =
 
 defaultTown : TownSlug
 defaultTown =
-    "montpellier"
+    "toulouse"
+
+
+townsUrl : String
+townsUrl =
+    "http://localhost:8000/locations/locations.json"
 
 
 baseUrl : String
@@ -291,14 +296,9 @@ baseUrl =
     "http://localhost:8000/locations/"
 
 
-placesUrlFor : String -> String
+placesUrlFor : TownSlug -> String
 placesUrlFor townSlug =
     baseUrl ++ townSlug ++ ".json"
-
-
-townsUrl : String
-townsUrl =
-    "http://localhost:8000/locations/locations.json"
 
 
 main : Program Never Model Msg

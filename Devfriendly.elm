@@ -74,14 +74,6 @@ update msg model =
                     model.towns
                         |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
                         |> List.head
-
-                visitedTowns =
-                    case List.member townSlug model.visitedTowns of
-                        True ->
-                            model.visitedTowns
-
-                        False ->
-                            List.append [ townSlug ] model.visitedTowns
             in
                 case selectedTown of
                     Just town ->
@@ -92,7 +84,7 @@ update msg model =
                             townUrl =
                                 "#" ++ (slugifyTownName town.name)
                         in
-                            ( { model | selectedTown = (slugifyTownName town.name), visitedTowns = visitedTowns }
+                            ( { model | selectedTown = (slugifyTownName town.name) }
                             , Cmd.batch
                                 (case List.member town.name model.visitedTowns of
                                     True ->
@@ -134,7 +126,25 @@ update msg model =
                 ( { model | towns = [] }, Cmd.none )
 
         GetPlaces (Ok places) ->
-            ( { model | places = List.append model.places places }, addPlaces places )
+            let
+                visitedTowns =
+                    let
+                        isVisited =
+                            List.member model.selectedTown model.visitedTowns
+                    in
+                        case isVisited of
+                            True ->
+                                model.visitedTowns
+
+                            False ->
+                                [ model.selectedTown ] ++ model.visitedTowns
+            in
+                ( { model
+                    | places = List.append model.places places
+                    , visitedTowns = visitedTowns
+                  }
+                , addPlaces places
+                )
 
         GetPlaces (Err error) ->
             let
@@ -286,7 +296,7 @@ main =
                     hash
 
         initialModel location =
-            ( { towns = [], places = [], selectedTown = initialTown location, visitedTowns = [ initialTown location ] }
+            ( { towns = [], places = [], selectedTown = initialTown location, visitedTowns = [] }
             , Cmd.batch [ loadPlaces (placesUrlFor (initialTown location)), loadTowns townsUrl ]
             )
     in

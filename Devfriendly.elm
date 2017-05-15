@@ -5,6 +5,7 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import Json.Decode as Decode exposing (Decoder, field, list)
 import Http
+import Navigation
 
 
 -- PORTS
@@ -23,20 +24,8 @@ port addPlaces : List Place -> Cmd msg
 type alias Model =
     { towns : List Town
     , places : List Place
-    , selectedTown : TownName
-    , visitedTowns : List TownName
-    }
-
-
-type alias TownName =
-    String
-
-
-type alias Town =
-    { name : String
-    , latitude : Float
-    , longitude : Float
-    , defaultZoom : Int
+    , selectedTown : TownSlug
+    , visitedTowns : List TownSlug
     }
 
 
@@ -52,68 +41,49 @@ type alias Place =
 
 
 type Msg
-    = TownSelected String
+    = TownOnChange String
     | GetTowns (Result Http.Error (List Town))
     | GetPlaces (Result Http.Error (List Place))
+    | UrlChange Navigation.Location
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        TownSelected townName ->
+        UrlChange location ->
             let
-                selectedTown =
-                    model.towns
-                        |> List.filter (\t -> t.name == townName)
-                        |> List.head
+                townSlug =
+                    urlToTownSlug location
 
-                visitedTowns =
-                    case List.member townName model.visitedTowns of
-                        True ->
-                            model.visitedTowns
-
-                        False ->
-                            List.append [ townName ] model.visitedTowns
+                town =
+                    findTown townSlug model.towns
             in
-                case selectedTown of
+                case town of
                     Just town ->
-                        let
-                            placesUrl =
-                                placesUrlFor town.name
-                        in
-                            ( { model | selectedTown = town.name, visitedTowns = visitedTowns }
-                            , Cmd.batch
-                                (case List.member town.name model.visitedTowns of
-                                    True ->
-                                        [ moveMap town ]
-
-                                    False ->
-                                        [ moveMap town, loadPlaces placesUrl ]
-                                )
-                            )
+                        ( { model | selectedTown = townSlug }
+                        , Cmd.batch (cmdsDisplayTown town model.visitedTowns)
+                        )
 
                     Nothing ->
-                        ( model, Cmd.none )
+                        let
+                            _ =
+                                Debug.log "Not a town" townSlug
+                        in
+                            ( model, Cmd.none )
+
+        TownOnChange townName ->
+            let
+                hash =
+                    "#" ++ slugifyTownName townName
+            in
+                ( model, Navigation.newUrl hash )
 
         GetTowns (Ok towns) ->
             let
-                defaultTown =
-                    towns
-                        |> List.filter (\t -> t.name == model.selectedTown)
-                        |> List.head
+                hash =
+                    "#" ++ model.selectedTown
             in
-                case defaultTown of
-                    Just town ->
-                        let
-                            placesUrl =
-                                placesUrlFor town.name
-                        in
-                            ( { model | towns = towns }
-                            , Cmd.batch [ moveMap town, loadPlaces placesUrl ]
-                            )
-
-                    Nothing ->
-                        ( { model | towns = towns }, Cmd.none )
+                ( { model | towns = towns }, Navigation.newUrl hash )
 
         GetTowns (Err error) ->
             let
@@ -123,7 +93,25 @@ update msg model =
                 ( { model | towns = [] }, Cmd.none )
 
         GetPlaces (Ok places) ->
-            ( { model | places = List.append model.places places }, addPlaces places )
+            let
+                visitedTowns =
+                    let
+                        isVisited =
+                            List.member model.selectedTown model.visitedTowns
+                    in
+                        case isVisited of
+                            True ->
+                                model.visitedTowns
+
+                            False ->
+                                [ model.selectedTown ] ++ model.visitedTowns
+            in
+                ( { model
+                    | places = places ++ model.places
+                    , visitedTowns = visitedTowns
+                  }
+                , addPlaces places
+                )
 
         GetPlaces (Err error) ->
             let
@@ -149,12 +137,12 @@ viewMenu model =
             List.map
                 (\town ->
                     option
-                        [ selected (model.selectedTown == town.name) ]
+                        [ selected (model.selectedTown == (slugifyTownName town.name)) ]
                         [ text town.name ]
                 )
                 (List.sortBy .name model.towns)
     in
-        select [ id "towns", onChange TownSelected ] townsOption
+        select [ id "towns", onChange TownOnChange ] townsOption
 
 
 view : Model -> Html Msg
@@ -178,6 +166,23 @@ loadPlaces url =
     Decode.list placeDecoder
         |> Http.get url
         |> Http.send GetPlaces
+
+
+cmdsDisplayTown : Town -> List TownSlug -> List (Cmd Msg)
+cmdsDisplayTown town visitedTowns =
+    let
+        townSlug =
+            slugifyTownName town.name
+
+        isVisited =
+            List.member townSlug visitedTowns
+    in
+        case isVisited of
+            False ->
+                [ moveMap town, loadPlaces (placesUrlFor townSlug) ]
+
+            True ->
+                [ moveMap town ]
 
 
 
@@ -216,15 +221,22 @@ placesDecode jsonPlaces =
 
 
 
--- MAIN
+-- Towns
 
 
-baseUrl : String
-baseUrl =
-    "http://localhost:8000/locations/"
+type alias TownSlug =
+    String
 
 
-slugifyTownName : TownName -> TownName
+type alias Town =
+    { name : String
+    , latitude : Float
+    , longitude : Float
+    , defaultZoom : Int
+    }
+
+
+slugifyTownName : String -> TownSlug
 slugifyTownName town =
     town
         |> String.toLower
@@ -248,9 +260,30 @@ slugifyTownName town =
             )
 
 
-placesUrlFor : String -> String
-placesUrlFor town =
-    baseUrl ++ (slugifyTownName town) ++ ".json"
+urlToTownSlug : Navigation.Location -> TownSlug
+urlToTownSlug location =
+    case location.hash of
+        "" ->
+            defaultTown
+
+        hash ->
+            String.dropLeft 1 hash
+
+
+findTown : TownSlug -> List Town -> Maybe Town
+findTown townSlug towns =
+    towns
+        |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
+        |> List.head
+
+
+
+-- MAIN
+
+
+defaultTown : TownSlug
+defaultTown =
+    "toulouse"
 
 
 townsUrl : String
@@ -258,14 +291,34 @@ townsUrl =
     "http://localhost:8000/locations/locations.json"
 
 
+baseUrl : String
+baseUrl =
+    "http://localhost:8000/locations/"
+
+
+placesUrlFor : TownSlug -> String
+placesUrlFor townSlug =
+    baseUrl ++ townSlug ++ ".json"
+
+
 main : Program Never Model Msg
 main =
     let
-        initialModel =
-            { towns = [], places = [], selectedTown = "Montpellier", visitedTowns = [ "Montpellier" ] }
+        initialModel location =
+            let
+                townSlug =
+                    urlToTownSlug location
+            in
+                ( { towns = []
+                  , places = []
+                  , selectedTown = townSlug
+                  , visitedTowns = []
+                  }
+                , Cmd.batch [ loadTowns townsUrl ]
+                )
     in
-        Html.program
-            { init = ( initialModel, Cmd.batch [ loadPlaces (placesUrlFor initialModel.selectedTown), loadTowns townsUrl ] )
+        Navigation.program UrlChange
+            { init = initialModel
             , view = view
             , update = update
             , subscriptions = \_ -> Sub.none

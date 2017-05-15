@@ -63,40 +63,30 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         UrlChange location ->
-            ( model, Cmd.none )
+            let
+                townSlug =
+                    urlToTownSlug location
+
+                isTownExists =
+                    isTown townSlug model.towns
+            in
+                case isTownExists of
+                    True ->
+                        ( { model | selectedTown = townSlug }, Cmd.none )
+
+                    False ->
+                        let
+                            _ =
+                                Debug.log "No Towns:" townSlug
+                        in
+                            ( model, Cmd.none )
 
         TownSelected townName ->
             let
-                townSlug =
-                    (slugifyTownName townName)
-
-                selectedTown =
-                    model.towns
-                        |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
-                        |> List.head
+                hash =
+                    "#" ++ slugifyTownName townName
             in
-                case selectedTown of
-                    Just town ->
-                        let
-                            placesUrl =
-                                placesUrlFor townSlug
-
-                            townUrl =
-                                "#" ++ (slugifyTownName town.name)
-                        in
-                            ( { model | selectedTown = (slugifyTownName town.name) }
-                            , Cmd.batch
-                                (case List.member town.name model.visitedTowns of
-                                    True ->
-                                        [ moveMap town, Navigation.newUrl townUrl ]
-
-                                    False ->
-                                        [ moveMap town, loadPlaces placesUrl, Navigation.newUrl townUrl ]
-                                )
-                            )
-
-                    Nothing ->
-                        ( model, Cmd.none )
+                ( model, Navigation.newUrl hash )
 
         GetTowns (Ok towns) ->
             let
@@ -237,17 +227,7 @@ placesDecode jsonPlaces =
 
 
 
--- MAIN
-
-
-defaultTown : TownSlug
-defaultTown =
-    "montpellier"
-
-
-baseUrl : String
-baseUrl =
-    "http://localhost:8000/locations/"
+-- Town
 
 
 slugifyTownName : String -> String
@@ -272,6 +252,47 @@ slugifyTownName town =
                     _ ->
                         c
             )
+
+
+urlToTownSlug : Navigation.Location -> TownSlug
+urlToTownSlug location =
+    case location.hash of
+        "" ->
+            defaultTown
+
+        hash ->
+            String.dropLeft 1 hash
+
+
+findTown : TownSlug -> List Town -> Maybe Town
+findTown townSlug towns =
+    towns
+        |> List.filter (\t -> (slugifyTownName t.name) == townSlug)
+        |> List.head
+
+
+isTown : TownSlug -> List Town -> Bool
+isTown townSlug towns =
+    case findTown townSlug towns of
+        Just _ ->
+            True
+
+        Nothing ->
+            False
+
+
+
+-- MAIN
+
+
+defaultTown : TownSlug
+defaultTown =
+    "montpellier"
+
+
+baseUrl : String
+baseUrl =
+    "http://localhost:8000/locations/"
 
 
 placesUrlFor : String -> String

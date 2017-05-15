@@ -274,6 +274,7 @@ townsUrl =
     "http://localhost:8000/locations/locations.json"
 
 
+main : Program Never Model Msg
 main =
     let
         initialTown location =

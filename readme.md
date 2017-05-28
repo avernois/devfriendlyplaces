@@ -93,10 +93,9 @@ Please, don't improve code/add new feature and add new places/locations in the s
 We now can run unit tests against devfriendlyplaces code. You can start them by two ways:
 * from your favorite browser, open the file test/index.html
 * from the console
-  * you first need to have a valid npm installation. Then
-    * `npm install -g mocha`
-    * `npm install mocha-phantomjs`
-  * then `./node_modules/mocha-phantomjs/bin/mocha-phantomjs ./test/index.html`
+  * you first need to have a valid yarn installation. Then
+    * `yarn nstall`
+  * then `yarn test`
 
 [albi]: http://albi.devfriendlyplaces.net
 [angers]: http://angers.devfriendlyplaces.net

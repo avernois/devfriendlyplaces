@@ -1,5 +1,10 @@
 "use strict";
 
+var isCommonJS = typeof exports == "object" && typeof module == "object";
+if (isCommonJS) {
+    var L = {icon: function(){}};
+}
+
 var marker_icons = [];
 for(var i = 0; i < 4; i++) {
     marker_icons.push(
@@ -136,4 +141,8 @@ function onMoveEnd(map, locations) {
 
 function isLocationDisplayedOnMap(map, location) {
     return map.isDisplayedLocation[location];
+}
+
+if (isCommonJS) {
+    module.exports = { extractLocationFromUrl };
 }

@@ -1,7 +1,7 @@
 "use strict";
 
 var marker_icons = [];
-for(var i = 0; i < 4; i++) {
+for (var i = 0; i < 4; i++) {
     marker_icons.push(
         L.icon({
             iconUrl: 'images/marker-icon-' + i + '.png',
@@ -42,10 +42,10 @@ function placeToHtml(place) {
 
 
 function iconForPlace(place) {
-    var weights = {wifi: 1, power: 2};
+    var weights = { wifi: 1, power: 2 };
     var iconIndex = 0;
 
-    for(var idx in weights) {
+    for (var idx in weights) {
         iconIndex += optionValue(place[idx]) * weights[idx];
     }
 
@@ -58,7 +58,7 @@ function optionalFieldToHtml(label, value) {
 }
 
 
-function optionalUrlToLink(label, value){
+function optionalUrlToLink(label, value) {
     return value ? label + ": " + "<a href='" + value + "'>" + value + "</a>" + "<br>" : "";
 }
 
@@ -94,7 +94,7 @@ function boolToStr(value) {
 }
 
 
-function boolToInt(value){
+function boolToInt(value) {
     if (value !== undefined) {
         return value ? 1 : 0;
     } else {
@@ -109,14 +109,14 @@ function optionalComment(value) {
 
 
 function displayPlacesFromLocation(map, location) {
-    if (isLocationDisplayedOnMap(map, location)) {return;}
+    if (isLocationDisplayedOnMap(map, location)) { return; }
 
     var places = getPlaces(location);
 
     places.forEach(function(place) {
-        L.marker([place.lat, place.lon], { icon: iconForPlace(place) } )
-        .bindPopup(placeToHtml(place))
-        .addTo(map);
+        L.marker([place.lat, place.lon], { icon: iconForPlace(place) })
+            .bindPopup(placeToHtml(place))
+            .addTo(map);
     });
 
     map.isDisplayedLocation[location] = true;
@@ -127,7 +127,7 @@ function onMoveEnd(map, locations) {
     return function() {
         locations.map(location => {
             if (map.getBounds().contains([location.lat, location.lon])) {
-                displayPlacesFromLocation(map, key);
+                displayPlacesFromLocation(map, slugifyLocation(location.name));
             }
         });
     }
